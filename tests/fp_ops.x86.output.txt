@@ -1,0 +1,133 @@
+    ; assembly                                       | /* jsdec pseudo code output */
+                                                     | /* testsuite @ 0x0 */
+                                                     | #include <stdint.h>
+                                                     |  
+    ; (fcn) fcn.0f320b70 ()                          | int32_t fcn_0f320b70 (void) {
+    0x0f320b70 push ecx                              |     
+    0x0f320b71 fldz                                  |     *((int64_t*) fp_stack--) = 0.0;
+    0x0f320b73 push esi                              |     
+    0x0f320b74 fcom dword [esp + 0xc]                |     fp_status = fp_compare(fp_stack[0], *((int32_t*) (esp + 0xc)));
+    0x0f320b78 mov esi, ecx                          |     esi = ecx;
+    0x0f320b7a fnstsw ax                             |     
+    0x0f320b7c test ah, 0x41                         |     
+                                                     |     if ((ah & 0x41) == 0) {
+    0x0f320b7f jne 0xf320b85                         |         
+                                                     |     }
+    0x0f320b85 fld dword [esi + 0x18]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x18));
+    0x0f320b88 fstp dword [esp + 4]                  |     *((int32_t*) (esp + 4)) = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320b8c fld dword [esp + 4]                   |     *((int64_t*) fp_stack--) = *((int32_t*) (esp + 4));
+    0x0f320b90 fcom st(1)                            |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+    0x0f320b92 fnstsw ax                             |     
+    0x0f320b94 test ah, 0x41                         |     
+    0x0f320b97 jne 0xf320b9f                         |     void (*0xf320b9f)() ();
+    0x0f320b9f fstp st(0)                            |     fp_stack++;
+    0x0f320ba1 fldz                                  |     *((int64_t*) fp_stack--) = 0.0;
+    0x0f320c8b fstp st(0)                            |     fp_stack++;
+    0x0f320c8d fstp st(0)                            |     fp_stack++;
+    0x0f320bbf mov eax, dword [esi + 0x10]           |     eax = *((int32_t*) (esi + 0x10));
+    0x0f320bc2 mov al, byte [eax + 0x20]             |     al = *((int8_t*) (eax + 0x20));
+    0x0f320bc5 test al, al                           |     
+    0x0f320bc7 jne 0xf320bef                         |     void (*0xf320bef)() ();
+    0x0f320bef fld dword [esi + 0x14]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x14));
+    0x0f320bf2 fcomp st(1)                           |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+                                                     |     fp_stack++;
+    0x0f320bf4 fnstsw ax                             |     
+    0x0f320bf6 test ah, 5                            |     
+    0x0f320bf9 jp 0xf320c8b                          |     void (*0xf320c8b)() ();
+    0x0f320bff fst dword [esi + 0x14]                |     *((int32_t*) (esi + 0x14)) = fp_stack[0];
+    0x0f320c02 fld1                                  |     *((int64_t*) fp_stack--) = 1.0;
+    0x0f320c04 fcom st(1)                            |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+    0x0f320c06 fnstsw ax                             |     
+    0x0f320c08 fstp st(1)                            |     fp_stack[1] = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c0a test ah, 5                            |     
+    0x0f320c0d jp 0xf320c14                          |     void (*0xf320c14)() ();
+    0x0f320c14 fstp st(0)                            |     fp_stack++;
+    0x0f320c2b fcomp dword [esi + 0x14]              |     fp_status = fp_compare(fp_stack[0], *((int32_t*) (esi + 0x14)));
+                                                     |     fp_stack++;
+    0x0f320c2e fnstsw ax                             |     
+    0x0f320c30 test ah, 1                            |     
+    0x0f320c33 jne 0xf320c8f                         |     void (*0xf320c8f)() ();
+    0x0f320c8f pop esi                               |     
+    0x0f320c90 pop ecx                               |     ecx = esi;
+    0x0f320c91 ret 4                                 |     return eax;
+    0x0f320c35 mov ecx, dword [esi + 4]              |     ecx = *((int32_t*) (esi + 4));
+    0x0f320c38 mov eax, dword [ecx + 8]              |     eax = *((int32_t*) (ecx + 8));
+    0x0f320c3b push 0x5e                             |     
+    0x0f320c3d push eax                              |     
+    0x0f320c3e call 0xf409c20                        |     ax = void (*0xf409c20)(void, void) (eax, 0x5e);
+    0x0f320c43 fldz                                  |     *((int64_t*) fp_stack--) = 0.0;
+    0x0f320c45 fcom st(1)                            |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+    0x0f320c47 fnstsw ax                             |     
+    0x0f320c49 fstp st(1)                            |     fp_stack[1] = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c4b test ah, 0x41                         |     
+    0x0f320c4e jp 0xf320c60                          |     void (*0xf320c60)() ();
+    0x0f320c60 fld dword [esp + 4]                   |     *((int64_t*) fp_stack--) = *((int32_t*) (esp + 4));
+    0x0f320c64 fcom st(1)                            |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+    0x0f320c66 fnstsw ax                             |     
+    0x0f320c68 fstp st(1)                            |     fp_stack[1] = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c6a test ah, 0x41                         |     
+    0x0f320c6d jne 0xf320c7b                         |     void (*0xf320c7b)() ();
+    0x0f320c7b fstp st(0)                            |     fp_stack++;
+    0x0f320c7d fld qword [0xf575900]                 |     *((int64_t*) fp_stack--) = *((int64_t*) 0xf575900);
+    0x0f320c83 fstp dword [esi + 0x14]               |     *((int32_t*) (esi + 0x14)) = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c86 pop esi                               |     
+    0x0f320c87 pop ecx                               |     
+    0x0f320c88 ret 4                                 |     return eax;
+    0x0f320c6f fld1                                  |     *((int64_t*) fp_stack--) = 1.0;
+    0x0f320c71 fdivrp st(1)                          |     fp_stack[1] /= fp_stack[0];
+                                                     |     fp_stack++;
+    0x0f320c73 fstp dword [esi + 0x14]               |     *((int32_t*) (esi + 0x14)) = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c76 pop esi                               |     
+    0x0f320c77 pop ecx                               |     
+    0x0f320c78 ret 4                                 |     return eax;
+    0x0f320c50 push 0                                |     
+    0x0f320c52 fstp st(0)                            |     fp_stack++;
+    0x0f320c54 mov ecx, esi                          |     ecx = esi;
+    0x0f320c56 call 0xf320830                        |     ax = void (*0xf320830)(void) (0);
+    0x0f320c5b pop esi                               |     
+    0x0f320c5c pop ecx                               |     
+    0x0f320c5d ret 4                                 |     return eax;
+    0x0f320c25 fld dword [esi + 0x1c]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x1c));
+    0x0f320c28 fstp dword [esi + 0x14]               |     *((int32_t*) (esi + 0x14)) = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c0f fstp dword [esi + 0x14]               |     *((int32_t*) (esi + 0x14)) = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320c12 jmp 0xf320c16                         |     void (*0xf320c16)() ();
+    0x0f320c16 fld dword [esi + 0x14]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x14));
+    0x0f320c19 fld dword [esi + 0x1c]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x1c));
+    0x0f320c1c fcompp                                |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+    0x0f320c1e fnstsw ax                             |     
+    0x0f320c20 test ah, 0x41                         |     
+    0x0f320c23 jne 0xf320c2b                         |     void (*0xf320c2b)() ();
+    0x0f320bc9 cmp dword [esi + 0x90], 0             |     
+    0x0f320bd0 jg 0xf320bd8                          |     void (*0xf320bd8)() ();
+    0x0f320bd8 test al, al                           |     
+    0x0f320bda jne 0xf320bef                         |     void (*0xf320bef)() ();
+    0x0f320bdc cmp dword [esi + 0x90], 0             |     
+    0x0f320be3 jg 0xf320bef                          |     void (*0xf320bef)() ();
+    0x0f320be5 cmp dword [esi + 0x2c], 0             |     
+    0x0f320be9 jle 0xf320c8b                         |     void (*0xf320c8b)() ();
+    0x0f320bd2 cmp dword [esi + 0x2c], 0             |     
+    0x0f320bd6 jle 0xf320bff                         |     void (*0xf320bff)() ();
+    0x0f320b99 fdivr dword [esp + 0xc]               |     *((int32_t*) (esp + 0xc)) /= fp_stack[0];
+    0x0f320b9d jmp 0xf320ba3                         |     void (*0xf320ba3)() ();
+    0x0f320ba3 fstp dword [esp + 0xc]                |     *((int32_t*) (esp + 0xc)) = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320ba7 fld dword [esi + 0x14]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x14));
+    0x0f320baa fld dword [esp + 0xc]                 |     *((int64_t*) fp_stack--) = *((int32_t*) (esp + 0xc));
+    0x0f320bae fld st(0)                             |     *((int64_t*) fp_stack--) = fp_stack[0];
+    0x0f320bb0 fucomp st(2)                          |     fp_status = fp_compare(fp_stack[0], fp_stack[2]);
+                                                     |     fp_stack++;
+    0x0f320bb2 fnstsw ax                             |     
+    0x0f320bb4 fstp st(1)                            |     fp_stack[1] = fp_stack[0];
+                                                     |     fp_stack--;
+    0x0f320bb6 test ah, 0x44                         |     
+    0x0f320bb9 jnp 0xf320c8b                         |     void (*0xf320c8b)() ();
+    0x0f320b81 fst dword [esp + 0xc]                 |     *((int32_t*) (esp + 0xc)) = fp_stack[0];
+                                                     | }

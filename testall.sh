@@ -2,7 +2,7 @@
 
 TESTFOLDER=./tests
 TMPFOLDER=./tmp
-R2DECFOLDER=$1
+JSDECFOLDER=$1
 TRAVIS=$2
 RMCMD="rm -rf"
 ERROR=false
@@ -13,15 +13,15 @@ if [ -z "$TRAVIS" ]; then
 	DIFF="diff --color=always -u"
 fi
 
-if [ -z "$R2DECFOLDER" ]; then
-	R2DECFOLDER=~/.local/share/radare2/r2pm/git/r2dec-js
+if [ -z "$JSDECFOLDER" ]; then
+	JSDECFOLDER=~/.local/share/rizin/rizinpm/git/jsdec
 fi
 
-R2DECBINFLD=$R2DECFOLDER/p
+JSDECBINFLD=$JSDECFOLDER/p
 
-if [ ! -f "$R2DECBINFLD/r2dec-test" ]; then
+if [ ! -f "$JSDECBINFLD/jsdec-test" ]; then
 	echo "building binary src"
-    make --no-print-directory testbin -C "$R2DECBINFLD"
+    make --no-print-directory testbin -C "$JSDECBINFLD"
 fi
 
 TESTS=$(find "$TESTFOLDER" | grep ".json" | sed "s/.json//g")
@@ -31,7 +31,7 @@ mkdir "$TMPFOLDER"
 for ELEM in $TESTS; do
 	NAME=$(basename "$ELEM")
 	OUTPUTFILE="$TMPFOLDER/$NAME.output.txt"
-	$R2DECBINFLD/r2dec-test "$R2DECFOLDER" "$ELEM.json" > "$OUTPUTFILE" || break
+	$JSDECBINFLD/jsdec-test "$JSDECFOLDER" "$ELEM.json" > "$OUTPUTFILE" || break
 	DIFFOUTPUT=$(diff -u "$ELEM.output.txt" "$OUTPUTFILE")
 
 	if [ ! -z "$DIFFOUTPUT" ]; then
@@ -54,9 +54,9 @@ if $ERROR; then
 	exit 1;
 fi
 
-if [ -f "$R2DECBINFLD/r2dec-test" ]; then
+if [ -f "$JSDECBINFLD/jsdec-test" ]; then
 	echo "cleaning binary folder"
-    make --no-print-directory clean -C "$R2DECBINFLD"
+    make --no-print-directory clean -C "$JSDECBINFLD"
 fi
 
 exit 0;

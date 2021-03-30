@@ -2,21 +2,21 @@
 
 TESTFOLDER=./tests
 TMPFOLDER=./tmp
-R2DECFOLDER=$2
+JSDECFOLDER=$2
 TESTNAME=$1
 RMCMD="rmdir"
 ERROR=false
 DIFF="diff --color=always -u"
 
-if [ -z "$R2DECFOLDER" ]; then
-	R2DECFOLDER=~/.local/share/radare2/r2pm/git/r2dec-js
+if [ -z "$JSDECFOLDER" ]; then
+	JSDECFOLDER=~/.local/share/rizin/plugins/jsdec
 fi
 
-R2DECBINFLD=$R2DECFOLDER/p
+JSDECBINFLD=$JSDECFOLDER/p
 
-if [ ! -f "$R2DECBINFLD/r2dec-test" ]; then
+if [ ! -f "$JSDECBINFLD/jsdec-test" ]; then
 	echo "building binary src"
-    make --no-print-directory testbin -C "$R2DECBINFLD"
+    make --no-print-directory testbin -C "$JSDECBINFLD"
 fi
 
 if [ -z "$TESTNAME" ]; then
@@ -24,5 +24,5 @@ if [ -z "$TESTNAME" ]; then
 	exit 1;
 fi
 
-$R2DECBINFLD/r2dec-test "$R2DECFOLDER" "$TESTNAME"
+$JSDECBINFLD/jsdec-test "$JSDECFOLDER" "$TESTNAME"
 

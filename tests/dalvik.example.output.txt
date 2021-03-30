@@ -1,4 +1,4 @@
-    ; assembly                                                                                                                                                   | /* r2dec pseudo code output */
+    ; assembly                                                                                                                                                   | /* jsdec pseudo code output */
                                                                                                                                                                  | /* testsuite @ 0x0 */
     ; (fcn) sym.La_b_g_a_W.method.a_Landroid_app_Activity__La_b_g_a_W ()                                                                                         | java.lang.Object a.b.g.a.W.method.a (a.b.g.a.W v3) {
     0x0007fff0 instance-of v0, v4, La/b/g/a/W$a;                                                                                                                 |     v0 = (v4 instanceof a.b.g.a.W$a) ? 1 : 0;

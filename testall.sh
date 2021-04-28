@@ -14,7 +14,7 @@ if [ -z "$TRAVIS" ]; then
 fi
 
 if [ -z "$JSDECFOLDER" ]; then
-	JSDECFOLDER=~/.local/share/rizin/rizinpm/git/jsdec
+	echo "$0 <jsdec folder> <ci>"
 fi
 
 JSDECBINFLD=$JSDECFOLDER/p

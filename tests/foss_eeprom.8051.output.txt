@@ -1,0 +1,67 @@
+    ; assembly                   | /* jsdec pseudo code output */
+                                 | /* testsuite @ 0x0 */
+                                 | #include <stdint.h>
+                                 |  
+                                 | uint8_t rotate_left8 (uint8_t value, uint32_t count) {
+                                 |     const uint8_t mask = (CHAR_BIT * sizeof (value)) - 1;
+                                 |     count &= mask;
+                                 |     return (value << count) | (value >> (-count & mask));
+                                 | }
+                                 |  
+    ; (fcn) fcn.0000233e ()      | void fcn_0000233e () {
+    0x0000233e mov a, r6         |     a = r6;
+    0x0000233f orl a, r7         |     a |= r7;
+                                 |     if (a == 0) {
+    0x00002340 jz 0x237a         |         goto label_0;
+                                 |     }
+    0x00002342 mov r4, #0x00     |     r4 = 0x00;
+    0x00002344 mov r5, #0x00     |     r5 = 0x00;
+    0x00002346 mov b, #0x10      |     b = 0x10;
+                                 |     do {
+    0x00002349 mov a, r2         |         a = r2;
+    0x0000234a add a, r2         |         a += r2;
+    0x0000234b mov r2, a         |         r2 = a;
+    0x0000234c mov a, r3         |         a = r3;
+                                 |         /* rotate with carry */
+    0x0000234d rlc a             |         a = rotate_left8 (a, 1);
+    0x0000234e mov r3, a         |         r3 = a;
+    0x0000234f mov a, r4         |         a = r4;
+                                 |         /* rotate with carry */
+    0x00002350 rlc a             |         a = rotate_left8 (a, 1);
+    0x00002351 mov r4, a         |         r4 = a;
+    0x00002352 mov a, r5         |         a = r5;
+                                 |         /* rotate with carry */
+    0x00002353 rlc a             |         a = rotate_left8 (a, 1);
+    0x00002354 mov r5, a         |         r5 = a;
+    0x00002355 clr c             |         c = 0;
+    0x00002356 mov a, r4         |         a = r4;
+    0x00002357 subb a, r6        |         a -= r6;
+    0x00002358 mov 0x24, a       |         *((uint8_t*) (iram + 0x24)) = a;
+    0x0000235a mov a, r5         |         a = r5;
+    0x0000235b subb a, r7        |         a -= r7;
+    0x0000235c mov 0x25, a       |         *((uint8_t*) (iram + 0x25)) = a;
+    0x0000235e cpl c             |         c = ~c;
+                                 |         if (c != 0) {
+    0x0000235f jnc 0x2365        |             
+    0x00002361 mov r5, 0x25      |             r5 = *((uint8_t*) (iram + 0x25));
+    0x00002363 mov r4, 0x24      |             r4 = *((uint8_t*) (iram + 0x24));
+                                 |         }
+    0x00002365 mov a, dpl        |         a = dpl;
+                                 |         /* rotate with carry */
+    0x00002367 rlc a             |         a = rotate_left8 (a, 1);
+    0x00002368 mov dpl, a        |         dpl = a;
+    0x0000236a mov a, dph        |         a = dph;
+                                 |         /* rotate with carry */
+    0x0000236c rlc a             |         a = rotate_left8 (a, 1);
+    0x0000236d mov dph, a        |         dph = a;
+    0x0000236f djnz b, 0x2349    |         b--;
+                                 |     } while (b != 0);
+    0x00002372 mov r2, dpl       |     r2 = dpl;
+    0x00002374 mov r3, dph       |     r3 = dph;
+    0x00002376 mov a, r5         |     a = r5;
+    0x00002377 mov r7, a         |     r7 = a;
+    0x00002378 mov a, r4         |     a = r4;
+    0x00002379 mov r6, a         |     r6 = a;
+                                 | label_0:
+    0x0000237a ret               |     return;
+                                 | }

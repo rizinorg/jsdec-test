@@ -50,13 +50,13 @@
     0x0f320c30 test ah, 1                            |     
     0x0f320c33 jne 0xf320c8f                         |     void (*0xf320c8f)() ();
     0x0f320c8f pop esi                               |     
-    0x0f320c90 pop ecx                               |     ecx = esi;
+    0x0f320c90 pop ecx                               |     
     0x0f320c91 ret 4                                 |     return eax;
     0x0f320c35 mov ecx, dword [esi + 4]              |     ecx = *((int32_t*) (esi + 4));
     0x0f320c38 mov eax, dword [ecx + 8]              |     eax = *((int32_t*) (ecx + 8));
     0x0f320c3b push 0x5e                             |     
     0x0f320c3d push eax                              |     
-    0x0f320c3e call 0xf409c20                        |     ax = void (*0xf409c20)(void, void) (eax, 0x5e);
+    0x0f320c3e call 0xf409c20                        |     ax = void (*0xf409c20)(uint32_t, uint32_t) (eax, 0x5e);
     0x0f320c43 fldz                                  |     *((int64_t*) fp_stack--) = 0.0;
     0x0f320c45 fcom st(1)                            |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
     0x0f320c47 fnstsw ax                             |     ax = fp_status;
@@ -89,7 +89,7 @@
     0x0f320c50 push 0                                |     
     0x0f320c52 fstp st(0)                            |     fp_stack++;
     0x0f320c54 mov ecx, esi                          |     ecx = esi;
-    0x0f320c56 call 0xf320830                        |     ax = void (*0xf320830)(void) (0);
+    0x0f320c56 call 0xf320830                        |     ax = void (*0xf320830)(uint32_t) (0);
     0x0f320c5b pop esi                               |     
     0x0f320c5c pop ecx                               |     
     0x0f320c5d ret 4                                 |     return eax;

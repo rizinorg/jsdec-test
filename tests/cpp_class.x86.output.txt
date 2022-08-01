@@ -1,0 +1,14 @@
+    ; assembly                                       | /* jsdec pseudo code output */
+                                                     | /* testsuite @ 0x0 */
+                                                     | #include <stdint.h>
+                                                     |  
+    ; (fcn) main ()                                  | int32_t main (char ** argv) {
+                                                     |     rdx = argv;
+                                                     |     /* [00] -r-x section size 4096 named .text */
+    0x140001000 sub rsp, 0x28                        |     
+    0x140001004 mov rcx, qword [rip + 0x1075]        |     
+    0x14000100b call 0x140001020                     |     eax = fcn_140001020 (*((uint64_t*) std::cout), rdx);
+    0x140001010 xor eax, eax                         |     eax = 0;
+    0x140001012 add rsp, 0x28                        |     
+    0x140001016 ret                                  |     return eax;
+                                                     | }

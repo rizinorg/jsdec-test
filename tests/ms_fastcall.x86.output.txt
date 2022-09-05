@@ -1,0 +1,23 @@
+    ; assembly                                           | /* jsdec pseudo code output */
+                                                         | /* testsuite @ 0x0 */
+                                                         | #include <stdint.h>
+                                                         |  
+    ; (fcn) fcn.140001000 ()                             | int64_t fcn_140001000 (int64_t arg4, int64_t arg3) {
+                                                         |     int64_t var_20h;
+                                                         |     int64_t var_24h;
+                                                         |     int64_t var_28h;
+                                                         |     r9 = arg4;
+                                                         |     r8 = arg3;
+                                                         |     /* [00] -r-x section size 4096 named .text */
+    0x140001000 sub rsp, 0x38                            |     
+    0x140001004 mov dword [rsp + 0x20], 5                |     *((int32_t*) (rsp + 0x20)) = 5;
+    0x14000100c mov dword [rsp + 0x24], 4                |     *((int32_t*) (rsp + 0x24)) = 4;
+    0x140001014 mov dword [rsp + 0x28], 3                |     *((int32_t*) (rsp + 0x28)) = 3;
+    0x14000101c mov eax, 4                               |     eax = 4;
+    0x140001021 imul rax, rax, 1                         |     rax *= 1;
+    0x140001025 mov edx, dword [rsp + rax + 0x20]        |     
+    0x140001029 lea rcx, [rip + 0x1200]                  |     
+    0x140001030 call 0x1400010b0                         |     fcn_1400010b0 ("number: %d", *((uint32_t*) (rsp + rax + 0x20)), r8, r9);
+    0x140001035 add rsp, 0x38                            |     
+    0x140001039 ret                                      |     return rax;
+                                                         | }

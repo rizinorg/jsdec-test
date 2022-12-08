@@ -102,6 +102,7 @@
     0x0f320c16 fld dword [esi + 0x14]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x14));
     0x0f320c19 fld dword [esi + 0x1c]                |     *((int64_t*) fp_stack--) = *((int32_t*) (esi + 0x1c));
     0x0f320c1c fcompp                                |     fp_status = fp_compare(fp_stack[0], fp_stack[1]);
+                                                     |     fp_stack += 2;
     0x0f320c1e fnstsw ax                             |     ax = fp_status;
     0x0f320c20 test ah, 0x41                         |     
     0x0f320c23 jne 0xf320c2b                         |     void (*0xf320c2b)() ();

@@ -849,29 +849,27 @@
     ],
     "afvj":
     {
-        "bp":
-        [],
         "reg":
         [],
-        "sp":
+        "stack":
         [
             {
-                "kind": "var",
+                "arg": false,
                 "name": "s2",
-                "ref":
+                "storage":
                 {
-                    "base": "esp",
-                    "offset": -4
+                    "stack_off": -4,
+                    "type": "stack"
                 },
                 "type": "wchar_t *"
             },
             {
-                "kind": "var",
+                "arg": false,
                 "name": "local_1ch",
-                "ref":
+                "storage":
                 {
-                    "base": "esp",
-                    "offset": -28
+                    "stack_off": -28,
+                    "type": "stack"
                 },
                 "type": "int"
             }

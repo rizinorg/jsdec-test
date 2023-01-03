@@ -258,43 +258,41 @@
     ],
     "afvj":
     {
-        "bp":
+        "reg":
+        [],
+        "stack":
         [
             {
-                "kind": "var",
+                "arg": false,
                 "name": "local_8h",
-                "ref":
+                "storage":
                 {
-                    "base": "rbp",
-                    "offset": -8
+                    "stack_off": -8,
+                    "type": "stack"
                 },
                 "type": "int"
             },
             {
-                "kind": "arg",
+                "arg": true,
                 "name": "arg_8h",
-                "ref":
+                "storage":
                 {
-                    "base": "rbp",
-                    "offset": 8
+                    "stack_off": 8,
+                    "type": "stack"
                 },
                 "type": "int"
             },
             {
-                "kind": "arg",
+                "arg": true,
                 "name": "arg_10h",
-                "ref":
+                "storage":
                 {
-                    "base": "rbp",
-                    "offset": 16
+                    "stack_off": 16,
+                    "type": "stack"
                 },
                 "type": "int"
             }
-        ],
-        "reg":
-        [],
-        "sp":
-        []
+        ]
     },
     "agj":
     [

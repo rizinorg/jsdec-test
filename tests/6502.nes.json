@@ -443,19 +443,17 @@
     ],
     "afvj":
     {
-        "bp":
-        [],
         "reg":
         [],
-        "sp":
+        "stack":
         [
             {
-                "kind": "arg",
+                "arg": true,
                 "name": "arg_ffh",
-                "ref":
+                "storage":
                 {
-                    "base": "sp",
-                    "offset": 255
+                    "stack_off": 255,
+                    "type": "stack"
                 },
                 "type": "int32_t"
             }

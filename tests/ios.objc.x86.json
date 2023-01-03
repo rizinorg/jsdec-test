@@ -570,33 +570,31 @@
     ],
     "afvj":
     {
-        "bp":
+        "reg":
+        [],
+        "stack":
         [
             {
-                "kind": "var",
+                "arg": false,
                 "name": "var_10h",
-                "ref":
+                "storage":
                 {
-                    "base": "rbp",
-                    "offset": 18446744073709551600
+                    "stack_off": 18446744073709551600,
+                    "type": "stack"
                 },
                 "type": "void **"
             },
             {
-                "kind": "var",
+                "arg": false,
                 "name": "instance",
-                "ref":
+                "storage":
                 {
-                    "base": "rbp",
-                    "offset": 18446744073709551608
+                    "stack_off": 18446744073709551608,
+                    "type": "stack"
                 },
                 "type": "void **"
             }
-        ],
-        "reg":
-        [],
-        "sp":
-        []
+        ]
     },
     "agj":
     [

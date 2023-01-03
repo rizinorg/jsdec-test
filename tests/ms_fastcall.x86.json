@@ -5665,52 +5665,58 @@
     ],
     "afvj":
     {
-        "bp":
-        [],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "arg4",
-                "ref": "r9",
+                "storage":
+                {
+                    "reg": "r9",
+                    "type": "reg"
+                },
                 "type": "int64_t"
             },
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "arg3",
-                "ref": "r8",
+                "storage":
+                {
+                    "reg": "r8",
+                    "type": "reg"
+                },
                 "type": "int64_t"
             }
         ],
-        "sp":
+        "stack":
         [
             {
-                "kind": "var",
+                "arg": false,
                 "name": "var_20h",
-                "ref":
+                "storage":
                 {
-                    "base": "rsp",
-                    "offset": 32
+                    "stack_off": 32,
+                    "type": "stack"
                 },
                 "type": "int64_t"
             },
             {
-                "kind": "var",
+                "arg": false,
                 "name": "var_24h",
-                "ref":
+                "storage":
                 {
-                    "base": "rsp",
-                    "offset": 36
+                    "stack_off": 36,
+                    "type": "stack"
                 },
                 "type": "int64_t"
             },
             {
-                "kind": "var",
+                "arg": false,
                 "name": "var_28h",
-                "ref":
+                "storage":
                 {
-                    "base": "rsp",
-                    "offset": 40
+                    "stack_off": 40,
+                    "type": "stack"
                 },
                 "type": "int64_t"
             }

@@ -487,46 +487,52 @@
     ],
     "afvj":
     {
-        "bp":
-        [
-            {
-                "kind": "var",
-                "name": "local_10h",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": -16
-                },
-                "type": "char **"
-            },
-            {
-                "kind": "var",
-                "name": "local_4h",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": -4
-                },
-                "type": "int"
-            }
-        ],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "argc",
-                "ref": "rdi",
+                "storage":
+                {
+                    "reg": "rdi",
+                    "type": "reg"
+                },
                 "type": "int"
             },
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "argv",
-                "ref": "rsi",
+                "storage":
+                {
+                    "reg": "rsi",
+                    "type": "reg"
+                },
                 "type": "char **"
             }
         ],
-        "sp":
-        []
+        "stack":
+        [
+            {
+                "arg": false,
+                "name": "local_10h",
+                "storage":
+                {
+                    "stack_off": -16,
+                    "type": "stack"
+                },
+                "type": "char **"
+            },
+            {
+                "arg": false,
+                "name": "local_4h",
+                "storage":
+                {
+                    "stack_off": -4,
+                    "type": "stack"
+                },
+                "type": "int"
+            }
+        ]
     },
     "agj":
     [

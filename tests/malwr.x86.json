@@ -843,40 +843,37 @@
     ],
     "afvj":
     {
-        "bp":
-        [
-            {
-                "kind": "arg",
-                "name": "arg_64h",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": 100
-                },
-                "type": "int"
-            }
-        ],
         "reg":
         [],
-        "sp":
+        "stack":
         [
             {
-                "kind": "var",
-                "name": "local_8h",
-                "ref":
+                "arg": true,
+                "name": "arg_64h",
+                "storage":
                 {
-                    "base": "rsp",
-                    "offset": -8
+                    "stack_off": 100,
+                    "type": "stack"
                 },
                 "type": "int"
             },
             {
-                "kind": "var",
-                "name": "local_18h",
-                "ref":
+                "arg": false,
+                "name": "local_8h",
+                "storage":
                 {
-                    "base": "rsp",
-                    "offset": -24
+                    "stack_off": -8,
+                    "type": "stack"
+                },
+                "type": "int"
+            },
+            {
+                "arg": false,
+                "name": "local_18h",
+                "storage":
+                {
+                    "stack_off": -24,
+                    "type": "stack"
                 },
                 "type": "int"
             }

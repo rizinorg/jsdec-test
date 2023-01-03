@@ -643,33 +643,31 @@
     ],
     "afvj":
     {
-        "bp":
+        "reg":
+        [],
+        "stack":
         [
             {
-                "kind": "arg",
+                "arg": true,
                 "name": "arg_8h",
-                "ref":
+                "storage":
                 {
-                    "base": "ebp",
-                    "offset": 8
+                    "stack_off": 8,
+                    "type": "stack"
                 },
                 "type": "int"
             },
             {
-                "kind": "arg",
+                "arg": true,
                 "name": "arg_ch",
-                "ref":
+                "storage":
                 {
-                    "base": "ebp",
-                    "offset": 12
+                    "stack_off": 12,
+                    "type": "stack"
                 },
                 "type": "int"
             }
-        ],
-        "reg":
-        [],
-        "sp":
-        []
+        ]
     },
     "agj":
     [

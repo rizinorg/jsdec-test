@@ -5952,18 +5952,20 @@
     ],
     "afvj":
     {
-        "bp":
-        [],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "selector",
-                "ref": "r0",
+                "storage":
+                {
+                    "reg": "r0",
+                    "type": "reg"
+                },
                 "type": "char *"
             }
         ],
-        "sp":
+        "stack":
         []
     },
     "agj":

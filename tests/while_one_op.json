@@ -859,24 +859,30 @@
     ],
     "afvj":
     {
-        "bp":
-        [],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "arg2",
-                "ref": "rsi",
+                "storage":
+                {
+                    "reg": "rsi",
+                    "type": "reg"
+                },
                 "type": "int"
             },
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "arg3",
-                "ref": "rdx",
+                "storage":
+                {
+                    "reg": "rdx",
+                    "type": "reg"
+                },
                 "type": "int"
             }
         ],
-        "sp":
+        "stack":
         []
     },
     "agj":

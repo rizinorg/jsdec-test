@@ -120,23 +120,21 @@
     ],
     "afvj":
     {
-        "bp":
+        "reg":
+        [],
+        "stack":
         [
             {
-                "kind": "var",
+                "arg": false,
                 "name": "local_4h",
-                "ref":
+                "storage":
                 {
-                    "base": "rbp",
-                    "offset": -4
+                    "stack_off": -4,
+                    "type": "stack"
                 },
                 "type": "int"
             }
-        ],
-        "reg":
-        [],
-        "sp":
-        []
+        ]
     },
     "agj":
     [

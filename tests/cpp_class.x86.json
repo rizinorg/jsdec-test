@@ -5237,18 +5237,20 @@
     ],
     "afvj":
     {
-        "bp":
-        [],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "argv",
-                "ref": "rdx",
+                "storage":
+                {
+                    "reg": "rdx",
+                    "type": "reg"
+                },
                 "type": "char **"
             }
         ],
-        "sp":
+        "stack":
         []
     },
     "agj":

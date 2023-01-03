@@ -19,7 +19,10 @@ if [ ! -f "$JSDECBINFLD/jsdec-test" ]; then
     make --no-print-directory testbin -C "$JSDECBINFLD"
 fi
 ELEM=$(find "$TESTFOLDER" | grep "$TESTNAME*.json" | sed "s/.json//g")
-mkdir "$TMPFOLDER"
+
+if [ ! -d "$TMPFOLDER" ]; then
+	mkdir "$TMPFOLDER"
+fi
 
 NAME=$(basename "$ELEM")
 if [ -z "$NAME" ]; then
@@ -45,7 +48,7 @@ else
 fi
 
 if [ ! "$TMPFOLDER" == "/tmp" ] ; then
-	$RMCMD "$TMPFOLDER"
+	$RMCMD "$TMPFOLDER" 2> /dev/null
 fi
 
 

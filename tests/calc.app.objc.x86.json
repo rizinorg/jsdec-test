@@ -51414,30 +51414,32 @@
     ],
     "afvj":
     {
-        "bp":
-        [
-            {
-                "kind": "var",
-                "name": "instance",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": 18446744073709551560
-                },
-                "type": "void **"
-            }
-        ],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "arg1",
-                "ref": "rdi",
+                "storage":
+                {
+                    "reg": "rdi",
+                    "type": "reg"
+                },
                 "type": "int32_t"
             }
         ],
-        "sp":
-        []
+        "stack":
+        [
+            {
+                "arg": false,
+                "name": "instance",
+                "storage":
+                {
+                    "stack_off": 18446744073709551560,
+                    "type": "stack"
+                },
+                "type": "void **"
+            }
+        ]
     },
     "agj":
     [

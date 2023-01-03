@@ -482,56 +482,62 @@
     ],
     "afvj":
     {
-        "bp":
-        [
-            {
-                "kind": "var",
-                "name": "local_20h",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": -32
-                },
-                "type": "char **"
-            },
-            {
-                "kind": "var",
-                "name": "local_14h",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": -20
-                },
-                "type": "int"
-            },
-            {
-                "kind": "var",
-                "name": "local_4h",
-                "ref":
-                {
-                    "base": "rbp",
-                    "offset": -4
-                },
-                "type": "signed int"
-            }
-        ],
         "reg":
         [
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "argc",
-                "ref": "rdi",
+                "storage":
+                {
+                    "reg": "rdi",
+                    "type": "reg"
+                },
                 "type": "int"
             },
             {
-                "kind": "reg",
+                "arg": true,
                 "name": "argv",
-                "ref": "rsi",
+                "storage":
+                {
+                    "reg": "rsi",
+                    "type": "reg"
+                },
                 "type": "char **"
             }
         ],
-        "sp":
-        []
+        "stack":
+        [
+            {
+                "arg": false,
+                "name": "local_20h",
+                "storage":
+                {
+                    "stack_off": -32,
+                    "type": "stack"
+                },
+                "type": "char **"
+            },
+            {
+                "arg": false,
+                "name": "local_14h",
+                "storage":
+                {
+                    "stack_off": -20,
+                    "type": "stack"
+                },
+                "type": "int"
+            },
+            {
+                "arg": false,
+                "name": "local_4h",
+                "storage":
+                {
+                    "stack_off": -4,
+                    "type": "stack"
+                },
+                "type": "signed int"
+            }
+        ]
     },
     "agj":
     [

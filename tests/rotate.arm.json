@@ -1,1 +1,370 @@
-{"name":"rotate_arm","arch":"arm","agj":[{"name":"fcn.000106ac","offset":67244,"ninstr":10,"nargs":0,"nlocals":0,"size":40,"stack":0,"type":"fcn","blocks":[{"offset":67244,"size":12,"jump":67256,"ops":[{"offset":67244,"esil":"r1,0,+,[1],r3,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"ldrb r3, [r1]","disasm":"ldrb r3, [r1]","bytes":"0030d1e5","family":"cpu","type":"load","type_num":32,"type2_num":0,"flags":["fcn.000106ac"]},{"offset":67248,"ptr":0,"esil":"0,r3,==,$z,zf,=,$z,zf,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"cmp r3, 0","disasm":"cmp r3, 0","bytes":"000053e3","family":"cpu","type":"cmp","type_num":15,"type2_num":0},{"offset":67252,"esil":"lr,pc,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"bxeq lr","disasm":"bxeq lr","bytes":"1eff2f01","family":"cpu","type":"ret","type_num":5,"type2_num":0}]},{"offset":67256,"size":24,"jump":67256,"fail":67280,"ops":[{"offset":67256,"esil":"r3,r0,^,0xffffffff,&,r0,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"eor r0, r0, r3","disasm":"eor r0, r0, r3","bytes":"030020e0","family":"cpu","type":"xor","type_num":28,"type2_num":0},{"offset":67260,"esil":"r1,1,+,[1],r3,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"ldrb r3, [r1, 1]!","disasm":"ldrb r3, [r1, 1]!","bytes":"0130f1e5","family":"cpu","type":"load","type_num":32,"type2_num":0},{"offset":67264,"esil":"","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"ror r0, r0, 0x1b","disasm":"ror r0, r0, 0x1b","bytes":"e00da0e1","family":"cpu","type":"null","type_num":0,"type2_num":0},{"offset":67268,"ptr":0,"esil":"0,r3,==,$z,zf,=,$z,zf,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"cmp r3, 0","disasm":"cmp r3, 0","bytes":"000053e3","family":"cpu","type":"cmp","type_num":15,"type2_num":0},{"offset":67272,"esil":"8,r0,<<,r0,^,0xffffffff,&,r0,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"eor r0, r0, r0, lsl 8","disasm":"eor r0, r0, r0, lsl 8","bytes":"000420e0","family":"cpu","type":"xor","type_num":28,"type2_num":0},{"offset":67276,"esil":"zf,!,?{,67256,pc,=,}","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"bne 0x106b8","disasm":"bne 0x106b8","bytes":"f9ffff1a","family":"cpu","type":"cjmp","type_num":2147483649,"type2_num":0,"jump":67256,"fail":67280}]},{"offset":67280,"size":4,"ops":[{"offset":67280,"esil":"lr,pc,=","refptr":false,"fcn_addr":67244,"fcn_last":67280,"size":4,"opcode":"bx lr","disasm":"bx lr","bytes":"1eff2fe1","family":"cpu","type":"ret","type_num":5,"type2_num":0}]}]}],"isj":[{"name":"stdout","demname":"","flagname":"obj.stdout","ordinal":4,"bind":"GLOBAL","size":4,"type":"OBJECT","vaddr":133428,"paddr":2356},{"name":"stdin","demname":"","flagname":"obj.stdin","ordinal":9,"bind":"GLOBAL","size":4,"type":"OBJECT","vaddr":133424,"paddr":2352},{"name":"imp.__gmon_start__","demname":"","flagname":"loc.imp.__gmon_start","ordinal":1,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":66632,"paddr":1096},{"name":"imp.getuid","demname":"","flagname":"sym.imp.getuid","ordinal":2,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66584,"paddr":1048},{"name":"imp.fgets","demname":"","flagname":"sym.imp.fgets","ordinal":3,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66596,"paddr":1060},{"name":"imp.getpwuid","demname":"","flagname":"sym.imp.getpwuid","ordinal":5,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66548,"paddr":1012},{"name":"imp.printf","demname":"","flagname":"sym.imp.printf","ordinal":6,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66560,"paddr":1024},{"name":"imp.fflush","demname":"","flagname":"sym.imp.fflush","ordinal":7,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66572,"paddr":1036},{"name":"imp.fwrite","demname":"","flagname":"sym.imp.fwrite","ordinal":8,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66608,"paddr":1072},{"name":"imp.strncpy","demname":"","flagname":"sym.imp.strncpy","ordinal":10,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66644,"paddr":1108},{"name":"imp.abort","demname":"","flagname":"sym.imp.abort","ordinal":11,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66656,"paddr":1120},{"name":"imp.__libc_start_main","demname":"","flagname":"sym.imp.__libc_start_main","ordinal":12,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":66620,"paddr":1084}],"izj":[{"vaddr":67396,"paddr":1860,"ordinal":0,"size":60,"length":59,"section":".rodata","type":"ascii","string":"XGVbMW1bSGF4U3lzXVxlWzBtIFdlbGNvbWUgJXMsIHBsZWFzZSBlbnRlciB5b3VyIHNlcmlhbCBrZXk6IA=="},{"vaddr":67456,"paddr":1920,"ordinal":1,"size":54,"length":53,"section":".rodata","type":"ascii","string":"XGVbMzI7MW1bSGF4U3lzXVxlWzBtIFlvdXIgc2VyaWFsIGlzIHZhbGlkLCB3ZWxsIGRvbmUuXG4="},{"vaddr":67512,"paddr":1976,"ordinal":2,"size":51,"length":50,"section":".rodata","type":"ascii","string":"XGVbMzE7MW1bSGF4U3lzXVxlWzBtIFNvcnJ5IHlvdXIgc2VyaWFsIGlzIGludmFsaWQuXG4="}]}
+{
+    "agj":
+    [
+        {
+            "blocks":
+            [
+                {
+                    "jump": 67256,
+                    "offset": 67244,
+                    "ops":
+                    [
+                        {
+                            "bytes": "0030d1e5",
+                            "disasm": "ldrb r3, [r1]",
+                            "esil": "r1,0,+,[1],r3,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "flags":
+                            [
+                                "fcn.000106ac"
+                            ],
+                            "offset": 67244,
+                            "opcode": "ldrb r3, [r1]",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32
+                        },
+                        {
+                            "bytes": "000053e3",
+                            "disasm": "cmp r3, 0",
+                            "esil": "0,r3,==,$z,zf,=,$z,zf,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67248,
+                            "opcode": "cmp r3, 0",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 4,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15
+                        },
+                        {
+                            "bytes": "1eff2f01",
+                            "disasm": "bxeq lr",
+                            "esil": "lr,pc,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67252,
+                            "opcode": "bxeq lr",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "ret",
+                            "type2_num": 0,
+                            "type_num": 5
+                        }
+                    ],
+                    "size": 12
+                },
+                {
+                    "fail": 67280,
+                    "jump": 67256,
+                    "offset": 67256,
+                    "ops":
+                    [
+                        {
+                            "bytes": "030020e0",
+                            "disasm": "eor r0, r0, r3",
+                            "esil": "r3,r0,^,0xffffffff,&,r0,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67256,
+                            "opcode": "eor r0, r0, r3",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "xor",
+                            "type2_num": 0,
+                            "type_num": 28
+                        },
+                        {
+                            "bytes": "0130f1e5",
+                            "disasm": "ldrb r3, [r1, 1]!",
+                            "esil": "r1,1,+,[1],r3,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67260,
+                            "opcode": "ldrb r3, [r1, 1]!",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32
+                        },
+                        {
+                            "bytes": "e00da0e1",
+                            "disasm": "ror r0, r0, 0x1b",
+                            "esil": "",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67264,
+                            "opcode": "ror r0, r0, 0x1b",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "null",
+                            "type2_num": 0,
+                            "type_num": 0
+                        },
+                        {
+                            "bytes": "000053e3",
+                            "disasm": "cmp r3, 0",
+                            "esil": "0,r3,==,$z,zf,=,$z,zf,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67268,
+                            "opcode": "cmp r3, 0",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 4,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15
+                        },
+                        {
+                            "bytes": "000420e0",
+                            "disasm": "eor r0, r0, r0, lsl 8",
+                            "esil": "8,r0,<<,r0,^,0xffffffff,&,r0,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67272,
+                            "opcode": "eor r0, r0, r0, lsl 8",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "xor",
+                            "type2_num": 0,
+                            "type_num": 28
+                        },
+                        {
+                            "bytes": "f9ffff1a",
+                            "disasm": "bne 0x106b8",
+                            "esil": "zf,!,?{,67256,pc,=,}",
+                            "fail": 67280,
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "jump": 67256,
+                            "offset": 67276,
+                            "opcode": "bne 0x106b8",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "cjmp",
+                            "type2_num": 0,
+                            "type_num": 2147483649
+                        }
+                    ],
+                    "size": 24
+                },
+                {
+                    "offset": 67280,
+                    "ops":
+                    [
+                        {
+                            "bytes": "1eff2fe1",
+                            "disasm": "bx lr",
+                            "esil": "lr,pc,=",
+                            "family": "cpu",
+                            "fcn_addr": 67244,
+                            "fcn_last": 67280,
+                            "offset": 67280,
+                            "opcode": "bx lr",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "ret",
+                            "type2_num": 0,
+                            "type_num": 5
+                        }
+                    ],
+                    "size": 4
+                }
+            ],
+            "name": "fcn.000106ac",
+            "nargs": 0,
+            "ninstr": 10,
+            "nlocals": 0,
+            "offset": 67244,
+            "size": 40,
+            "stack": 0,
+            "type": "fcn"
+        }
+    ],
+    "arch": "arm",
+    "isj":
+    [
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "obj.stdout",
+            "name": "stdout",
+            "ordinal": 4,
+            "paddr": 2356,
+            "size": 4,
+            "type": "OBJECT",
+            "vaddr": 133428
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "obj.stdin",
+            "name": "stdin",
+            "ordinal": 9,
+            "paddr": 2352,
+            "size": 4,
+            "type": "OBJECT",
+            "vaddr": 133424
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp.__gmon_start",
+            "name": "imp.__gmon_start__",
+            "ordinal": 1,
+            "paddr": 1096,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 66632
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.getuid",
+            "name": "imp.getuid",
+            "ordinal": 2,
+            "paddr": 1048,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66584
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.fgets",
+            "name": "imp.fgets",
+            "ordinal": 3,
+            "paddr": 1060,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66596
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.getpwuid",
+            "name": "imp.getpwuid",
+            "ordinal": 5,
+            "paddr": 1012,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66548
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.printf",
+            "name": "imp.printf",
+            "ordinal": 6,
+            "paddr": 1024,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66560
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.fflush",
+            "name": "imp.fflush",
+            "ordinal": 7,
+            "paddr": 1036,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66572
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.fwrite",
+            "name": "imp.fwrite",
+            "ordinal": 8,
+            "paddr": 1072,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66608
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.strncpy",
+            "name": "imp.strncpy",
+            "ordinal": 10,
+            "paddr": 1108,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66644
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.abort",
+            "name": "imp.abort",
+            "ordinal": 11,
+            "paddr": 1120,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66656
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.__libc_start_main",
+            "name": "imp.__libc_start_main",
+            "ordinal": 12,
+            "paddr": 1084,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 66620
+        }
+    ],
+    "izj":
+    [
+        {
+            "length": 59,
+            "ordinal": 0,
+            "paddr": 1860,
+            "section": ".rodata",
+            "size": 60,
+            "string": "XGVbMW1bSGF4U3lzXVxlWzBtIFdlbGNvbWUgJXMsIHBsZWFzZSBlbnRlciB5b3VyIHNlcmlhbCBrZXk6IA==",
+            "type": "ascii",
+            "vaddr": 67396
+        },
+        {
+            "length": 53,
+            "ordinal": 1,
+            "paddr": 1920,
+            "section": ".rodata",
+            "size": 54,
+            "string": "XGVbMzI7MW1bSGF4U3lzXVxlWzBtIFlvdXIgc2VyaWFsIGlzIHZhbGlkLCB3ZWxsIGRvbmUuXG4=",
+            "type": "ascii",
+            "vaddr": 67456
+        },
+        {
+            "length": 50,
+            "ordinal": 2,
+            "paddr": 1976,
+            "section": ".rodata",
+            "size": 51,
+            "string": "XGVbMzE7MW1bSGF4U3lzXVxlWzBtIFNvcnJ5IHlvdXIgc2VyaWFsIGlzIGludmFsaWQuXG4=",
+            "type": "ascii",
+            "vaddr": 67512
+        }
+    ],
+    "name": "rotate_arm"
+}

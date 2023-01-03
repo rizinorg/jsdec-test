@@ -1,1 +1,638 @@
-{"name":"issue_1527833221697","arch":"avr","agj":[{"name":"entry0","offset":1998,"ninstr":293,"nargs":0,"nlocals":0,"size":1142,"stack":0,"type":"fcn","blocks":[{"offset":1998,"size":24,"jump":2026,"trace":{"count":1,"times":8},"ops":[{"offset":1998,"ptr":0,"val":0,"esil":"r1,r1,^,0,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,vf,nf,^,sf,=,r1,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"clr r1","bytes":"1124","family":"cpu","type":"xor","type_num":28,"type2_num":0,"jump":0,"fail":2000,"flags":["entry0"],"xrefs":[{"addr":0,"type":"JMP"}]},{"offset":2000,"ptr":0,"val":63,"esil":"r1,sreg,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"out 0x3f, r1","bytes":"1fbe","family":"7","type":"io","type_num":19,"type2_num":1,"jump":0,"fail":2002},{"offset":2002,"ptr":0,"val":0,"esil":"0xff,r28,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ser r28","bytes":"cfef","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2004},{"offset":2004,"ptr":0,"val":0,"esil":"0x8,r29,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r29, 0x08","bytes":"d8e0","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2006},{"offset":2006,"ptr":0,"val":62,"esil":"r29,sph,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"out 0x3e, r29","bytes":"debf","family":"7","type":"io","type_num":19,"type2_num":1,"jump":0,"fail":2008},{"offset":2008,"ptr":0,"val":61,"esil":"r28,spl,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"out 0x3d, r28","bytes":"cdbf","family":"7","type":"io","type_num":19,"type2_num":1,"jump":0,"fail":2010},{"offset":2010,"ptr":0,"val":0,"esil":"0x2,r17,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r17, 0x02","bytes":"12e0","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2012},{"offset":2012,"ptr":0,"val":0,"esil":"0x0,r26,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r26, 0x00","bytes":"a0e0","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2014},{"offset":2014,"ptr":0,"val":0,"esil":"0x1,r27,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r27, 0x01","bytes":"b1e0","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2016},{"offset":2016,"ptr":0,"val":0,"esil":"0xbc,r30,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r30, 0xbc","bytes":"eceb","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2018},{"offset":2018,"ptr":0,"val":0,"esil":"0x2d,r31,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r31, 0x2d","bytes":"fde2","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2020},{"offset":2020,"ptr":0,"val":0,"esil":"2026,pc,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"rjmp 0x7ea","bytes":"02c0","family":"cpu","type":"jmp","type_num":1,"type2_num":0,"jump":2026,"fail":2022,"flags":["hit2_36"]}]},{"offset":2022,"size":4,"jump":2026,"trace":{"count":13,"times":8},"ops":[{"offset":2022,"ptr":0,"val":0,"esil":"z,16,rampz,<<,+,_prog,+,[1],1,z,+,z,=,r0,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"lpm r0, z+","bytes":"0590","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2024},{"offset":2024,"ptr":0,"val":0,"esil":"r0,x,_ram,+,=[1],1,x,+,x,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"st x+, r0","bytes":"0d92","family":"cpu","type":"store","type_num":31,"type2_num":0,"jump":0,"fail":2026,"flags":["pcl"]}]},{"offset":2026,"size":6,"jump":2022,"fail":2032,"trace":{"count":15,"times":8},"ops":[{"offset":2026,"ptr":0,"val":0,"esil":"180,r26,-,r26,0x08,&,!,180,0x08,&,!,!,&,180,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r26,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r26,0x80,&,!,!,180,0x80,&,!,&,0,RPICK,0x80,&,!,&,r26,0x80,&,!,180,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,r26,0x80,&,!,180,0x80,&,!,!,&,180,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r26,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"cpi r26, 0xb4","bytes":"a43b","family":"cpu","type":"cmp","type_num":15,"type2_num":0,"jump":0,"fail":2028,"xrefs":[{"addr":2020,"type":"JMP"}]},{"offset":2028,"ptr":0,"val":0,"esil":"cf,r17,-,r27,-,r27,0x08,&,!,r17,0x08,&,!,!,&,r17,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r27,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r27,0x80,&,!,!,r17,0x80,&,!,&,0,RPICK,0x80,&,!,&,r27,0x80,&,!,r17,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,&,zf,=,r27,0x80,&,!,r17,0x80,&,!,!,&,r17,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r27,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"cpc r27, r17","bytes":"b107","family":"cpu","type":"cmp","type_num":15,"type2_num":0,"jump":0,"fail":2030},{"offset":2030,"ptr":0,"val":0,"esil":"1,1,<<,sreg,&,!,?{,2022,pc,=,}","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"brne 0x7e6","bytes":"d9f7","family":"cpu","type":"cjmp","type_num":2147483649,"type2_num":0,"jump":2022,"fail":2032}]},{"offset":2032,"size":8,"jump":2042,"trace":{"count":18,"times":8},"ops":[{"offset":2032,"ptr":0,"val":0,"esil":"0x3,r18,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r18, 0x03","bytes":"23e0","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2034},{"offset":2034,"ptr":0,"val":0,"esil":"0xb4,r26,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r26, 0xb4","bytes":"a4eb","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2036},{"offset":2036,"ptr":0,"val":0,"esil":"0x2,r27,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"ldi r27, 0x02","bytes":"b2e0","family":"cpu","type":"load","type_num":32,"type2_num":0,"jump":0,"fail":2038},{"offset":2038,"ptr":0,"val":0,"esil":"2042,pc,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"rjmp 0x7fa","bytes":"01c0","family":"cpu","type":"jmp","type_num":1,"type2_num":0,"jump":2042,"fail":2040,"flags":["hit2_37"]}]},{"offset":2040,"size":2,"jump":2042,"trace":{"count":22,"times":8},"ops":[{"offset":2040,"ptr":0,"val":0,"esil":"r1,x,_ram,+,=[1],1,x,+,x,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"st x+, r1","bytes":"1d92","family":"cpu","type":"store","type_num":31,"type2_num":0,"jump":0,"fail":2042}]},{"offset":2042,"size":6,"jump":2040,"fail":2048,"trace":{"count":23,"times":8},"ops":[{"offset":2042,"ptr":0,"val":0,"esil":"71,r26,-,r26,0x08,&,!,71,0x08,&,!,!,&,71,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r26,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r26,0x80,&,!,!,71,0x80,&,!,&,0,RPICK,0x80,&,!,&,r26,0x80,&,!,71,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,r26,0x80,&,!,71,0x80,&,!,!,&,71,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r26,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"cpi r26, 0x47","bytes":"a734","family":"cpu","type":"cmp","type_num":15,"type2_num":0,"jump":0,"fail":2044,"xrefs":[{"addr":2038,"type":"JMP"}]},{"offset":2044,"ptr":0,"val":0,"esil":"cf,r18,-,r27,-,r27,0x08,&,!,r18,0x08,&,!,!,&,r18,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r27,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r27,0x80,&,!,!,r18,0x80,&,!,&,0,RPICK,0x80,&,!,&,r27,0x80,&,!,r18,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,&,zf,=,r27,0x80,&,!,r18,0x80,&,!,!,&,r18,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r27,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"cpc r27, r18","bytes":"b207","family":"cpu","type":"cmp","type_num":15,"type2_num":0,"jump":0,"fail":2046},{"offset":2046,"ptr":0,"val":0,"esil":"1,1,<<,sreg,&,!,?{,2040,pc,=,}","refptr":false,"fcn_addr":1998,"fcn_last":3138,"size":2,"opcode":"brne 0x7f8","bytes":"e1f7","family":"cpu","type":"cjmp","type_num":2147483649,"type2_num":0,"jump":2040,"fail":2048}]},{"offset":2048,"size":8,"ops":[{"offset":2048,"ptr":0,"val":0,"esil":"pc,sp,_ram,+,-1,+,=[2],-2,sp,+=,2060,pc,=","refptr":false,"fcn_addr":1998,"fcn_last":3136,"size":4,"opcode":"call fcn.0000080c","bytes":"0e940604","family":"cpu","type":"call","type_num":3,"type2_num":0,"jump":2060,"fail":2052},{"offset":2052,"ptr":0,"val":0,"esil":"11704,pc,=","refptr":false,"fcn_addr":1998,"fcn_last":3136,"size":4,"opcode":"jmp 0x2db8","bytes":"0c94dc16","family":"cpu","type":"jmp","type_num":1,"type2_num":0,"jump":11704,"fail":2056,"flags":["hit2_38"]}]}]}],"isj":[],"izj":[]}
+{
+    "agj":
+    [
+        {
+            "blocks":
+            [
+                {
+                    "jump": 2026,
+                    "offset": 1998,
+                    "ops":
+                    [
+                        {
+                            "bytes": "1124",
+                            "esil": "r1,r1,^,0,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,vf,nf,^,sf,=,r1,=",
+                            "fail": 2000,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "flags":
+                            [
+                                "entry0"
+                            ],
+                            "jump": 0,
+                            "offset": 1998,
+                            "opcode": "clr r1",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "xor",
+                            "type2_num": 0,
+                            "type_num": 28,
+                            "val": 0,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 0,
+                                    "type": "JMP"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "1fbe",
+                            "esil": "r1,sreg,=",
+                            "fail": 2002,
+                            "family": "7",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2000,
+                            "opcode": "out 0x3f, r1",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "io",
+                            "type2_num": 1,
+                            "type_num": 19,
+                            "val": 63
+                        },
+                        {
+                            "bytes": "cfef",
+                            "esil": "0xff,r28,=",
+                            "fail": 2004,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2002,
+                            "opcode": "ser r28",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "d8e0",
+                            "esil": "0x8,r29,=",
+                            "fail": 2006,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2004,
+                            "opcode": "ldi r29, 0x08",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "debf",
+                            "esil": "r29,sph,=",
+                            "fail": 2008,
+                            "family": "7",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2006,
+                            "opcode": "out 0x3e, r29",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "io",
+                            "type2_num": 1,
+                            "type_num": 19,
+                            "val": 62
+                        },
+                        {
+                            "bytes": "cdbf",
+                            "esil": "r28,spl,=",
+                            "fail": 2010,
+                            "family": "7",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2008,
+                            "opcode": "out 0x3d, r28",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "io",
+                            "type2_num": 1,
+                            "type_num": 19,
+                            "val": 61
+                        },
+                        {
+                            "bytes": "12e0",
+                            "esil": "0x2,r17,=",
+                            "fail": 2012,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2010,
+                            "opcode": "ldi r17, 0x02",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "a0e0",
+                            "esil": "0x0,r26,=",
+                            "fail": 2014,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2012,
+                            "opcode": "ldi r26, 0x00",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "b1e0",
+                            "esil": "0x1,r27,=",
+                            "fail": 2016,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2014,
+                            "opcode": "ldi r27, 0x01",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "eceb",
+                            "esil": "0xbc,r30,=",
+                            "fail": 2018,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2016,
+                            "opcode": "ldi r30, 0xbc",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "fde2",
+                            "esil": "0x2d,r31,=",
+                            "fail": 2020,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2018,
+                            "opcode": "ldi r31, 0x2d",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "02c0",
+                            "esil": "2026,pc,=",
+                            "fail": 2022,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "flags":
+                            [
+                                "hit2_36"
+                            ],
+                            "jump": 2026,
+                            "offset": 2020,
+                            "opcode": "rjmp 0x7ea",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "jmp",
+                            "type2_num": 0,
+                            "type_num": 1,
+                            "val": 0
+                        }
+                    ],
+                    "size": 24,
+                    "trace":
+                    {
+                        "count": 1,
+                        "times": 8
+                    }
+                },
+                {
+                    "jump": 2026,
+                    "offset": 2022,
+                    "ops":
+                    [
+                        {
+                            "bytes": "0590",
+                            "esil": "z,16,rampz,<<,+,_prog,+,[1],1,z,+,z,=,r0,=",
+                            "fail": 2024,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2022,
+                            "opcode": "lpm r0, z+",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "0d92",
+                            "esil": "r0,x,_ram,+,=[1],1,x,+,x,=",
+                            "fail": 2026,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "flags":
+                            [
+                                "pcl"
+                            ],
+                            "jump": 0,
+                            "offset": 2024,
+                            "opcode": "st x+, r0",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "store",
+                            "type2_num": 0,
+                            "type_num": 31,
+                            "val": 0
+                        }
+                    ],
+                    "size": 4,
+                    "trace":
+                    {
+                        "count": 13,
+                        "times": 8
+                    }
+                },
+                {
+                    "fail": 2032,
+                    "jump": 2022,
+                    "offset": 2026,
+                    "ops":
+                    [
+                        {
+                            "bytes": "a43b",
+                            "esil": "180,r26,-,r26,0x08,&,!,180,0x08,&,!,!,&,180,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r26,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r26,0x80,&,!,!,180,0x80,&,!,&,0,RPICK,0x80,&,!,&,r26,0x80,&,!,180,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,r26,0x80,&,!,180,0x80,&,!,!,&,180,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r26,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=",
+                            "fail": 2028,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2026,
+                            "opcode": "cpi r26, 0xb4",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15,
+                            "val": 0,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 2020,
+                                    "type": "JMP"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "b107",
+                            "esil": "cf,r17,-,r27,-,r27,0x08,&,!,r17,0x08,&,!,!,&,r17,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r27,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r27,0x80,&,!,!,r17,0x80,&,!,&,0,RPICK,0x80,&,!,&,r27,0x80,&,!,r17,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,&,zf,=,r27,0x80,&,!,r17,0x80,&,!,!,&,r17,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r27,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=",
+                            "fail": 2030,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2028,
+                            "opcode": "cpc r27, r17",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "d9f7",
+                            "esil": "1,1,<<,sreg,&,!,?{,2022,pc,=,}",
+                            "fail": 2032,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 2022,
+                            "offset": 2030,
+                            "opcode": "brne 0x7e6",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cjmp",
+                            "type2_num": 0,
+                            "type_num": 2147483649,
+                            "val": 0
+                        }
+                    ],
+                    "size": 6,
+                    "trace":
+                    {
+                        "count": 15,
+                        "times": 8
+                    }
+                },
+                {
+                    "jump": 2042,
+                    "offset": 2032,
+                    "ops":
+                    [
+                        {
+                            "bytes": "23e0",
+                            "esil": "0x3,r18,=",
+                            "fail": 2034,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2032,
+                            "opcode": "ldi r18, 0x03",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "a4eb",
+                            "esil": "0xb4,r26,=",
+                            "fail": 2036,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2034,
+                            "opcode": "ldi r26, 0xb4",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "b2e0",
+                            "esil": "0x2,r27,=",
+                            "fail": 2038,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2036,
+                            "opcode": "ldi r27, 0x02",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "01c0",
+                            "esil": "2042,pc,=",
+                            "fail": 2040,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "flags":
+                            [
+                                "hit2_37"
+                            ],
+                            "jump": 2042,
+                            "offset": 2038,
+                            "opcode": "rjmp 0x7fa",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "jmp",
+                            "type2_num": 0,
+                            "type_num": 1,
+                            "val": 0
+                        }
+                    ],
+                    "size": 8,
+                    "trace":
+                    {
+                        "count": 18,
+                        "times": 8
+                    }
+                },
+                {
+                    "jump": 2042,
+                    "offset": 2040,
+                    "ops":
+                    [
+                        {
+                            "bytes": "1d92",
+                            "esil": "r1,x,_ram,+,=[1],1,x,+,x,=",
+                            "fail": 2042,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2040,
+                            "opcode": "st x+, r1",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "store",
+                            "type2_num": 0,
+                            "type_num": 31,
+                            "val": 0
+                        }
+                    ],
+                    "size": 2,
+                    "trace":
+                    {
+                        "count": 22,
+                        "times": 8
+                    }
+                },
+                {
+                    "fail": 2048,
+                    "jump": 2040,
+                    "offset": 2042,
+                    "ops":
+                    [
+                        {
+                            "bytes": "a734",
+                            "esil": "71,r26,-,r26,0x08,&,!,71,0x08,&,!,!,&,71,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r26,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r26,0x80,&,!,!,71,0x80,&,!,&,0,RPICK,0x80,&,!,&,r26,0x80,&,!,71,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,r26,0x80,&,!,71,0x80,&,!,!,&,71,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r26,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=",
+                            "fail": 2044,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2042,
+                            "opcode": "cpi r26, 0x47",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15,
+                            "val": 0,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 2038,
+                                    "type": "JMP"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "b207",
+                            "esil": "cf,r18,-,r27,-,r27,0x08,&,!,r18,0x08,&,!,!,&,r18,0x08,&,!,!,0,RPICK,0x08,&,!,!,&,r27,0x08,&,!,0,RPICK,0x08,&,!,!,&,|,|,hf,=,r27,0x80,&,!,!,r18,0x80,&,!,&,0,RPICK,0x80,&,!,&,r27,0x80,&,!,r18,0x80,&,!,!,&,0,RPICK,0x80,&,!,!,&,|,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,&,zf,=,r27,0x80,&,!,r18,0x80,&,!,!,&,r18,0x80,&,!,!,0,RPICK,0x80,&,!,!,&,r27,0x80,&,!,0,RPICK,0x80,&,!,!,&,|,|,cf,=,vf,nf,^,sf,=",
+                            "fail": 2046,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 0,
+                            "offset": 2044,
+                            "opcode": "cpc r27, r18",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "e1f7",
+                            "esil": "1,1,<<,sreg,&,!,?{,2040,pc,=,}",
+                            "fail": 2048,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3138,
+                            "jump": 2040,
+                            "offset": 2046,
+                            "opcode": "brne 0x7f8",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cjmp",
+                            "type2_num": 0,
+                            "type_num": 2147483649,
+                            "val": 0
+                        }
+                    ],
+                    "size": 6,
+                    "trace":
+                    {
+                        "count": 23,
+                        "times": 8
+                    }
+                },
+                {
+                    "offset": 2048,
+                    "ops":
+                    [
+                        {
+                            "bytes": "0e940604",
+                            "esil": "pc,sp,_ram,+,-1,+,=[2],-2,sp,+=,2060,pc,=",
+                            "fail": 2052,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3136,
+                            "jump": 2060,
+                            "offset": 2048,
+                            "opcode": "call fcn.0000080c",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 4,
+                            "type": "call",
+                            "type2_num": 0,
+                            "type_num": 3,
+                            "val": 0
+                        },
+                        {
+                            "bytes": "0c94dc16",
+                            "esil": "11704,pc,=",
+                            "fail": 2056,
+                            "family": "cpu",
+                            "fcn_addr": 1998,
+                            "fcn_last": 3136,
+                            "flags":
+                            [
+                                "hit2_38"
+                            ],
+                            "jump": 11704,
+                            "offset": 2052,
+                            "opcode": "jmp 0x2db8",
+                            "ptr": 0,
+                            "refptr": false,
+                            "size": 4,
+                            "type": "jmp",
+                            "type2_num": 0,
+                            "type_num": 1,
+                            "val": 0
+                        }
+                    ],
+                    "size": 8
+                }
+            ],
+            "name": "entry0",
+            "nargs": 0,
+            "ninstr": 293,
+            "nlocals": 0,
+            "offset": 1998,
+            "size": 1142,
+            "stack": 0,
+            "type": "fcn"
+        }
+    ],
+    "arch": "avr",
+    "isj":
+    [],
+    "izj":
+    [],
+    "name": "issue_1527833221697"
+}

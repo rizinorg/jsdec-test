@@ -1,1 +1,2242 @@
-{"name":"issue_1536336950641","arch":"x86","archbits":64,"agj":[{"name":"fcn.0045af71","offset":4566897,"ninstr":77,"nargs":1,"nlocals":2,"size":107,"stack":128,"type":"fcn","blocks":[{"offset":4566835,"size":22,"jump":4566937,"fail":4566857,"trace":{"count":1,"times":2},"colorize":0,"ops":[{"offset":4566835,"ptr":30,"val":30,"esil":"30,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":5,"opcode":"push 0x1e","disasm":"push 0x1e","bytes":"681e000000","family":"cpu","type":"push","type_num":13,"type2_num":0,"xrefs":[{"addr":4566941,"type":"CODE"}]},{"offset":4566840,"esil":"rsp,[8],rdx,=,8,rsp,+=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"pop rdx","disasm":"pop rdx","bytes":"5a","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566841,"esil":"4566880,rip,8,rsp,-=,rsp,=[],rip,=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":5,"opcode":"call 0x45af60","disasm":"call fcn.0045af60","bytes":"e822000000","family":"cpu","type":"call","type_num":3,"type2_num":0,"jump":4566880,"fail":4566846},{"offset":4566846,"esil":"rax,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"push rax","disasm":"push rax","bytes":"50","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566847,"esil":"rdx,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"push rdx","disasm":"push rdx","bytes":"52","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566848,"esil":"r12,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":2,"opcode":"push r12","disasm":"push r12","bytes":"4f54","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566850,"esil":"rsp,[8],rdi,=,8,rsp,+=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"pop rdi","disasm":"pop rdi","bytes":"5f","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566851,"esil":"rsp,[8],r8,=,8,rsp,+=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":2,"opcode":"pop r8","disasm":"pop r8","bytes":"4558","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566853,"esil":"of,sf,^,?{,4566937,rip,=,}","refptr":false,"fcn_addr":0,"fcn_last":0,"size":4,"opcode":"jl 0x45af99","disasm":"jl 0x45af99","bytes":"45437c50","family":"cpu","type":"cjmp","type_num":2147483649,"type2_num":0,"jump":4566937,"fail":4566857}]},{"offset":4566857,"size":40,"jump":4566897,"trace":{"count":8,"times":2},"colorize":0,"ops":[{"offset":4566857,"esil":"rdx,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"push rdx","disasm":"push rdx","bytes":"52","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566858,"esil":"r12,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":2,"opcode":"push r12","disasm":"push r12","bytes":"4f54","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566860,"esil":"rsp,[8],rdi,=,8,rsp,+=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"pop rdi","disasm":"pop rdi","bytes":"5f","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566861,"esil":"rdi,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"push rdi","disasm":"push rdi","bytes":"57","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566862,"esil":"rdx,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"push rdx","disasm":"push rdx","bytes":"52","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566863,"esil":"r12,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":2,"opcode":"push r12","disasm":"push r12","bytes":"4954","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566865,"esil":"r12b,0x61,r14,+,&=[1],$0,of,=,$0,cf,=,$z,zf,=,$s,sf,=,$o,pf,=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":4,"opcode":"and byte [r14 + 0x61], r12b","disasm":"and byte [r14 + 0x61], r12b","bytes":"45206661","family":"cpu","type":"and","type_num":27,"type2_num":0},{"offset":4566869,"esil":"2606,0x64,rbp,+,[4],*,ebp,=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":8,"opcode":"imul ebp, dword [rbp + 0x64], 0xa2e","disasm":"imul ebp, dword [rbp + 0x64], 0xa2e","bytes":"696c65642e0a0000","family":"cpu","type":"mul","type_num":20,"type2_num":0},{"offset":4566877,"esil":",","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"nop","disasm":"nop","bytes":"90","family":"cpu","type":"nop","type_num":8,"type2_num":0},{"offset":4566878,"esil":",","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"nop","disasm":"nop","bytes":"90","family":"cpu","type":"nop","type_num":8,"type2_num":0},{"offset":4566879,"esil":",","refptr":false,"fcn_addr":0,"fcn_last":0,"size":1,"opcode":"nop","disasm":"nop","bytes":"90","family":"cpu","type":"nop","type_num":8,"type2_num":0},{"offset":4566880,"esil":"rsp,[8],rsi,=,8,rsp,+=","refptr":false,"fcn_addr":4566880,"fcn_last":4566896,"size":1,"opcode":"pop rsi","disasm":"pop rsi","bytes":"5e","family":"cpu","type":"pop","type_num":14,"type2_num":0,"flags":["fcn.0045af60"],"xrefs":[{"addr":4566841,"type":"CALL"}]},{"offset":4566881,"ptr":2,"val":2,"esil":"2,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566880,"fcn_last":4566895,"size":2,"opcode":"push 2","disasm":"push 2","bytes":"6a02","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566883,"esil":"rsp,[8],rdi,=,8,rsp,+=","refptr":false,"fcn_addr":4566880,"fcn_last":4566896,"size":1,"opcode":"pop rdi","disasm":"pop rdi","bytes":"5f","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566884,"ptr":1,"val":1,"esil":"1,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566880,"fcn_last":4566895,"size":2,"opcode":"push 1","disasm":"push 1","bytes":"6a01","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566886,"esil":"rsp,[8],rax,=,8,rsp,+=","refptr":false,"fcn_addr":4566880,"fcn_last":4566896,"size":1,"opcode":"pop rax","disasm":"pop rax","bytes":"58","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566887,"esil":"","refptr":false,"fcn_addr":4566880,"fcn_last":4566895,"size":2,"opcode":"syscall","disasm":"syscall","bytes":"0f05","family":"cpu","type":"swi","type_num":11,"type2_num":0},{"offset":4566889,"ptr":127,"val":127,"esil":"127,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566880,"fcn_last":4566895,"size":2,"opcode":"push 0x7f","disasm":"push 0x7f","bytes":"6a7f","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566891,"esil":"rsp,[8],rdi,=,8,rsp,+=","refptr":false,"fcn_addr":4566880,"fcn_last":4566896,"size":1,"opcode":"pop rdi","disasm":"pop rdi","bytes":"5f","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566892,"ptr":60,"val":60,"esil":"60,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566880,"fcn_last":4566895,"size":2,"opcode":"push 0x3c","disasm":"push 0x3c","bytes":"6a3c","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566894,"esil":"rsp,[8],rax,=,8,rsp,+=","refptr":false,"fcn_addr":4566880,"fcn_last":4566896,"size":1,"opcode":"pop rax","disasm":"pop rax","bytes":"58","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566895,"esil":"","refptr":false,"fcn_addr":4566880,"fcn_last":4566895,"size":2,"opcode":"syscall","disasm":"syscall","bytes":"0f05","family":"cpu","type":"swi","type_num":11,"type2_num":0}]},{"offset":4566897,"size":40,"jump":4566937,"trace":{"count":147,"times":1},"colorize":0,"ops":[{"offset":4566897,"esil":"rsp,[8],rbx,=,8,rsp,+=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"pop rbx","disasm":"pop rbx","bytes":"5b","family":"cpu","type":"pop","type_num":14,"type2_num":0,"flags":["fcn.0045af71"],"xrefs":[{"addr":4567027,"type":"CALL"}]},{"offset":4566898,"ptr":1,"val":1,"esil":"1,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"push 1","disasm":"push 1","bytes":"6a01","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566900,"ptr":4194316,"val":4194316,"esil":"4194316,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4566999,"size":5,"opcode":"push 0x40000c","disasm":"push 0x40000c","bytes":"680c004000","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566905,"esil":"rax,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"push rax","disasm":"push rax","bytes":"50","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566906,"ptr":3014610,"val":3014610,"esil":"3014610,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4566999,"size":5,"opcode":"push 0x2dffd2","disasm":"push 0x2dffd2","bytes":"68d2ff2d00","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566911,"esil":"rcx,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"push rcx","disasm":"push rcx","bytes":"51","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566912,"esil":"r15,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"push r15","disasm":"push r15","bytes":"4157","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566914,"ptr":8388608,"val":8388608,"esil":"8388608,edi,=,0xffffffff,rdi,&=","refptr":false,"fcn_addr":4566897,"fcn_last":4566999,"size":5,"opcode":"mov edi, 0x800000","disasm":"mov edi, 0x800000","bytes":"bf00008000","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566919,"ptr":7,"val":7,"esil":"7,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"push 7","disasm":"push 7","bytes":"6a07","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566921,"esil":"rsp,[8],rdx,=,8,rsp,+=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"pop rdx","disasm":"pop rdx","bytes":"5a","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566922,"ptr":3014610,"val":3014610,"esil":"3014610,esi,=,0xffffffff,rsi,&=","refptr":false,"fcn_addr":4566897,"fcn_last":4566999,"size":5,"opcode":"mov esi, 0x2dffd2","disasm":"mov esi, 0x2dffd2","bytes":"bed2ff2d00","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566927,"ptr":50,"val":50,"esil":"50,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"push 0x32","disasm":"push 0x32","bytes":"6a32","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566929,"esil":"rsp,[8],r10,=,8,rsp,+=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"pop r10","disasm":"pop r10","bytes":"415a","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4566931,"esil":"r8d,r8d,-=,$o,of,=,$s,sf,=,$z,zf,=,$p,pf,=,$b4,cf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567001,"size":3,"opcode":"sub r8d, r8d","disasm":"sub r8d, r8d","bytes":"4529c0","family":"cpu","type":"sub","type_num":18,"type2_num":0},{"offset":4566934,"ptr":9,"val":9,"esil":"9,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"push 9","disasm":"push 9","bytes":"6a09","family":"cpu","type":"push","type_num":13,"type2_num":0},{"offset":4566936,"esil":"rsp,[8],rax,=,8,rsp,+=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"pop rax","disasm":"pop rax","bytes":"58","family":"cpu","type":"pop","type_num":14,"type2_num":0}]},{"offset":4566937,"size":10,"jump":4566835,"fail":4566947,"colorize":0,"ops":[{"offset":4566937,"esil":"","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"syscall","disasm":"syscall","bytes":"0f05","family":"cpu","type":"swi","type_num":11,"type2_num":0,"xrefs":[{"addr":4566853,"type":"CODE"}]},{"offset":4566939,"esil":"eax,edi,==,$z,zf,=,$b32,cf,=,$p,pf,=,$s,sf,=,$o,of,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"cmp edi, eax","disasm":"cmp edi, eax","bytes":"39c7","family":"cpu","type":"cmp","type_num":15,"type2_num":0},{"offset":4566941,"esil":"zf,!,?{,4566835,rip,=,}","refptr":false,"fcn_addr":4566897,"fcn_last":4566998,"size":6,"opcode":"jne 0x45af33","disasm":"jne 0x45af33","bytes":"0f8590ffffff","family":"cpu","type":"cjmp","type_num":2147483649,"type2_num":0,"jump":4566835,"fail":4566947}]},{"offset":4566947,"size":11,"jump":4566979,"fail":4566958,"trace":{"count":164,"times":1},"colorize":0,"ops":[{"offset":4566947,"ptr":4194304,"val":4194304,"esil":"4194304,esi,=,0xffffffff,rsi,&=","refptr":false,"fcn_addr":4566897,"fcn_last":4566999,"size":5,"opcode":"mov esi, 0x400000","disasm":"mov esi, segment.ehdr","bytes":"be00004000","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566952,"esil":"edi,edx,=,0xffffffff,rdx,&=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"mov edx, edi","disasm":"mov edx, edi","bytes":"89fa","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566954,"esil":"esi,edx,-=,$o,of,=,$s,sf,=,$z,zf,=,$p,pf,=,$b4,cf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"sub edx, esi","disasm":"sub edx, esi","bytes":"29f2","family":"cpu","type":"sub","type_num":18,"type2_num":0},{"offset":4566956,"esil":"zf,?{,4566979,rip,=,}","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"je 0x45afc3","disasm":"je 0x45afc3","bytes":"7415","family":"cpu","type":"cjmp","type_num":2147483649,"type2_num":0,"jump":4566979,"fail":4566958}]},{"offset":4566958,"size":21,"jump":4566979,"trace":{"count":167,"times":1},"colorize":0,"ops":[{"offset":4566958,"val":24,"esil":"edx,ebp,+=,$o,of,=,$s,sf,=,$z,zf,=,$c31,cf,=,$p,pf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"add ebp, edx","disasm":"add ebp, edx","bytes":"01d5","family":"cpu","type":"add","type_num":17,"type2_num":0},{"offset":4566960,"val":24,"esil":"edx,0x8,rsp,+,+=[4],$o,of,=,$s,sf,=,$z,zf,=,$c31,cf,=,$p,pf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567000,"size":4,"opcode":"add dword [rsp + 8], edx","disasm":"add dword [local_8h], edx","bytes":"01542408","family":"cpu","type":"add","type_num":17,"type2_num":0},{"offset":4566964,"val":24,"esil":"edx,0x18,rsp,+,+=[4],$o,of,=,$s,sf,=,$z,zf,=,$c31,cf,=,$p,pf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567000,"size":4,"opcode":"add dword [rsp + 0x18], edx","disasm":"add dword [local_18h], edx","bytes":"01542418","family":"cpu","type":"add","type_num":17,"type2_num":0},{"offset":4566968,"esil":"ebx,ecx,=,0xffffffff,rcx,&=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"mov ecx, ebx","disasm":"mov ecx, ebx","bytes":"89d9","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566970,"esil":"esi,ecx,-=,$o,of,=,$s,sf,=,$z,zf,=,$p,pf,=,$b4,cf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"sub ecx, esi","disasm":"sub ecx, esi","bytes":"29f1","family":"cpu","type":"sub","type_num":18,"type2_num":0},{"offset":4566972,"val":3,"esil":"0,cf,=,1,3,-,1,<<,ecx,&,?{,1,cf,=,},3,ecx,>>,ecx,=,$z,zf,=,$p,pf,=,$s,sf,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567001,"size":3,"opcode":"shr ecx, 3","disasm":"shr ecx, 3","bytes":"c1e903","family":"cpu","type":"shr","type_num":22,"type2_num":0},{"offset":4566975,"esil":"0,df,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"cld","disasm":"cld","bytes":"fc","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566976,"ptr":0,"esil":"rcx,!,?{,BREAK,},rsi,[8],rdi,=[8],df,?{,8,rsi,-=,8,rdi,-=,},df,!,?{,8,rsi,+=,8,rdi,+=,},rcx,--=,rcx,?{,5,GOTO,}","refptr":true,"fcn_addr":4566897,"fcn_last":4567001,"size":3,"opcode":"rep movsq qword [rdi], qword ptr [rsi]","disasm":"rep movsq qword [rdi], qword ptr [rsi]","bytes":"f348a5","family":"cpu","type":"mov","type_num":9,"type2_num":0}]},{"offset":4566979,"size":25,"trace":{"count":175,"times":1},"colorize":0,"ops":[{"offset":4566979,"esil":"eax,edi,^,edi,=,edi,eax,^,eax,=,eax,edi,^,edi,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"xchg eax, edi","disasm":"xchg eax, edi","bytes":"97","family":"cpu","type":"mov","type_num":9,"type2_num":0,"xrefs":[{"addr":4566956,"type":"CODE"}]},{"offset":4566980,"esil":"rbx,rsi,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567001,"size":3,"opcode":"mov rsi, rbx","disasm":"mov rsi, rbx","bytes":"4889de","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566983,"esil":"rax,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"push rax","disasm":"push rax","bytes":"50","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566984,"esil":"eax,edx,^,edx,=,edx,eax,^,eax,=,eax,edx,^,edx,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"xchg eax, edx","disasm":"xchg eax, edx","bytes":"92","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566985,"esil":"esi,[4],eax,=,df,?{,4,esi,-=,},df,!,?{,4,esi,+=,}","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"lodsd eax, dword [rsi]","disasm":"lodsd eax, dword [rsi]","bytes":"ad","family":"cpu","type":"load","type_num":32,"type2_num":0},{"offset":4566986,"esil":"rax,8,rsp,-,=[8],8,rsp,-=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"push rax","disasm":"push rax","bytes":"50","family":"cpu","type":"upush","type_num":12,"type2_num":0},{"offset":4566987,"esil":"rsp,rcx,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567001,"size":3,"opcode":"mov rcx, rsp","disasm":"mov rcx, rsp","bytes":"4889e1","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566990,"esil":"esi,[4],eax,=,df,?{,4,esi,-=,},df,!,?{,4,esi,+=,}","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"lodsd eax, dword [rsi]","disasm":"lodsd eax, dword [rsi]","bytes":"ad","family":"cpu","type":"load","type_num":32,"type2_num":0},{"offset":4566991,"esil":"eax,edi,^,edi,=,edi,eax,^,eax,=,eax,edi,^,edi,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"xchg eax, edi","disasm":"xchg eax, edi","bytes":"97","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566992,"esil":"esi,[4],eax,=,df,?{,4,esi,-=,},df,!,?{,4,esi,+=,}","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"lodsd eax, dword [rsi]","disasm":"lodsd eax, dword [rsi]","bytes":"ad","family":"cpu","type":"load","type_num":32,"type2_num":0},{"offset":4566993,"esil":"al,r8d,=,0xffffffff,r8,&=","refptr":false,"fcn_addr":4566897,"fcn_last":4567000,"size":4,"opcode":"movzx r8d, al","disasm":"movzx r8d, al","bytes":"440fb6c0","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4566997,"esil":"rsi,rdi,^,rdi,=,rdi,rsi,^,rsi,=,rsi,rdi,^,rdi,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567001,"size":3,"opcode":"xchg rsi, rdi","disasm":"xchg rsi, rdi","bytes":"4887fe","family":"cpu","type":"mov","type_num":9,"type2_num":0},{"offset":4567000,"esil":"rbp,rip,8,rsp,-=,rsp,=[],rip,=","refptr":false,"fcn_addr":4566897,"fcn_last":4567002,"size":2,"opcode":"call rbp","disasm":"call rbp","bytes":"ffd5","family":"cpu","type":"ucall","type_num":268435460,"type2_num":0},{"offset":4567002,"esil":"rsp,[8],rcx,=,8,rsp,+=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"pop rcx","disasm":"pop rcx","bytes":"59","family":"cpu","type":"pop","type_num":14,"type2_num":0},{"offset":4567003,"esil":"rsp,[8],rip,=,8,rsp,+=","refptr":false,"fcn_addr":4566897,"fcn_last":4567003,"size":1,"opcode":"ret","disasm":"ret","bytes":"c3","family":"cpu","type":"ret","type_num":5,"type2_num":0}]}]}],"isj":[],"izj":[],"afvj":{"sp":[{"name":"local_8h","kind":"var","type":"int","ref":{"base":"rsp", "offset":-8}},{"name":"local_18h","kind":"var","type":"int","ref":{"base":"rsp", "offset":-24}}],"bp":[{"name":"arg_64h","kind":"arg","type":"int","ref":{"base":"rbp", "offset":100}}],"reg":[]},"aflj":[{"offset":4351222,"name":"fcn.004264f6","size":109,"realsz":126,"stackframe":8,"calltype":"amd64","cost":77,"cc":7,"bits":64,"type":"fcn","nbbs":21,"edges":26,"ebbs":4,"minbound":"4350991","maxbound":"4351331","callrefs":[{"addr":4351010,"type":"J","at":4351003},{"addr":4350991,"type":"J","at":4351009},{"addr":4351005,"type":"J","at":4351119},{"addr":4351270,"type":"J","at":4351242},{"addr":4351300,"type":"J","at":4351274},{"addr":4351318,"type":"J","at":4351300},{"addr":4351327,"type":"J","at":4351305}],"datarefs":[],"codexrefs":[{"addr":4351009,"type":"J","at":4350991},{"addr":4351119,"type":"J","at":4351005},{"addr":4351103,"type":"J","at":4351011},{"addr":4314220,"type":"C","at":4351222},{"addr":4351185,"type":"J","at":4351241},{"addr":4351242,"type":"J","at":4351270},{"addr":4351331,"type":"J","at":4351273},{"addr":4351274,"type":"J","at":4351300},{"addr":4351300,"type":"J","at":4351318}],"dataxrefs":[],"indegree":9,"outdegree":0,"nlocals":0,"nargs":4,"bpvars":[{"name":"arg_12h","kind":"arg","type":"int","ref":{"base":"rbp", "offset":18}}],"spvars":[],"regvars":[{"name":"arg2","kind":"reg","type":"int","ref":"rsi"},{"name":"arg3","kind":"reg","type":"int","ref":"rdx"},{"name":"arg4","kind":"reg","type":"unsigned int","ref":"rcx"}],"difftype":"new"},{"offset":4566520,"name":"entry0","size":50,"realsz":50,"stackframe":40,"calltype":"amd64","cost":35,"cc":1,"bits":64,"type":"fcn","nbbs":3,"edges":2,"ebbs":2,"minbound":"4566520","maxbound":"4566570","callrefs":[{"addr":4567004,"type":"C","at":4566520},{"addr":4566632,"type":"C","at":4566547},{"addr":4566558,"type":"J","at":4566554}],"datarefs":[],"codexrefs":[{"addr":4566554,"type":"J","at":4566558}],"dataxrefs":[],"indegree":1,"outdegree":2,"nlocals":0,"nargs":2,"bpvars":[],"spvars":[],"regvars":[{"name":"arg1","kind":"reg","type":"int","ref":"rdi"},{"name":"arg3","kind":"reg","type":"int","ref":"rdx"}],"difftype":"new"},{"offset":4566570,"name":"fcn.0045ae2a","size":62,"realsz":62,"stackframe":0,"calltype":"amd64","cost":30,"cc":6,"bits":64,"type":"fcn","nbbs":7,"edges":11,"ebbs":1,"minbound":"4566570","maxbound":"4566632","callrefs":[{"addr":4566614,"type":"J","at":4566579},{"addr":4566614,"type":"J","at":4566585},{"addr":4566590,"type":"J","at":4566605},{"addr":4566630,"type":"J","at":4566612},{"addr":4566614,"type":"J","at":4566628}],"datarefs":[],"codexrefs":[{"addr":4566808,"type":"C","at":4566570},{"addr":4566605,"type":"J","at":4566590},{"addr":4566579,"type":"J","at":4566614},{"addr":4566585,"type":"J","at":4566614},{"addr":4566628,"type":"J","at":4566614},{"addr":4566612,"type":"J","at":4566630}],"dataxrefs":[],"indegree":6,"outdegree":0,"nlocals":0,"nargs":2,"bpvars":[],"spvars":[],"regvars":[{"name":"arg1","kind":"reg","type":"int","ref":"rdi"},{"name":"arg4","kind":"reg","type":"unsigned int","ref":"rcx"}],"difftype":"new"},{"offset":4566632,"name":"fcn.0045ae68","size":203,"realsz":203,"stackframe":0,"calltype":"amd64","cost":112,"cc":15,"bits":64,"type":"fcn","nbbs":28,"edges":41,"ebbs":1,"minbound":"4566632","maxbound":"4566835","callrefs":[{"addr":4566654,"type":"J","at":4566639},{"addr":4566818,"type":"J","at":4566641},{"addr":4566670,"type":"J","at":4566658},{"addr":4566646,"type":"J","at":4566670},{"addr":4566684,"type":"J","at":4566675},{"addr":4566703,"type":"J","at":4566691},{"addr":4566677,"type":"J","at":4566703},{"addr":4566739,"type":"J","at":4566708},{"addr":4566818,"type":"J","at":4566724},{"addr":4566793,"type":"J","at":4566735},{"addr":4566753,"type":"J","at":4566737},{"addr":4566751,"type":"J","at":4566741},{"addr":4566793,"type":"J","at":4566751},{"addr":4566767,"type":"J","at":4566757},{"addr":4566793,"type":"J","at":4566767},{"addr":4566786,"type":"J","at":4566776},{"addr":4566769,"type":"J","at":4566786},{"addr":4566798,"type":"J","at":4566791},{"addr":4566570,"type":"C","at":4566808},{"addr":4566654,"type":"J","at":4566813}],"datarefs":[],"codexrefs":[{"addr":4566547,"type":"C","at":4566632},{"addr":4566670,"type":"J","at":4566646},{"addr":4566639,"type":"J","at":4566654},{"addr":4566813,"type":"J","at":4566654},{"addr":4566658,"type":"J","at":4566670},{"addr":4566703,"type":"J","at":4566677},{"addr":4566675,"type":"J","at":4566684},{"addr":4566691,"type":"J","at":4566703},{"addr":4566708,"type":"J","at":4566739},{"addr":4566741,"type":"J","at":4566751},{"addr":4566737,"type":"J","at":4566753},{"addr":4566757,"type":"J","at":4566767},{"addr":4566786,"type":"J","at":4566769},{"addr":4566776,"type":"J","at":4566786},{"addr":4566735,"type":"J","at":4566793},{"addr":4566751,"type":"J","at":4566793},{"addr":4566767,"type":"J","at":4566793},{"addr":4566791,"type":"J","at":4566798},{"addr":4566641,"type":"J","at":4566818},{"addr":4566724,"type":"J","at":4566818}],"dataxrefs":[],"indegree":20,"outdegree":1,"nlocals":0,"nargs":2,"bpvars":[],"spvars":[],"regvars":[{"name":"arg2","kind":"reg","type":"int","ref":"rsi"},{"name":"arg4","kind":"reg","type":"int","ref":"rcx"}],"difftype":"new"},{"offset":4566880,"name":"fcn.0045af60","size":17,"realsz":62,"stackframe":120,"calltype":"amd64","cost":44,"cc":0,"bits":64,"type":"fcn","nbbs":3,"edges":2,"ebbs":1,"minbound":"4566835","maxbound":"4566897","callrefs":[{"addr":4566880,"type":"C","at":4566841},{"addr":4566937,"type":"J","at":4566853}],"datarefs":[4194316],"codexrefs":[{"addr":4566941,"type":"J","at":4566835},{"addr":4566841,"type":"C","at":4566880},{"addr":4567027,"type":"C","at":4566897}],"dataxrefs":[],"indegree":3,"outdegree":1,"nlocals":0,"nargs":1,"bpvars":[{"name":"arg_64h","kind":"arg","type":"int","ref":{"base":"rbp", "offset":100}}],"spvars":[],"regvars":[],"difftype":"new"},{"offset":4566897,"name":"fcn.0045af71","size":107,"realsz":169,"stackframe":128,"calltype":"amd64","cost":102,"cc":4,"bits":64,"type":"fcn","nbbs":7,"edges":9,"ebbs":1,"minbound":"4566835","maxbound":"4567004","callrefs":[{"addr":4566880,"type":"C","at":4566841},{"addr":4566937,"type":"J","at":4566853},{"addr":4566835,"type":"J","at":4566941},{"addr":4566979,"type":"J","at":4566956}],"datarefs":[4194316,4194304],"codexrefs":[{"addr":4566941,"type":"J","at":4566835},{"addr":4566841,"type":"C","at":4566880},{"addr":4567027,"type":"C","at":4566897},{"addr":4566853,"type":"J","at":4566937},{"addr":4566956,"type":"J","at":4566979}],"dataxrefs":[],"indegree":5,"outdegree":1,"nlocals":2,"nargs":1,"bpvars":[{"name":"arg_64h","kind":"arg","type":"int","ref":{"base":"rbp", "offset":100}}],"spvars":[{"name":"local_8h","kind":"var","type":"int","ref":{"base":"rsp", "offset":-8}},{"name":"local_18h","kind":"var","type":"int","ref":{"base":"rsp", "offset":-24}}],"regvars":[],"difftype":"new"},{"offset":4567004,"name":"fcn.0045afdc","size":38,"realsz":40,"stackframe":0,"calltype":"amd64","cost":17,"cc":1,"bits":64,"type":"fcn","nbbs":3,"edges":2,"ebbs":2,"minbound":"4567004","maxbound":"4567042","callrefs":[{"addr":4566897,"type":"C","at":4567027},{"addr":4567040,"type":"J","at":4567032}],"datarefs":[],"codexrefs":[{"addr":4566520,"type":"C","at":4567004},{"addr":4567032,"type":"J","at":4567040}],"dataxrefs":[],"indegree":2,"outdegree":1,"nlocals":1,"nargs":0,"bpvars":[{"name":"local_9h","kind":"var","type":"int","ref":{"base":"rbp", "offset":-9}}],"spvars":[],"regvars":[],"difftype":"new"}]}
+{
+    "aflj":
+    [
+        {
+            "bits": 64,
+            "bpvars":
+            [
+                {
+                    "kind": "arg",
+                    "name": "arg_12h",
+                    "ref":
+                    {
+                        "base": "rbp",
+                        "offset": 18
+                    },
+                    "type": "int"
+                }
+            ],
+            "callrefs":
+            [
+                {
+                    "addr": 4351010,
+                    "at": 4351003,
+                    "type": "J"
+                },
+                {
+                    "addr": 4350991,
+                    "at": 4351009,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351005,
+                    "at": 4351119,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351270,
+                    "at": 4351242,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351300,
+                    "at": 4351274,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351318,
+                    "at": 4351300,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351327,
+                    "at": 4351305,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 7,
+            "codexrefs":
+            [
+                {
+                    "addr": 4351009,
+                    "at": 4350991,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351119,
+                    "at": 4351005,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351103,
+                    "at": 4351011,
+                    "type": "J"
+                },
+                {
+                    "addr": 4314220,
+                    "at": 4351222,
+                    "type": "C"
+                },
+                {
+                    "addr": 4351185,
+                    "at": 4351241,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351242,
+                    "at": 4351270,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351331,
+                    "at": 4351273,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351274,
+                    "at": 4351300,
+                    "type": "J"
+                },
+                {
+                    "addr": 4351300,
+                    "at": 4351318,
+                    "type": "J"
+                }
+            ],
+            "cost": 77,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 4,
+            "edges": 26,
+            "indegree": 9,
+            "maxbound": "4351331",
+            "minbound": "4350991",
+            "name": "fcn.004264f6",
+            "nargs": 4,
+            "nbbs": 21,
+            "nlocals": 0,
+            "offset": 4351222,
+            "outdegree": 0,
+            "realsz": 126,
+            "regvars":
+            [
+                {
+                    "kind": "reg",
+                    "name": "arg2",
+                    "ref": "rsi",
+                    "type": "int"
+                },
+                {
+                    "kind": "reg",
+                    "name": "arg3",
+                    "ref": "rdx",
+                    "type": "int"
+                },
+                {
+                    "kind": "reg",
+                    "name": "arg4",
+                    "ref": "rcx",
+                    "type": "unsigned int"
+                }
+            ],
+            "size": 109,
+            "spvars":
+            [],
+            "stackframe": 8,
+            "type": "fcn"
+        },
+        {
+            "bits": 64,
+            "bpvars":
+            [],
+            "callrefs":
+            [
+                {
+                    "addr": 4567004,
+                    "at": 4566520,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566632,
+                    "at": 4566547,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566558,
+                    "at": 4566554,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [
+                {
+                    "addr": 4566554,
+                    "at": 4566558,
+                    "type": "J"
+                }
+            ],
+            "cost": 35,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 2,
+            "edges": 2,
+            "indegree": 1,
+            "maxbound": "4566570",
+            "minbound": "4566520",
+            "name": "entry0",
+            "nargs": 2,
+            "nbbs": 3,
+            "nlocals": 0,
+            "offset": 4566520,
+            "outdegree": 2,
+            "realsz": 50,
+            "regvars":
+            [
+                {
+                    "kind": "reg",
+                    "name": "arg1",
+                    "ref": "rdi",
+                    "type": "int"
+                },
+                {
+                    "kind": "reg",
+                    "name": "arg3",
+                    "ref": "rdx",
+                    "type": "int"
+                }
+            ],
+            "size": 50,
+            "spvars":
+            [],
+            "stackframe": 40,
+            "type": "fcn"
+        },
+        {
+            "bits": 64,
+            "bpvars":
+            [],
+            "callrefs":
+            [
+                {
+                    "addr": 4566614,
+                    "at": 4566579,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566614,
+                    "at": 4566585,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566590,
+                    "at": 4566605,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566630,
+                    "at": 4566612,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566614,
+                    "at": 4566628,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 6,
+            "codexrefs":
+            [
+                {
+                    "addr": 4566808,
+                    "at": 4566570,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566605,
+                    "at": 4566590,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566579,
+                    "at": 4566614,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566585,
+                    "at": 4566614,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566628,
+                    "at": 4566614,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566612,
+                    "at": 4566630,
+                    "type": "J"
+                }
+            ],
+            "cost": 30,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 11,
+            "indegree": 6,
+            "maxbound": "4566632",
+            "minbound": "4566570",
+            "name": "fcn.0045ae2a",
+            "nargs": 2,
+            "nbbs": 7,
+            "nlocals": 0,
+            "offset": 4566570,
+            "outdegree": 0,
+            "realsz": 62,
+            "regvars":
+            [
+                {
+                    "kind": "reg",
+                    "name": "arg1",
+                    "ref": "rdi",
+                    "type": "int"
+                },
+                {
+                    "kind": "reg",
+                    "name": "arg4",
+                    "ref": "rcx",
+                    "type": "unsigned int"
+                }
+            ],
+            "size": 62,
+            "spvars":
+            [],
+            "stackframe": 0,
+            "type": "fcn"
+        },
+        {
+            "bits": 64,
+            "bpvars":
+            [],
+            "callrefs":
+            [
+                {
+                    "addr": 4566654,
+                    "at": 4566639,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566818,
+                    "at": 4566641,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566670,
+                    "at": 4566658,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566646,
+                    "at": 4566670,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566684,
+                    "at": 4566675,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566703,
+                    "at": 4566691,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566677,
+                    "at": 4566703,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566739,
+                    "at": 4566708,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566818,
+                    "at": 4566724,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566793,
+                    "at": 4566735,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566753,
+                    "at": 4566737,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566751,
+                    "at": 4566741,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566793,
+                    "at": 4566751,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566767,
+                    "at": 4566757,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566793,
+                    "at": 4566767,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566786,
+                    "at": 4566776,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566769,
+                    "at": 4566786,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566798,
+                    "at": 4566791,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566570,
+                    "at": 4566808,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566654,
+                    "at": 4566813,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 15,
+            "codexrefs":
+            [
+                {
+                    "addr": 4566547,
+                    "at": 4566632,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566670,
+                    "at": 4566646,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566639,
+                    "at": 4566654,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566813,
+                    "at": 4566654,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566658,
+                    "at": 4566670,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566703,
+                    "at": 4566677,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566675,
+                    "at": 4566684,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566691,
+                    "at": 4566703,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566708,
+                    "at": 4566739,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566741,
+                    "at": 4566751,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566737,
+                    "at": 4566753,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566757,
+                    "at": 4566767,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566786,
+                    "at": 4566769,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566776,
+                    "at": 4566786,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566735,
+                    "at": 4566793,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566751,
+                    "at": 4566793,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566767,
+                    "at": 4566793,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566791,
+                    "at": 4566798,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566641,
+                    "at": 4566818,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566724,
+                    "at": 4566818,
+                    "type": "J"
+                }
+            ],
+            "cost": 112,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 41,
+            "indegree": 20,
+            "maxbound": "4566835",
+            "minbound": "4566632",
+            "name": "fcn.0045ae68",
+            "nargs": 2,
+            "nbbs": 28,
+            "nlocals": 0,
+            "offset": 4566632,
+            "outdegree": 1,
+            "realsz": 203,
+            "regvars":
+            [
+                {
+                    "kind": "reg",
+                    "name": "arg2",
+                    "ref": "rsi",
+                    "type": "int"
+                },
+                {
+                    "kind": "reg",
+                    "name": "arg4",
+                    "ref": "rcx",
+                    "type": "int"
+                }
+            ],
+            "size": 203,
+            "spvars":
+            [],
+            "stackframe": 0,
+            "type": "fcn"
+        },
+        {
+            "bits": 64,
+            "bpvars":
+            [
+                {
+                    "kind": "arg",
+                    "name": "arg_64h",
+                    "ref":
+                    {
+                        "base": "rbp",
+                        "offset": 100
+                    },
+                    "type": "int"
+                }
+            ],
+            "callrefs":
+            [
+                {
+                    "addr": 4566880,
+                    "at": 4566841,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566937,
+                    "at": 4566853,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 0,
+            "codexrefs":
+            [
+                {
+                    "addr": 4566941,
+                    "at": 4566835,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566841,
+                    "at": 4566880,
+                    "type": "C"
+                },
+                {
+                    "addr": 4567027,
+                    "at": 4566897,
+                    "type": "C"
+                }
+            ],
+            "cost": 44,
+            "datarefs":
+            [
+                4194316
+            ],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 2,
+            "indegree": 3,
+            "maxbound": "4566897",
+            "minbound": "4566835",
+            "name": "fcn.0045af60",
+            "nargs": 1,
+            "nbbs": 3,
+            "nlocals": 0,
+            "offset": 4566880,
+            "outdegree": 1,
+            "realsz": 62,
+            "regvars":
+            [],
+            "size": 17,
+            "spvars":
+            [],
+            "stackframe": 120,
+            "type": "fcn"
+        },
+        {
+            "bits": 64,
+            "bpvars":
+            [
+                {
+                    "kind": "arg",
+                    "name": "arg_64h",
+                    "ref":
+                    {
+                        "base": "rbp",
+                        "offset": 100
+                    },
+                    "type": "int"
+                }
+            ],
+            "callrefs":
+            [
+                {
+                    "addr": 4566880,
+                    "at": 4566841,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566937,
+                    "at": 4566853,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566835,
+                    "at": 4566941,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566979,
+                    "at": 4566956,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 4,
+            "codexrefs":
+            [
+                {
+                    "addr": 4566941,
+                    "at": 4566835,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566841,
+                    "at": 4566880,
+                    "type": "C"
+                },
+                {
+                    "addr": 4567027,
+                    "at": 4566897,
+                    "type": "C"
+                },
+                {
+                    "addr": 4566853,
+                    "at": 4566937,
+                    "type": "J"
+                },
+                {
+                    "addr": 4566956,
+                    "at": 4566979,
+                    "type": "J"
+                }
+            ],
+            "cost": 102,
+            "datarefs":
+            [
+                4194316,
+                4194304
+            ],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 9,
+            "indegree": 5,
+            "maxbound": "4567004",
+            "minbound": "4566835",
+            "name": "fcn.0045af71",
+            "nargs": 1,
+            "nbbs": 7,
+            "nlocals": 2,
+            "offset": 4566897,
+            "outdegree": 1,
+            "realsz": 169,
+            "regvars":
+            [],
+            "size": 107,
+            "spvars":
+            [
+                {
+                    "kind": "var",
+                    "name": "local_8h",
+                    "ref":
+                    {
+                        "base": "rsp",
+                        "offset": -8
+                    },
+                    "type": "int"
+                },
+                {
+                    "kind": "var",
+                    "name": "local_18h",
+                    "ref":
+                    {
+                        "base": "rsp",
+                        "offset": -24
+                    },
+                    "type": "int"
+                }
+            ],
+            "stackframe": 128,
+            "type": "fcn"
+        },
+        {
+            "bits": 64,
+            "bpvars":
+            [
+                {
+                    "kind": "var",
+                    "name": "local_9h",
+                    "ref":
+                    {
+                        "base": "rbp",
+                        "offset": -9
+                    },
+                    "type": "int"
+                }
+            ],
+            "callrefs":
+            [
+                {
+                    "addr": 4566897,
+                    "at": 4567027,
+                    "type": "C"
+                },
+                {
+                    "addr": 4567040,
+                    "at": 4567032,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [
+                {
+                    "addr": 4566520,
+                    "at": 4567004,
+                    "type": "C"
+                },
+                {
+                    "addr": 4567032,
+                    "at": 4567040,
+                    "type": "J"
+                }
+            ],
+            "cost": 17,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "difftype": "new",
+            "ebbs": 2,
+            "edges": 2,
+            "indegree": 2,
+            "maxbound": "4567042",
+            "minbound": "4567004",
+            "name": "fcn.0045afdc",
+            "nargs": 0,
+            "nbbs": 3,
+            "nlocals": 1,
+            "offset": 4567004,
+            "outdegree": 1,
+            "realsz": 40,
+            "regvars":
+            [],
+            "size": 38,
+            "spvars":
+            [],
+            "stackframe": 0,
+            "type": "fcn"
+        }
+    ],
+    "afvj":
+    {
+        "bp":
+        [
+            {
+                "kind": "arg",
+                "name": "arg_64h",
+                "ref":
+                {
+                    "base": "rbp",
+                    "offset": 100
+                },
+                "type": "int"
+            }
+        ],
+        "reg":
+        [],
+        "sp":
+        [
+            {
+                "kind": "var",
+                "name": "local_8h",
+                "ref":
+                {
+                    "base": "rsp",
+                    "offset": -8
+                },
+                "type": "int"
+            },
+            {
+                "kind": "var",
+                "name": "local_18h",
+                "ref":
+                {
+                    "base": "rsp",
+                    "offset": -24
+                },
+                "type": "int"
+            }
+        ]
+    },
+    "agj":
+    [
+        {
+            "blocks":
+            [
+                {
+                    "colorize": 0,
+                    "fail": 4566857,
+                    "jump": 4566937,
+                    "offset": 4566835,
+                    "ops":
+                    [
+                        {
+                            "bytes": "681e000000",
+                            "disasm": "push 0x1e",
+                            "esil": "30,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566835,
+                            "opcode": "push 0x1e",
+                            "ptr": 30,
+                            "refptr": false,
+                            "size": 5,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 30,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 4566941,
+                                    "type": "CODE"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "5a",
+                            "disasm": "pop rdx",
+                            "esil": "rsp,[8],rdx,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566840,
+                            "opcode": "pop rdx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "e822000000",
+                            "disasm": "call fcn.0045af60",
+                            "esil": "4566880,rip,8,rsp,-=,rsp,=[],rip,=",
+                            "fail": 4566846,
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "jump": 4566880,
+                            "offset": 4566841,
+                            "opcode": "call 0x45af60",
+                            "refptr": false,
+                            "size": 5,
+                            "type": "call",
+                            "type2_num": 0,
+                            "type_num": 3
+                        },
+                        {
+                            "bytes": "50",
+                            "disasm": "push rax",
+                            "esil": "rax,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566846,
+                            "opcode": "push rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "52",
+                            "disasm": "push rdx",
+                            "esil": "rdx,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566847,
+                            "opcode": "push rdx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "4f54",
+                            "disasm": "push r12",
+                            "esil": "r12,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566848,
+                            "opcode": "push r12",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "5f",
+                            "disasm": "pop rdi",
+                            "esil": "rsp,[8],rdi,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566850,
+                            "opcode": "pop rdi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "4558",
+                            "disasm": "pop r8",
+                            "esil": "rsp,[8],r8,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566851,
+                            "opcode": "pop r8",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "45437c50",
+                            "disasm": "jl 0x45af99",
+                            "esil": "of,sf,^,?{,4566937,rip,=,}",
+                            "fail": 4566857,
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "jump": 4566937,
+                            "offset": 4566853,
+                            "opcode": "jl 0x45af99",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "cjmp",
+                            "type2_num": 0,
+                            "type_num": 2147483649
+                        }
+                    ],
+                    "size": 22,
+                    "trace":
+                    {
+                        "count": 1,
+                        "times": 2
+                    }
+                },
+                {
+                    "colorize": 0,
+                    "jump": 4566897,
+                    "offset": 4566857,
+                    "ops":
+                    [
+                        {
+                            "bytes": "52",
+                            "disasm": "push rdx",
+                            "esil": "rdx,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566857,
+                            "opcode": "push rdx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "4f54",
+                            "disasm": "push r12",
+                            "esil": "r12,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566858,
+                            "opcode": "push r12",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "5f",
+                            "disasm": "pop rdi",
+                            "esil": "rsp,[8],rdi,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566860,
+                            "opcode": "pop rdi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "57",
+                            "disasm": "push rdi",
+                            "esil": "rdi,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566861,
+                            "opcode": "push rdi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "52",
+                            "disasm": "push rdx",
+                            "esil": "rdx,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566862,
+                            "opcode": "push rdx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "4954",
+                            "disasm": "push r12",
+                            "esil": "r12,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566863,
+                            "opcode": "push r12",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "45206661",
+                            "disasm": "and byte [r14 + 0x61], r12b",
+                            "esil": "r12b,0x61,r14,+,&=[1],$0,of,=,$0,cf,=,$z,zf,=,$s,sf,=,$o,pf,=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566865,
+                            "opcode": "and byte [r14 + 0x61], r12b",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "and",
+                            "type2_num": 0,
+                            "type_num": 27
+                        },
+                        {
+                            "bytes": "696c65642e0a0000",
+                            "disasm": "imul ebp, dword [rbp + 0x64], 0xa2e",
+                            "esil": "2606,0x64,rbp,+,[4],*,ebp,=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566869,
+                            "opcode": "imul ebp, dword [rbp + 0x64], 0xa2e",
+                            "refptr": false,
+                            "size": 8,
+                            "type": "mul",
+                            "type2_num": 0,
+                            "type_num": 20
+                        },
+                        {
+                            "bytes": "90",
+                            "disasm": "nop",
+                            "esil": ",",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566877,
+                            "opcode": "nop",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "nop",
+                            "type2_num": 0,
+                            "type_num": 8
+                        },
+                        {
+                            "bytes": "90",
+                            "disasm": "nop",
+                            "esil": ",",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566878,
+                            "opcode": "nop",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "nop",
+                            "type2_num": 0,
+                            "type_num": 8
+                        },
+                        {
+                            "bytes": "90",
+                            "disasm": "nop",
+                            "esil": ",",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "offset": 4566879,
+                            "opcode": "nop",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "nop",
+                            "type2_num": 0,
+                            "type_num": 8
+                        },
+                        {
+                            "bytes": "5e",
+                            "disasm": "pop rsi",
+                            "esil": "rsp,[8],rsi,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566896,
+                            "flags":
+                            [
+                                "fcn.0045af60"
+                            ],
+                            "offset": 4566880,
+                            "opcode": "pop rsi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 4566841,
+                                    "type": "CALL"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "6a02",
+                            "disasm": "push 2",
+                            "esil": "2,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566895,
+                            "offset": 4566881,
+                            "opcode": "push 2",
+                            "ptr": 2,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 2
+                        },
+                        {
+                            "bytes": "5f",
+                            "disasm": "pop rdi",
+                            "esil": "rsp,[8],rdi,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566896,
+                            "offset": 4566883,
+                            "opcode": "pop rdi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "6a01",
+                            "disasm": "push 1",
+                            "esil": "1,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566895,
+                            "offset": 4566884,
+                            "opcode": "push 1",
+                            "ptr": 1,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 1
+                        },
+                        {
+                            "bytes": "58",
+                            "disasm": "pop rax",
+                            "esil": "rsp,[8],rax,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566896,
+                            "offset": 4566886,
+                            "opcode": "pop rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "0f05",
+                            "disasm": "syscall",
+                            "esil": "",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566895,
+                            "offset": 4566887,
+                            "opcode": "syscall",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "swi",
+                            "type2_num": 0,
+                            "type_num": 11
+                        },
+                        {
+                            "bytes": "6a7f",
+                            "disasm": "push 0x7f",
+                            "esil": "127,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566895,
+                            "offset": 4566889,
+                            "opcode": "push 0x7f",
+                            "ptr": 127,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 127
+                        },
+                        {
+                            "bytes": "5f",
+                            "disasm": "pop rdi",
+                            "esil": "rsp,[8],rdi,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566896,
+                            "offset": 4566891,
+                            "opcode": "pop rdi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "6a3c",
+                            "disasm": "push 0x3c",
+                            "esil": "60,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566895,
+                            "offset": 4566892,
+                            "opcode": "push 0x3c",
+                            "ptr": 60,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 60
+                        },
+                        {
+                            "bytes": "58",
+                            "disasm": "pop rax",
+                            "esil": "rsp,[8],rax,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566896,
+                            "offset": 4566894,
+                            "opcode": "pop rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "0f05",
+                            "disasm": "syscall",
+                            "esil": "",
+                            "family": "cpu",
+                            "fcn_addr": 4566880,
+                            "fcn_last": 4566895,
+                            "offset": 4566895,
+                            "opcode": "syscall",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "swi",
+                            "type2_num": 0,
+                            "type_num": 11
+                        }
+                    ],
+                    "size": 40,
+                    "trace":
+                    {
+                        "count": 8,
+                        "times": 2
+                    }
+                },
+                {
+                    "colorize": 0,
+                    "jump": 4566937,
+                    "offset": 4566897,
+                    "ops":
+                    [
+                        {
+                            "bytes": "5b",
+                            "disasm": "pop rbx",
+                            "esil": "rsp,[8],rbx,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "flags":
+                            [
+                                "fcn.0045af71"
+                            ],
+                            "offset": 4566897,
+                            "opcode": "pop rbx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 4567027,
+                                    "type": "CALL"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "6a01",
+                            "disasm": "push 1",
+                            "esil": "1,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566898,
+                            "opcode": "push 1",
+                            "ptr": 1,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 1
+                        },
+                        {
+                            "bytes": "680c004000",
+                            "disasm": "push 0x40000c",
+                            "esil": "4194316,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4566999,
+                            "offset": 4566900,
+                            "opcode": "push 0x40000c",
+                            "ptr": 4194316,
+                            "refptr": false,
+                            "size": 5,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 4194316
+                        },
+                        {
+                            "bytes": "50",
+                            "disasm": "push rax",
+                            "esil": "rax,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566905,
+                            "opcode": "push rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "68d2ff2d00",
+                            "disasm": "push 0x2dffd2",
+                            "esil": "3014610,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4566999,
+                            "offset": 4566906,
+                            "opcode": "push 0x2dffd2",
+                            "ptr": 3014610,
+                            "refptr": false,
+                            "size": 5,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 3014610
+                        },
+                        {
+                            "bytes": "51",
+                            "disasm": "push rcx",
+                            "esil": "rcx,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566911,
+                            "opcode": "push rcx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "4157",
+                            "disasm": "push r15",
+                            "esil": "r15,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566912,
+                            "opcode": "push r15",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "bf00008000",
+                            "disasm": "mov edi, 0x800000",
+                            "esil": "8388608,edi,=,0xffffffff,rdi,&=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4566999,
+                            "offset": 4566914,
+                            "opcode": "mov edi, 0x800000",
+                            "ptr": 8388608,
+                            "refptr": false,
+                            "size": 5,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9,
+                            "val": 8388608
+                        },
+                        {
+                            "bytes": "6a07",
+                            "disasm": "push 7",
+                            "esil": "7,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566919,
+                            "opcode": "push 7",
+                            "ptr": 7,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 7
+                        },
+                        {
+                            "bytes": "5a",
+                            "disasm": "pop rdx",
+                            "esil": "rsp,[8],rdx,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566921,
+                            "opcode": "pop rdx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "bed2ff2d00",
+                            "disasm": "mov esi, 0x2dffd2",
+                            "esil": "3014610,esi,=,0xffffffff,rsi,&=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4566999,
+                            "offset": 4566922,
+                            "opcode": "mov esi, 0x2dffd2",
+                            "ptr": 3014610,
+                            "refptr": false,
+                            "size": 5,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9,
+                            "val": 3014610
+                        },
+                        {
+                            "bytes": "6a32",
+                            "disasm": "push 0x32",
+                            "esil": "50,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566927,
+                            "opcode": "push 0x32",
+                            "ptr": 50,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 50
+                        },
+                        {
+                            "bytes": "415a",
+                            "disasm": "pop r10",
+                            "esil": "rsp,[8],r10,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566929,
+                            "opcode": "pop r10",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "4529c0",
+                            "disasm": "sub r8d, r8d",
+                            "esil": "r8d,r8d,-=,$o,of,=,$s,sf,=,$z,zf,=,$p,pf,=,$b4,cf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567001,
+                            "offset": 4566931,
+                            "opcode": "sub r8d, r8d",
+                            "refptr": false,
+                            "size": 3,
+                            "type": "sub",
+                            "type2_num": 0,
+                            "type_num": 18
+                        },
+                        {
+                            "bytes": "6a09",
+                            "disasm": "push 9",
+                            "esil": "9,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566934,
+                            "opcode": "push 9",
+                            "ptr": 9,
+                            "refptr": false,
+                            "size": 2,
+                            "type": "push",
+                            "type2_num": 0,
+                            "type_num": 13,
+                            "val": 9
+                        },
+                        {
+                            "bytes": "58",
+                            "disasm": "pop rax",
+                            "esil": "rsp,[8],rax,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566936,
+                            "opcode": "pop rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        }
+                    ],
+                    "size": 40,
+                    "trace":
+                    {
+                        "count": 147,
+                        "times": 1
+                    }
+                },
+                {
+                    "colorize": 0,
+                    "fail": 4566947,
+                    "jump": 4566835,
+                    "offset": 4566937,
+                    "ops":
+                    [
+                        {
+                            "bytes": "0f05",
+                            "disasm": "syscall",
+                            "esil": "",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566937,
+                            "opcode": "syscall",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "swi",
+                            "type2_num": 0,
+                            "type_num": 11,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 4566853,
+                                    "type": "CODE"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "39c7",
+                            "disasm": "cmp edi, eax",
+                            "esil": "eax,edi,==,$z,zf,=,$b32,cf,=,$p,pf,=,$s,sf,=,$o,of,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566939,
+                            "opcode": "cmp edi, eax",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cmp",
+                            "type2_num": 0,
+                            "type_num": 15
+                        },
+                        {
+                            "bytes": "0f8590ffffff",
+                            "disasm": "jne 0x45af33",
+                            "esil": "zf,!,?{,4566835,rip,=,}",
+                            "fail": 4566947,
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4566998,
+                            "jump": 4566835,
+                            "offset": 4566941,
+                            "opcode": "jne 0x45af33",
+                            "refptr": false,
+                            "size": 6,
+                            "type": "cjmp",
+                            "type2_num": 0,
+                            "type_num": 2147483649
+                        }
+                    ],
+                    "size": 10
+                },
+                {
+                    "colorize": 0,
+                    "fail": 4566958,
+                    "jump": 4566979,
+                    "offset": 4566947,
+                    "ops":
+                    [
+                        {
+                            "bytes": "be00004000",
+                            "disasm": "mov esi, segment.ehdr",
+                            "esil": "4194304,esi,=,0xffffffff,rsi,&=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4566999,
+                            "offset": 4566947,
+                            "opcode": "mov esi, 0x400000",
+                            "ptr": 4194304,
+                            "refptr": false,
+                            "size": 5,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9,
+                            "val": 4194304
+                        },
+                        {
+                            "bytes": "89fa",
+                            "disasm": "mov edx, edi",
+                            "esil": "edi,edx,=,0xffffffff,rdx,&=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566952,
+                            "opcode": "mov edx, edi",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "29f2",
+                            "disasm": "sub edx, esi",
+                            "esil": "esi,edx,-=,$o,of,=,$s,sf,=,$z,zf,=,$p,pf,=,$b4,cf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566954,
+                            "opcode": "sub edx, esi",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "sub",
+                            "type2_num": 0,
+                            "type_num": 18
+                        },
+                        {
+                            "bytes": "7415",
+                            "disasm": "je 0x45afc3",
+                            "esil": "zf,?{,4566979,rip,=,}",
+                            "fail": 4566958,
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "jump": 4566979,
+                            "offset": 4566956,
+                            "opcode": "je 0x45afc3",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "cjmp",
+                            "type2_num": 0,
+                            "type_num": 2147483649
+                        }
+                    ],
+                    "size": 11,
+                    "trace":
+                    {
+                        "count": 164,
+                        "times": 1
+                    }
+                },
+                {
+                    "colorize": 0,
+                    "jump": 4566979,
+                    "offset": 4566958,
+                    "ops":
+                    [
+                        {
+                            "bytes": "01d5",
+                            "disasm": "add ebp, edx",
+                            "esil": "edx,ebp,+=,$o,of,=,$s,sf,=,$z,zf,=,$c31,cf,=,$p,pf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566958,
+                            "opcode": "add ebp, edx",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "add",
+                            "type2_num": 0,
+                            "type_num": 17,
+                            "val": 24
+                        },
+                        {
+                            "bytes": "01542408",
+                            "disasm": "add dword [local_8h], edx",
+                            "esil": "edx,0x8,rsp,+,+=[4],$o,of,=,$s,sf,=,$z,zf,=,$c31,cf,=,$p,pf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567000,
+                            "offset": 4566960,
+                            "opcode": "add dword [rsp + 8], edx",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "add",
+                            "type2_num": 0,
+                            "type_num": 17,
+                            "val": 24
+                        },
+                        {
+                            "bytes": "01542418",
+                            "disasm": "add dword [local_18h], edx",
+                            "esil": "edx,0x18,rsp,+,+=[4],$o,of,=,$s,sf,=,$z,zf,=,$c31,cf,=,$p,pf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567000,
+                            "offset": 4566964,
+                            "opcode": "add dword [rsp + 0x18], edx",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "add",
+                            "type2_num": 0,
+                            "type_num": 17,
+                            "val": 24
+                        },
+                        {
+                            "bytes": "89d9",
+                            "disasm": "mov ecx, ebx",
+                            "esil": "ebx,ecx,=,0xffffffff,rcx,&=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566968,
+                            "opcode": "mov ecx, ebx",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "29f1",
+                            "disasm": "sub ecx, esi",
+                            "esil": "esi,ecx,-=,$o,of,=,$s,sf,=,$z,zf,=,$p,pf,=,$b4,cf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4566970,
+                            "opcode": "sub ecx, esi",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "sub",
+                            "type2_num": 0,
+                            "type_num": 18
+                        },
+                        {
+                            "bytes": "c1e903",
+                            "disasm": "shr ecx, 3",
+                            "esil": "0,cf,=,1,3,-,1,<<,ecx,&,?{,1,cf,=,},3,ecx,>>,ecx,=,$z,zf,=,$p,pf,=,$s,sf,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567001,
+                            "offset": 4566972,
+                            "opcode": "shr ecx, 3",
+                            "refptr": false,
+                            "size": 3,
+                            "type": "shr",
+                            "type2_num": 0,
+                            "type_num": 22,
+                            "val": 3
+                        },
+                        {
+                            "bytes": "fc",
+                            "disasm": "cld",
+                            "esil": "0,df,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566975,
+                            "opcode": "cld",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "f348a5",
+                            "disasm": "rep movsq qword [rdi], qword ptr [rsi]",
+                            "esil": "rcx,!,?{,BREAK,},rsi,[8],rdi,=[8],df,?{,8,rsi,-=,8,rdi,-=,},df,!,?{,8,rsi,+=,8,rdi,+=,},rcx,--=,rcx,?{,5,GOTO,}",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567001,
+                            "offset": 4566976,
+                            "opcode": "rep movsq qword [rdi], qword ptr [rsi]",
+                            "ptr": 0,
+                            "refptr": true,
+                            "size": 3,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        }
+                    ],
+                    "size": 21,
+                    "trace":
+                    {
+                        "count": 167,
+                        "times": 1
+                    }
+                },
+                {
+                    "colorize": 0,
+                    "offset": 4566979,
+                    "ops":
+                    [
+                        {
+                            "bytes": "97",
+                            "disasm": "xchg eax, edi",
+                            "esil": "eax,edi,^,edi,=,edi,eax,^,eax,=,eax,edi,^,edi,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566979,
+                            "opcode": "xchg eax, edi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 4566956,
+                                    "type": "CODE"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "4889de",
+                            "disasm": "mov rsi, rbx",
+                            "esil": "rbx,rsi,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567001,
+                            "offset": 4566980,
+                            "opcode": "mov rsi, rbx",
+                            "refptr": false,
+                            "size": 3,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "50",
+                            "disasm": "push rax",
+                            "esil": "rax,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566983,
+                            "opcode": "push rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "92",
+                            "disasm": "xchg eax, edx",
+                            "esil": "eax,edx,^,edx,=,edx,eax,^,eax,=,eax,edx,^,edx,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566984,
+                            "opcode": "xchg eax, edx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "ad",
+                            "disasm": "lodsd eax, dword [rsi]",
+                            "esil": "esi,[4],eax,=,df,?{,4,esi,-=,},df,!,?{,4,esi,+=,}",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566985,
+                            "opcode": "lodsd eax, dword [rsi]",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32
+                        },
+                        {
+                            "bytes": "50",
+                            "disasm": "push rax",
+                            "esil": "rax,8,rsp,-,=[8],8,rsp,-=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566986,
+                            "opcode": "push rax",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "upush",
+                            "type2_num": 0,
+                            "type_num": 12
+                        },
+                        {
+                            "bytes": "4889e1",
+                            "disasm": "mov rcx, rsp",
+                            "esil": "rsp,rcx,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567001,
+                            "offset": 4566987,
+                            "opcode": "mov rcx, rsp",
+                            "refptr": false,
+                            "size": 3,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "ad",
+                            "disasm": "lodsd eax, dword [rsi]",
+                            "esil": "esi,[4],eax,=,df,?{,4,esi,-=,},df,!,?{,4,esi,+=,}",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566990,
+                            "opcode": "lodsd eax, dword [rsi]",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32
+                        },
+                        {
+                            "bytes": "97",
+                            "disasm": "xchg eax, edi",
+                            "esil": "eax,edi,^,edi,=,edi,eax,^,eax,=,eax,edi,^,edi,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566991,
+                            "opcode": "xchg eax, edi",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "ad",
+                            "disasm": "lodsd eax, dword [rsi]",
+                            "esil": "esi,[4],eax,=,df,?{,4,esi,-=,},df,!,?{,4,esi,+=,}",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4566992,
+                            "opcode": "lodsd eax, dword [rsi]",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32
+                        },
+                        {
+                            "bytes": "440fb6c0",
+                            "disasm": "movzx r8d, al",
+                            "esil": "al,r8d,=,0xffffffff,r8,&=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567000,
+                            "offset": 4566993,
+                            "opcode": "movzx r8d, al",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "4887fe",
+                            "disasm": "xchg rsi, rdi",
+                            "esil": "rsi,rdi,^,rdi,=,rdi,rsi,^,rsi,=,rsi,rdi,^,rdi,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567001,
+                            "offset": 4566997,
+                            "opcode": "xchg rsi, rdi",
+                            "refptr": false,
+                            "size": 3,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "ffd5",
+                            "disasm": "call rbp",
+                            "esil": "rbp,rip,8,rsp,-=,rsp,=[],rip,=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567002,
+                            "offset": 4567000,
+                            "opcode": "call rbp",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "ucall",
+                            "type2_num": 0,
+                            "type_num": 268435460
+                        },
+                        {
+                            "bytes": "59",
+                            "disasm": "pop rcx",
+                            "esil": "rsp,[8],rcx,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4567002,
+                            "opcode": "pop rcx",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "pop",
+                            "type2_num": 0,
+                            "type_num": 14
+                        },
+                        {
+                            "bytes": "c3",
+                            "disasm": "ret",
+                            "esil": "rsp,[8],rip,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 4566897,
+                            "fcn_last": 4567003,
+                            "offset": 4567003,
+                            "opcode": "ret",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "ret",
+                            "type2_num": 0,
+                            "type_num": 5
+                        }
+                    ],
+                    "size": 25,
+                    "trace":
+                    {
+                        "count": 175,
+                        "times": 1
+                    }
+                }
+            ],
+            "name": "fcn.0045af71",
+            "nargs": 1,
+            "ninstr": 77,
+            "nlocals": 2,
+            "offset": 4566897,
+            "size": 107,
+            "stack": 128,
+            "type": "fcn"
+        }
+    ],
+    "arch": "x86",
+    "archbits": 64,
+    "isj":
+    [],
+    "izj":
+    [],
+    "name": "issue_1536336950641"
+}

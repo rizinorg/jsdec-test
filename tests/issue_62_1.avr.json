@@ -1,1 +1,252 @@
-{"name":"issue_1527912694776","arch":"avr","agj":[{"name":"entry0","offset":140,"ninstr":10,"nargs":0,"nlocals":0,"size":96,"stack":0,"type":"fcn","blocks":[{"offset":140,"size":20,"jump":234,"trace":{"count":1,"times":1},"ops":[{"offset":140,"esil":"r1,r1,^,0,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,vf,nf,^,sf,=,r1,=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"clr r1","disasm":"clr r1","bytes":"1124","family":"cpu","type":"xor","type_num":28,"type2_num":0,"flags":["entry0","pcl"],"xrefs":[{"addr":0,"type":"CODE"}]},{"offset":142,"val":63,"esil":"r1,sreg,=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"out 0x3f, r1","disasm":"out 0x3f, r1","bytes":"1fbe","family":"7","type":"io","type_num":19,"type2_num":1},{"offset":144,"val":255,"esil":"0xff,r28,=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"ser r28","disasm":"ser r28","bytes":"cfef","family":"cpu","type":"load","type_num":32,"type2_num":0},{"offset":146,"val":16,"esil":"0x10,r29,=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"ldi r29, 0x10","disasm":"ldi r29, 0x10","bytes":"d0e1","family":"cpu","type":"load","type_num":32,"type2_num":0},{"offset":148,"val":62,"esil":"r29,sph,=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"out 0x3e, r29","disasm":"out 0x3e, r29","bytes":"debf","family":"7","type":"io","type_num":19,"type2_num":1},{"offset":150,"val":61,"esil":"r28,spl,=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"out 0x3d, r28","disasm":"out 0x3d, r28","bytes":"cdbf","family":"7","type":"io","type_num":19,"type2_num":1},{"offset":152,"esil":"pc,sp,_ram,+,-1,+,=[2],-2,sp,+=,178,pc,=","refptr":false,"fcn_addr":140,"fcn_last":232,"size":4,"opcode":"call 0xb2","disasm":"call 0xb2","bytes":"0e945900","family":"cpu","type":"call","type_num":3,"type2_num":0,"jump":178,"fail":156,"xrefs":[{"addr":178,"type":"DATA"}]},{"offset":156,"esil":"234,pc,=","refptr":false,"fcn_addr":140,"fcn_last":232,"size":4,"opcode":"jmp 0xea","disasm":"jmp 0xea","bytes":"0c947500","family":"cpu","type":"jmp","type_num":1,"type2_num":0,"jump":234,"xrefs":[{"addr":172,"type":"DATA"}]}]},{"offset":234,"size":2,"jump":236,"ops":[{"offset":234,"esil":"0xff,7,1,<<,^,sreg,&=","refptr":false,"fcn_addr":140,"fcn_last":234,"size":2,"opcode":"cli","disasm":"cli","bytes":"f894","family":"cpu","type":"swi","type_num":11,"type2_num":0,"xrefs":[{"addr":156,"type":"CODE"}]}]},{"offset":236,"size":2,"jump":236,"ops":[{"offset":236,"esil":"236,pc,=","refptr":false,"fcn_addr":0,"fcn_last":0,"size":2,"opcode":"rjmp 0xec","disasm":"rjmp 0xec","bytes":"ffcf","family":"cpu","type":"jmp","type_num":1,"type2_num":0,"jump":236,"xrefs":[{"addr":236,"type":"CODE"}]}]}]}],"isj":[],"izj":[]}
+{
+    "agj":
+    [
+        {
+            "blocks":
+            [
+                {
+                    "jump": 234,
+                    "offset": 140,
+                    "ops":
+                    [
+                        {
+                            "bytes": "1124",
+                            "disasm": "clr r1",
+                            "esil": "r1,r1,^,0,vf,=,0,RPICK,0x80,&,!,!,nf,=,0,RPICK,!,zf,=,vf,nf,^,sf,=,r1,=",
+                            "family": "cpu",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "flags":
+                            [
+                                "entry0",
+                                "pcl"
+                            ],
+                            "offset": 140,
+                            "opcode": "clr r1",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "xor",
+                            "type2_num": 0,
+                            "type_num": 28,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 0,
+                                    "type": "CODE"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "1fbe",
+                            "disasm": "out 0x3f, r1",
+                            "esil": "r1,sreg,=",
+                            "family": "7",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "offset": 142,
+                            "opcode": "out 0x3f, r1",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "io",
+                            "type2_num": 1,
+                            "type_num": 19,
+                            "val": 63
+                        },
+                        {
+                            "bytes": "cfef",
+                            "disasm": "ser r28",
+                            "esil": "0xff,r28,=",
+                            "family": "cpu",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "offset": 144,
+                            "opcode": "ser r28",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 255
+                        },
+                        {
+                            "bytes": "d0e1",
+                            "disasm": "ldi r29, 0x10",
+                            "esil": "0x10,r29,=",
+                            "family": "cpu",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "offset": 146,
+                            "opcode": "ldi r29, 0x10",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "load",
+                            "type2_num": 0,
+                            "type_num": 32,
+                            "val": 16
+                        },
+                        {
+                            "bytes": "debf",
+                            "disasm": "out 0x3e, r29",
+                            "esil": "r29,sph,=",
+                            "family": "7",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "offset": 148,
+                            "opcode": "out 0x3e, r29",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "io",
+                            "type2_num": 1,
+                            "type_num": 19,
+                            "val": 62
+                        },
+                        {
+                            "bytes": "cdbf",
+                            "disasm": "out 0x3d, r28",
+                            "esil": "r28,spl,=",
+                            "family": "7",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "offset": 150,
+                            "opcode": "out 0x3d, r28",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "io",
+                            "type2_num": 1,
+                            "type_num": 19,
+                            "val": 61
+                        },
+                        {
+                            "bytes": "0e945900",
+                            "disasm": "call 0xb2",
+                            "esil": "pc,sp,_ram,+,-1,+,=[2],-2,sp,+=,178,pc,=",
+                            "fail": 156,
+                            "family": "cpu",
+                            "fcn_addr": 140,
+                            "fcn_last": 232,
+                            "jump": 178,
+                            "offset": 152,
+                            "opcode": "call 0xb2",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "call",
+                            "type2_num": 0,
+                            "type_num": 3,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 178,
+                                    "type": "DATA"
+                                }
+                            ]
+                        },
+                        {
+                            "bytes": "0c947500",
+                            "disasm": "jmp 0xea",
+                            "esil": "234,pc,=",
+                            "family": "cpu",
+                            "fcn_addr": 140,
+                            "fcn_last": 232,
+                            "jump": 234,
+                            "offset": 156,
+                            "opcode": "jmp 0xea",
+                            "refptr": false,
+                            "size": 4,
+                            "type": "jmp",
+                            "type2_num": 0,
+                            "type_num": 1,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 172,
+                                    "type": "DATA"
+                                }
+                            ]
+                        }
+                    ],
+                    "size": 20,
+                    "trace":
+                    {
+                        "count": 1,
+                        "times": 1
+                    }
+                },
+                {
+                    "jump": 236,
+                    "offset": 234,
+                    "ops":
+                    [
+                        {
+                            "bytes": "f894",
+                            "disasm": "cli",
+                            "esil": "0xff,7,1,<<,^,sreg,&=",
+                            "family": "cpu",
+                            "fcn_addr": 140,
+                            "fcn_last": 234,
+                            "offset": 234,
+                            "opcode": "cli",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "swi",
+                            "type2_num": 0,
+                            "type_num": 11,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 156,
+                                    "type": "CODE"
+                                }
+                            ]
+                        }
+                    ],
+                    "size": 2
+                },
+                {
+                    "jump": 236,
+                    "offset": 236,
+                    "ops":
+                    [
+                        {
+                            "bytes": "ffcf",
+                            "disasm": "rjmp 0xec",
+                            "esil": "236,pc,=",
+                            "family": "cpu",
+                            "fcn_addr": 0,
+                            "fcn_last": 0,
+                            "jump": 236,
+                            "offset": 236,
+                            "opcode": "rjmp 0xec",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "jmp",
+                            "type2_num": 0,
+                            "type_num": 1,
+                            "xrefs":
+                            [
+                                {
+                                    "addr": 236,
+                                    "type": "CODE"
+                                }
+                            ]
+                        }
+                    ],
+                    "size": 2
+                }
+            ],
+            "name": "entry0",
+            "nargs": 0,
+            "ninstr": 10,
+            "nlocals": 0,
+            "offset": 140,
+            "size": 96,
+            "stack": 0,
+            "type": "fcn"
+        }
+    ],
+    "arch": "avr",
+    "isj":
+    [],
+    "izj":
+    [],
+    "name": "issue_1527912694776"
+}

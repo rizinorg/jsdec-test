@@ -1,1 +1,1842 @@
-{"name":"issue_1533063178117","arch":"x86","archbits":64,"agj":[{"name":"sym.stosb","offset":1728,"ninstr":4,"nargs":2,"nlocals":0,"size":8,"stack":0,"type":"sym","blocks":[{"offset":1728,"size":8,"trace":{"count":48,"times":1},"ops":[{"offset":1728,"esil":"esi,eax,=,0xffffffff,rax,&=","refptr":false,"fcn_addr":1728,"fcn_last":1734,"size":2,"opcode":"mov eax, esi","disasm":"mov eax, esi","bytes":"89f0","family":"cpu","type":"mov","type_num":9,"type2_num":0,"flags":["section_end..symtab","sym.stosb"],"comment":"YXJnMg=="},{"offset":1730,"esil":"rdx,rcx,=","refptr":false,"fcn_addr":1728,"fcn_last":1733,"size":3,"opcode":"mov rcx, rdx","disasm":"mov rcx, rdx","bytes":"4889d1","family":"cpu","type":"mov","type_num":9,"type2_num":0,"comment":"YXJnMw=="},{"offset":1733,"esil":"rcx,!,?{,BREAK,},al,edi,=[1],df,?{,1,edi,-=,},df,!,?{,1,edi,+=,},rcx,--=,rcx,?{,5,GOTO,}","refptr":false,"fcn_addr":1728,"fcn_last":1734,"size":2,"opcode":"rep stosb byte [rdi], al","disasm":"rep stosb byte [rdi], al","bytes":"f3aa","family":"cpu","type":"store","type_num":31,"type2_num":0},{"offset":1735,"esil":"rsp,[8],rip,=,8,rsp,+=","refptr":false,"fcn_addr":1728,"fcn_last":1735,"size":1,"opcode":"ret","disasm":"ret","bytes":"c3","family":"cpu","type":"ret","type_num":5,"type2_num":0}]}]}],"isj":[{"name":"","demname":"","flagname":"sym.","ordinal":1,"bind":"LOCAL","size":0,"type":"SECT","vaddr":568,"paddr":568},{"name":"","demname":"","flagname":"sym._1","ordinal":2,"bind":"LOCAL","size":0,"type":"SECT","vaddr":596,"paddr":596},{"name":"","demname":"","flagname":"sym._2","ordinal":3,"bind":"LOCAL","size":0,"type":"SECT","vaddr":628,"paddr":628},{"name":"","demname":"","flagname":"sym._3","ordinal":4,"bind":"LOCAL","size":0,"type":"SECT","vaddr":664,"paddr":664},{"name":"","demname":"","flagname":"sym._4","ordinal":5,"bind":"LOCAL","size":0,"type":"SECT","vaddr":704,"paddr":704},{"name":"","demname":"","flagname":"sym._5","ordinal":6,"bind":"LOCAL","size":0,"type":"SECT","vaddr":896,"paddr":896},{"name":"","demname":"","flagname":"sym._6","ordinal":7,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1030,"paddr":1030},{"name":"","demname":"","flagname":"sym._7","ordinal":8,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1048,"paddr":1048},{"name":"","demname":"","flagname":"sym._8","ordinal":9,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1080,"paddr":1080},{"name":"","demname":"","flagname":"sym._9","ordinal":10,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1272,"paddr":1272},{"name":"","demname":"","flagname":"sym._10","ordinal":11,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1296,"paddr":1296},{"name":"","demname":"","flagname":"sym._11","ordinal":12,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1328,"paddr":1328},{"name":"","demname":"","flagname":"sym._12","ordinal":13,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1360,"paddr":1360},{"name":"","demname":"","flagname":"sym._13","ordinal":14,"bind":"LOCAL","size":0,"type":"SECT","vaddr":1376,"paddr":1376},{"name":"","demname":"","flagname":"sym._14","ordinal":15,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2004,"paddr":2004},{"name":"","demname":"","flagname":"sym._15","ordinal":16,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2016,"paddr":2016},{"name":"","demname":"","flagname":"sym._16","ordinal":17,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2060,"paddr":2060},{"name":"","demname":"","flagname":"sym._17","ordinal":18,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2192,"paddr":2192},{"name":"","demname":"","flagname":"sym._18","ordinal":19,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2100664,"paddr":3512},{"name":"","demname":"","flagname":"sym._19","ordinal":20,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2100672,"paddr":3520},{"name":"","demname":"","flagname":"sym._20","ordinal":21,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2100680,"paddr":3528},{"name":"","demname":"","flagname":"sym._21","ordinal":22,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2101176,"paddr":4024},{"name":"","demname":"","flagname":"sym._22","ordinal":23,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2101248,"paddr":4096},{"name":"","demname":"","flagname":"sym._23","ordinal":24,"bind":"LOCAL","size":0,"type":"SECT","vaddr":2101264,"paddr":4112},{"name":"","demname":"","flagname":"sym._24","ordinal":25,"bind":"LOCAL","size":0,"type":"SECT","vaddr":0,"paddr":0},{"name":"tests.c","demname":"","flagname":"sym.tests.c","ordinal":26,"bind":"LOCAL","size":0,"type":"FILE","vaddr":0,"paddr":0},{"name":"crtstuff.c","demname":"","flagname":"sym.crtstuff.c","ordinal":27,"bind":"LOCAL","size":0,"type":"FILE","vaddr":0,"paddr":0},{"name":"deregister_tm_clones","demname":"","flagname":"sym.deregister_tm_clones","ordinal":28,"bind":"LOCAL","size":0,"type":"FUNC","vaddr":1440,"paddr":1440},{"name":"register_tm_clones","demname":"","flagname":"sym.register_tm_clones","ordinal":29,"bind":"LOCAL","size":0,"type":"FUNC","vaddr":1504,"paddr":1504},{"name":"__do_global_dtors_aux","demname":"","flagname":"sym.__do_global_dtors_aux","ordinal":30,"bind":"LOCAL","size":0,"type":"FUNC","vaddr":1584,"paddr":1584},{"name":"completed.7696","demname":"","flagname":"obj.completed.7696","ordinal":31,"bind":"LOCAL","size":1,"type":"OBJ","vaddr":2101264,"paddr":4112},{"name":"__do_global_dtors_aux_fini_array_entry","demname":"","flagname":"obj.__do_global_dtors_aux_fini_array_entry","ordinal":32,"bind":"LOCAL","size":0,"type":"OBJ","vaddr":2100672,"paddr":3520},{"name":"frame_dummy","demname":"","flagname":"sym.frame_dummy","ordinal":33,"bind":"LOCAL","size":0,"type":"FUNC","vaddr":1648,"paddr":1648},{"name":"__frame_dummy_init_array_entry","demname":"","flagname":"obj.__frame_dummy_init_array_entry","ordinal":34,"bind":"LOCAL","size":0,"type":"OBJ","vaddr":2100664,"paddr":3512},{"name":"crtstuff.c","demname":"","flagname":"sym.crtstuff.c","ordinal":35,"bind":"LOCAL","size":0,"type":"FILE","vaddr":0,"paddr":0},{"name":"__FRAME_END__","demname":"","flagname":"obj.__FRAME_END","ordinal":36,"bind":"LOCAL","size":0,"type":"OBJ","vaddr":2636,"paddr":2636},{"name":"","demname":"","flagname":"sym.","ordinal":37,"bind":"LOCAL","size":0,"type":"FILE","vaddr":0,"paddr":0},{"name":"__init_array_end","demname":"","flagname":"loc.__init_array_end","ordinal":38,"bind":"LOCAL","size":0,"type":"NOTYPE","vaddr":2100672,"paddr":3520},{"name":"_DYNAMIC","demname":"","flagname":"obj._DYNAMIC","ordinal":39,"bind":"LOCAL","size":0,"type":"OBJ","vaddr":2100680,"paddr":3528},{"name":"__init_array_start","demname":"","flagname":"loc.__init_array_start","ordinal":40,"bind":"LOCAL","size":0,"type":"NOTYPE","vaddr":2100664,"paddr":3512},{"name":"__GNU_EH_FRAME_HDR","demname":"","flagname":"loc.__GNU_EH_FRAME_HDR","ordinal":41,"bind":"LOCAL","size":0,"type":"NOTYPE","vaddr":2060,"paddr":2060},{"name":"_GLOBAL_OFFSET_TABLE_","demname":"","flagname":"obj._GLOBAL_OFFSET_TABLE","ordinal":42,"bind":"LOCAL","size":0,"type":"OBJ","vaddr":2101176,"paddr":4024},{"name":"__libc_csu_fini","demname":"","flagname":"sym.__libc_csu_fini","ordinal":43,"bind":"GLOBAL","size":2,"type":"FUNC","vaddr":2000,"paddr":2000},{"name":"movsb","demname":"","flagname":"sym.movsb","ordinal":44,"bind":"GLOBAL","size":6,"type":"FUNC","vaddr":1744,"paddr":1744},{"name":"data_start","demname":"","flagname":"loc.data_start","ordinal":46,"bind":"WEAK","size":0,"type":"NOTYPE","vaddr":2101248,"paddr":4096},{"name":"_edata","demname":"","flagname":"loc._edata","ordinal":48,"bind":"GLOBAL","size":0,"type":"NOTYPE","vaddr":2101264,"paddr":4112},{"name":"dec","demname":"","flagname":"sym.dec","ordinal":49,"bind":"GLOBAL","size":17,"type":"FUNC","vaddr":1856,"paddr":1856},{"name":"_fini","demname":"","flagname":"sym._fini","ordinal":50,"bind":"GLOBAL","size":0,"type":"FUNC","vaddr":2004,"paddr":2004},{"name":"div","demname":"","flagname":"sym.div","ordinal":51,"bind":"GLOBAL","size":7,"type":"FUNC","vaddr":1776,"paddr":1776},{"name":"__data_start","demname":"","flagname":"loc.__data_start","ordinal":53,"bind":"GLOBAL","size":0,"type":"NOTYPE","vaddr":2101248,"paddr":4096},{"name":"_while","demname":"","flagname":"sym._while","ordinal":54,"bind":"GLOBAL","size":31,"type":"FUNC","vaddr":1680,"paddr":1680},{"name":"__dso_handle","demname":"","flagname":"obj.__dso_handle","ordinal":56,"bind":"GLOBAL","size":0,"type":"OBJ","vaddr":2101256,"paddr":4104},{"name":"_IO_stdin_used","demname":"","flagname":"obj._IO_stdin_used","ordinal":57,"bind":"GLOBAL","size":4,"type":"OBJ","vaddr":2016,"paddr":2016},{"name":"__libc_csu_init","demname":"","flagname":"sym.__libc_csu_init","ordinal":58,"bind":"GLOBAL","size":101,"type":"FUNC","vaddr":1888,"paddr":1888},{"name":"_end","demname":"","flagname":"loc._end","ordinal":59,"bind":"GLOBAL","size":0,"type":"NOTYPE","vaddr":2101272,"paddr":2101272},{"name":"segovr","demname":"","flagname":"sym.segovr","ordinal":60,"bind":"GLOBAL","size":9,"type":"FUNC","vaddr":1664,"paddr":1664},{"name":"_start","demname":"","flagname":"sym._start","ordinal":61,"bind":"GLOBAL","size":43,"type":"FUNC","vaddr":1392,"paddr":1392},{"name":"__bss_start","demname":"","flagname":"loc.__bss_start","ordinal":62,"bind":"GLOBAL","size":0,"type":"NOTYPE","vaddr":2101264,"paddr":4112},{"name":"main","demname":"","flagname":"sym.main","ordinal":63,"bind":"GLOBAL","size":3,"type":"FUNC","vaddr":1376,"paddr":1376},{"name":"mul","demname":"","flagname":"sym.mul","ordinal":64,"bind":"GLOBAL","size":6,"type":"FUNC","vaddr":1760,"paddr":1760},{"name":"__TMC_END__","demname":"","flagname":"obj.__TMC_END","ordinal":65,"bind":"GLOBAL","size":0,"type":"OBJ","vaddr":2101264,"paddr":4112},{"name":"stosb","demname":"","flagname":"sym.stosb","ordinal":67,"bind":"GLOBAL","size":8,"type":"FUNC","vaddr":1728,"paddr":1728},{"name":"_init","demname":"","flagname":"sym._init","ordinal":69,"bind":"GLOBAL","size":0,"type":"FUNC","vaddr":1296,"paddr":1296},{"name":"cmpsb","demname":"","flagname":"sym.cmpsb","ordinal":70,"bind":"GLOBAL","size":14,"type":"FUNC","vaddr":1712,"paddr":1712},{"name":"inc","demname":"","flagname":"sym.inc","ordinal":71,"bind":"GLOBAL","size":62,"type":"FUNC","vaddr":1792,"paddr":1792},{"name":"imp._ITM_deregisterTMCloneTable","demname":"","flagname":"loc.imp._ITM_deregisterTMCloneTable","ordinal":1,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":0,"paddr":0},{"name":"imp.puts","demname":"","flagname":"sym.imp.puts","ordinal":2,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":1344,"paddr":1344},{"name":"imp.__libc_start_main","demname":"","flagname":"sym.imp.__libc_start_main","ordinal":3,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":0,"paddr":0},{"name":"imp.__gmon_start__","demname":"","flagname":"loc.imp.__gmon_start","ordinal":4,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":0,"paddr":0},{"name":"imp._ITM_registerTMCloneTable","demname":"","flagname":"loc.imp._ITM_registerTMCloneTable","ordinal":5,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":0,"paddr":0},{"name":"imp.__cxa_finalize","demname":"","flagname":"sym.imp.__cxa_finalize","ordinal":6,"bind":"WEAK","size":16,"type":"FUNC","vaddr":0,"paddr":0},{"name":"imp._ITM_deregisterTMCloneTable","demname":"","flagname":"loc.imp._ITM_deregisterTMCloneTable","ordinal":1,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":0,"paddr":0},{"name":"imp.__libc_start_main","demname":"","flagname":"sym.imp.__libc_start_main","ordinal":3,"bind":"GLOBAL","size":16,"type":"FUNC","vaddr":0,"paddr":0},{"name":"imp.__gmon_start__","demname":"","flagname":"loc.imp.__gmon_start","ordinal":4,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":0,"paddr":0},{"name":"imp._ITM_registerTMCloneTable","demname":"","flagname":"loc.imp._ITM_registerTMCloneTable","ordinal":5,"bind":"WEAK","size":16,"type":"NOTYPE","vaddr":0,"paddr":0},{"name":"imp.__cxa_finalize","demname":"","flagname":"sym.imp.__cxa_finalize","ordinal":6,"bind":"WEAK","size":16,"type":"FUNC","vaddr":0,"paddr":0}],"izj":[{"vaddr":2020,"paddr":2020,"ordinal":0,"size":14,"length":13,"section":".rodata","type":"ascii","string":"bG93ZXIgdGhhbiAxMA=="},{"vaddr":2034,"paddr":2034,"ordinal":1,"size":25,"length":24,"section":".rodata","type":"ascii","string":"ZXF1YWxzIG9yIGhpZ2hlciB0aGFuIDEw"}],"afvj":{"sp":[],"bp":[],"reg":[{"name":"arg2","kind":"reg","type":"int","ref":"rsi"},{"name":"arg3","kind":"reg","type":"int","ref":"rdx"}]},"aflj":[{"offset":0,"name":"sym.imp.__libc_start_main","size":72,"realsz":73,"cc":1,"cost":32,"nbbs":3,"edges":2,"ebbs":2,"calltype":"amd64","type":"sym","minbound":"0","maxbound":"72","range":"72","diff":"NEW","callrefs":[{"addr":71,"type":"J","at":0}],"datarefs":[2,2,2,2],"codexrefs":[{"addr":1961,"type":"C","at":0},{"addr":0,"type":"J","at":71}],"dataxrefs":[54,128,136,144,432,440,2588,2596,647,918,2528],"difftype":"new","indegree":2,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1296,"name":"sym._init","size":23,"realsz":23,"cc":2,"cost":12,"nbbs":3,"edges":3,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1296","maxbound":"1319","range":"23","diff":"NEW","callrefs":[{"addr":1314,"type":"J","at":1310}],"datarefs":[2101224],"codexrefs":[{"addr":1932,"type":"C","at":1296},{"addr":1310,"type":"J","at":1314}],"dataxrefs":[],"difftype":"new","indegree":2,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1344,"name":"sym.imp.puts","size":6,"realsz":6,"cc":1,"cost":3,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1344","maxbound":"1350","range":"6","diff":"NEW","callrefs":[{"addr":2101200,"type":"J","at":1344}],"datarefs":[],"codexrefs":[{"addr":1815,"type":"C","at":1344},{"addr":1839,"type":"C","at":1344}],"dataxrefs":[],"difftype":"new","indegree":2,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1360,"name":"sub.__cxa_finalize_550","size":6,"realsz":6,"cc":1,"cost":3,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"fcn","minbound":"1360","maxbound":"1366","range":"6","diff":"NEW","callrefs":[{"addr":2101240,"type":"J","at":1360}],"datarefs":[],"codexrefs":[{"addr":1614,"type":"C","at":1360}],"dataxrefs":[],"difftype":"new","indegree":1,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1376,"name":"sym.main","size":3,"realsz":3,"cc":1,"cost":4,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1376","maxbound":"1379","range":"3","diff":"NEW","codexrefs":[],"dataxrefs":[1421],"difftype":"new","indegree":0,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1392,"name":"entry0","size":43,"realsz":43,"cc":1,"cost":17,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"fcn","minbound":"1392","maxbound":"1435","range":"43","diff":"NEW","callrefs":[{"addr":2101216,"type":"C","at":1428}],"datarefs":[2000,1888,1376],"difftype":"new","indegree":0,"outdegree":1,"nargs":1,"nlocals":0},{"offset":1440,"name":"sym.deregister_tm_clones","size":50,"realsz":40,"cc":2,"cost":19,"nbbs":4,"edges":4,"ebbs":2,"calltype":"amd64","type":"sym","minbound":"1440","maxbound":"1490","range":"50","diff":"NEW","callrefs":[{"addr":1488,"type":"J","at":1461},{"addr":1488,"type":"J","at":1473}],"datarefs":[2101264,2101264,2101208],"codexrefs":[{"addr":1619,"type":"C","at":1440},{"addr":1461,"type":"J","at":1488},{"addr":1473,"type":"J","at":1488}],"dataxrefs":[],"difftype":"new","indegree":3,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1504,"name":"sym.register_tm_clones","size":66,"realsz":57,"cc":2,"cost":24,"nbbs":4,"edges":4,"ebbs":2,"calltype":"amd64","type":"sym","minbound":"1504","maxbound":"1570","range":"66","diff":"NEW","callrefs":[{"addr":1568,"type":"J","at":1542},{"addr":1568,"type":"J","at":1554}],"datarefs":[2101264,2101264,2101232],"codexrefs":[{"addr":1653,"type":"J","at":1504},{"addr":1542,"type":"J","at":1568},{"addr":1554,"type":"J","at":1568}],"dataxrefs":[],"difftype":"new","indegree":3,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1584,"name":"sym.__do_global_dtors_aux","size":49,"realsz":49,"cc":1,"cost":21,"nbbs":4,"edges":4,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1584","maxbound":"1633","range":"49","diff":"NEW","callrefs":[{"addr":1640,"type":"J","at":1591},{"addr":1619,"type":"J","at":1605},{"addr":1360,"type":"C","at":1614},{"addr":1440,"type":"C","at":1619}],"datarefs":[2101256,2101264],"codexrefs":[{"addr":1605,"type":"J","at":1619}],"dataxrefs":[],"difftype":"new","indegree":1,"outdegree":2,"nargs":0,"nlocals":0},{"offset":1648,"name":"entry1.init","size":10,"realsz":10,"cc":2,"cost":6,"nbbs":1,"edges":1,"ebbs":0,"calltype":"amd64","type":"fcn","minbound":"1648","maxbound":"1658","range":"10","diff":"NEW","callrefs":[{"addr":1504,"type":"J","at":1653}],"datarefs":[],"difftype":"new","indegree":0,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1664,"name":"sym.segovr","size":9,"realsz":9,"cc":1,"cost":4,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1664","maxbound":"1673","range":"9","diff":"NEW","callrefs":[],"datarefs":[40],"difftype":"new","indegree":0,"outdegree":0,"nargs":0,"nlocals":0},{"offset":1680,"name":"sym._while","size":31,"realsz":31,"cc":3,"cost":13,"nbbs":4,"edges":5,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1680","maxbound":"1711","range":"31","diff":"NEW","callrefs":[{"addr":1709,"type":"J","at":1683},{"addr":1696,"type":"J","at":1707}],"datarefs":[],"codexrefs":[{"addr":1707,"type":"J","at":1696},{"addr":1683,"type":"J","at":1709}],"dataxrefs":[],"difftype":"new","indegree":2,"outdegree":0,"nargs":1,"nlocals":0},{"offset":1712,"name":"sym.cmpsb","size":14,"realsz":14,"cc":1,"cost":8,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1712","maxbound":"1726","range":"14","diff":"NEW","difftype":"new","indegree":0,"outdegree":0,"nargs":2,"nlocals":0},{"offset":1728,"name":"sym.stosb","size":8,"realsz":8,"cc":1,"cost":6,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1728","maxbound":"1736","range":"8","diff":"NEW","difftype":"new","indegree":0,"outdegree":0,"nargs":2,"nlocals":0},{"offset":1744,"name":"sym.movsb","size":6,"realsz":6,"cc":1,"cost":5,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1744","maxbound":"1750","range":"6","diff":"NEW","difftype":"new","indegree":0,"outdegree":0,"nargs":2,"nlocals":0},{"offset":1760,"name":"sym.mul","size":6,"realsz":6,"cc":1,"cost":5,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1760","maxbound":"1766","range":"6","diff":"NEW","difftype":"new","indegree":0,"outdegree":0,"nargs":1,"nlocals":0},{"offset":1776,"name":"sym.div","size":7,"realsz":7,"cc":1,"cost":6,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1776","maxbound":"1783","range":"7","diff":"NEW","difftype":"new","indegree":0,"outdegree":0,"nargs":1,"nlocals":0},{"offset":1792,"name":"sym.inc","size":35,"realsz":35,"cc":0,"cost":16,"nbbs":2,"edges":1,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1792","maxbound":"1827","range":"35","diff":"NEW","callrefs":[{"addr":1832,"type":"J","at":1806},{"addr":1344,"type":"C","at":1815}],"datarefs":[9,2034],"difftype":"new","indegree":0,"outdegree":1,"nargs":1,"nlocals":0},{"offset":1856,"name":"sym.dec","size":17,"realsz":17,"cc":1,"cost":9,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1856","maxbound":"1873","range":"17","diff":"NEW","callrefs":[],"datarefs":[9],"difftype":"new","indegree":0,"outdegree":0,"nargs":1,"nlocals":0},{"offset":1888,"name":"sym.__libc_csu_init","size":101,"realsz":101,"cc":3,"cost":49,"nbbs":4,"edges":5,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"1888","maxbound":"1989","range":"101","diff":"NEW","callrefs":[{"addr":1296,"type":"C","at":1932},{"addr":1974,"type":"J","at":1940},{"addr":0,"type":"C","at":1961},{"addr":1952,"type":"J","at":1972}],"datarefs":[2100664,2100672],"codexrefs":[{"addr":1972,"type":"J","at":1952},{"addr":1940,"type":"J","at":1974}],"dataxrefs":[1414],"difftype":"new","indegree":2,"outdegree":2,"nargs":3,"nlocals":0},{"offset":2000,"name":"sym.__libc_csu_fini","size":2,"realsz":2,"cc":1,"cost":3,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"2000","maxbound":"2002","range":"2","diff":"NEW","codexrefs":[],"dataxrefs":[1407],"difftype":"new","indegree":0,"outdegree":0,"nargs":0,"nlocals":0},{"offset":2004,"name":"sym._fini","size":9,"realsz":9,"cc":1,"cost":5,"nbbs":1,"edges":0,"ebbs":1,"calltype":"amd64","type":"sym","minbound":"2004","maxbound":"2013","range":"9","diff":"NEW","difftype":"new","indegree":0,"outdegree":0,"nargs":0,"nlocals":0}]}
+{
+    "aflj":
+    [
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 71,
+                    "at": 0,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [
+                {
+                    "addr": 1961,
+                    "at": 0,
+                    "type": "C"
+                },
+                {
+                    "addr": 0,
+                    "at": 71,
+                    "type": "J"
+                }
+            ],
+            "cost": 32,
+            "datarefs":
+            [
+                2,
+                2,
+                2,
+                2
+            ],
+            "dataxrefs":
+            [
+                54,
+                128,
+                136,
+                144,
+                432,
+                440,
+                2588,
+                2596,
+                647,
+                918,
+                2528
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 2,
+            "edges": 2,
+            "indegree": 2,
+            "maxbound": "72",
+            "minbound": "0",
+            "name": "sym.imp.__libc_start_main",
+            "nargs": 0,
+            "nbbs": 3,
+            "nlocals": 0,
+            "offset": 0,
+            "outdegree": 0,
+            "range": "72",
+            "realsz": 73,
+            "size": 72,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1314,
+                    "at": 1310,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 2,
+            "codexrefs":
+            [
+                {
+                    "addr": 1932,
+                    "at": 1296,
+                    "type": "C"
+                },
+                {
+                    "addr": 1310,
+                    "at": 1314,
+                    "type": "J"
+                }
+            ],
+            "cost": 12,
+            "datarefs":
+            [
+                2101224
+            ],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 3,
+            "indegree": 2,
+            "maxbound": "1319",
+            "minbound": "1296",
+            "name": "sym._init",
+            "nargs": 0,
+            "nbbs": 3,
+            "nlocals": 0,
+            "offset": 1296,
+            "outdegree": 0,
+            "range": "23",
+            "realsz": 23,
+            "size": 23,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 2101200,
+                    "at": 1344,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [
+                {
+                    "addr": 1815,
+                    "at": 1344,
+                    "type": "C"
+                },
+                {
+                    "addr": 1839,
+                    "at": 1344,
+                    "type": "C"
+                }
+            ],
+            "cost": 3,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 2,
+            "maxbound": "1350",
+            "minbound": "1344",
+            "name": "sym.imp.puts",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1344,
+            "outdegree": 0,
+            "range": "6",
+            "realsz": 6,
+            "size": 6,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 2101240,
+                    "at": 1360,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [
+                {
+                    "addr": 1614,
+                    "at": 1360,
+                    "type": "C"
+                }
+            ],
+            "cost": 3,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 1,
+            "maxbound": "1366",
+            "minbound": "1360",
+            "name": "sub.__cxa_finalize_550",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1360,
+            "outdegree": 0,
+            "range": "6",
+            "realsz": 6,
+            "size": 6,
+            "type": "fcn"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [],
+            "cost": 4,
+            "dataxrefs":
+            [
+                1421
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1379",
+            "minbound": "1376",
+            "name": "sym.main",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1376,
+            "outdegree": 0,
+            "range": "3",
+            "realsz": 3,
+            "size": 3,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 2101216,
+                    "at": 1428,
+                    "type": "C"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 17,
+            "datarefs":
+            [
+                2000,
+                1888,
+                1376
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1435",
+            "minbound": "1392",
+            "name": "entry0",
+            "nargs": 1,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1392,
+            "outdegree": 1,
+            "range": "43",
+            "realsz": 43,
+            "size": 43,
+            "type": "fcn"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1488,
+                    "at": 1461,
+                    "type": "J"
+                },
+                {
+                    "addr": 1488,
+                    "at": 1473,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 2,
+            "codexrefs":
+            [
+                {
+                    "addr": 1619,
+                    "at": 1440,
+                    "type": "C"
+                },
+                {
+                    "addr": 1461,
+                    "at": 1488,
+                    "type": "J"
+                },
+                {
+                    "addr": 1473,
+                    "at": 1488,
+                    "type": "J"
+                }
+            ],
+            "cost": 19,
+            "datarefs":
+            [
+                2101264,
+                2101264,
+                2101208
+            ],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 2,
+            "edges": 4,
+            "indegree": 3,
+            "maxbound": "1490",
+            "minbound": "1440",
+            "name": "sym.deregister_tm_clones",
+            "nargs": 0,
+            "nbbs": 4,
+            "nlocals": 0,
+            "offset": 1440,
+            "outdegree": 0,
+            "range": "50",
+            "realsz": 40,
+            "size": 50,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1568,
+                    "at": 1542,
+                    "type": "J"
+                },
+                {
+                    "addr": 1568,
+                    "at": 1554,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 2,
+            "codexrefs":
+            [
+                {
+                    "addr": 1653,
+                    "at": 1504,
+                    "type": "J"
+                },
+                {
+                    "addr": 1542,
+                    "at": 1568,
+                    "type": "J"
+                },
+                {
+                    "addr": 1554,
+                    "at": 1568,
+                    "type": "J"
+                }
+            ],
+            "cost": 24,
+            "datarefs":
+            [
+                2101264,
+                2101264,
+                2101232
+            ],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 2,
+            "edges": 4,
+            "indegree": 3,
+            "maxbound": "1570",
+            "minbound": "1504",
+            "name": "sym.register_tm_clones",
+            "nargs": 0,
+            "nbbs": 4,
+            "nlocals": 0,
+            "offset": 1504,
+            "outdegree": 0,
+            "range": "66",
+            "realsz": 57,
+            "size": 66,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1640,
+                    "at": 1591,
+                    "type": "J"
+                },
+                {
+                    "addr": 1619,
+                    "at": 1605,
+                    "type": "J"
+                },
+                {
+                    "addr": 1360,
+                    "at": 1614,
+                    "type": "C"
+                },
+                {
+                    "addr": 1440,
+                    "at": 1619,
+                    "type": "C"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [
+                {
+                    "addr": 1605,
+                    "at": 1619,
+                    "type": "J"
+                }
+            ],
+            "cost": 21,
+            "datarefs":
+            [
+                2101256,
+                2101264
+            ],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 4,
+            "indegree": 1,
+            "maxbound": "1633",
+            "minbound": "1584",
+            "name": "sym.__do_global_dtors_aux",
+            "nargs": 0,
+            "nbbs": 4,
+            "nlocals": 0,
+            "offset": 1584,
+            "outdegree": 2,
+            "range": "49",
+            "realsz": 49,
+            "size": 49,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1504,
+                    "at": 1653,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 2,
+            "cost": 6,
+            "datarefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 0,
+            "edges": 1,
+            "indegree": 0,
+            "maxbound": "1658",
+            "minbound": "1648",
+            "name": "entry1.init",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1648,
+            "outdegree": 0,
+            "range": "10",
+            "realsz": 10,
+            "size": 10,
+            "type": "fcn"
+        },
+        {
+            "callrefs":
+            [],
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 4,
+            "datarefs":
+            [
+                40
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1673",
+            "minbound": "1664",
+            "name": "sym.segovr",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1664,
+            "outdegree": 0,
+            "range": "9",
+            "realsz": 9,
+            "size": 9,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1709,
+                    "at": 1683,
+                    "type": "J"
+                },
+                {
+                    "addr": 1696,
+                    "at": 1707,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 3,
+            "codexrefs":
+            [
+                {
+                    "addr": 1707,
+                    "at": 1696,
+                    "type": "J"
+                },
+                {
+                    "addr": 1683,
+                    "at": 1709,
+                    "type": "J"
+                }
+            ],
+            "cost": 13,
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 5,
+            "indegree": 2,
+            "maxbound": "1711",
+            "minbound": "1680",
+            "name": "sym._while",
+            "nargs": 1,
+            "nbbs": 4,
+            "nlocals": 0,
+            "offset": 1680,
+            "outdegree": 0,
+            "range": "31",
+            "realsz": 31,
+            "size": 31,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 8,
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1726",
+            "minbound": "1712",
+            "name": "sym.cmpsb",
+            "nargs": 2,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1712,
+            "outdegree": 0,
+            "range": "14",
+            "realsz": 14,
+            "size": 14,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 6,
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1736",
+            "minbound": "1728",
+            "name": "sym.stosb",
+            "nargs": 2,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1728,
+            "outdegree": 0,
+            "range": "8",
+            "realsz": 8,
+            "size": 8,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 5,
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1750",
+            "minbound": "1744",
+            "name": "sym.movsb",
+            "nargs": 2,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1744,
+            "outdegree": 0,
+            "range": "6",
+            "realsz": 6,
+            "size": 6,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 5,
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1766",
+            "minbound": "1760",
+            "name": "sym.mul",
+            "nargs": 1,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1760,
+            "outdegree": 0,
+            "range": "6",
+            "realsz": 6,
+            "size": 6,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 6,
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1783",
+            "minbound": "1776",
+            "name": "sym.div",
+            "nargs": 1,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1776,
+            "outdegree": 0,
+            "range": "7",
+            "realsz": 7,
+            "size": 7,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1832,
+                    "at": 1806,
+                    "type": "J"
+                },
+                {
+                    "addr": 1344,
+                    "at": 1815,
+                    "type": "C"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 0,
+            "cost": 16,
+            "datarefs":
+            [
+                9,
+                2034
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 1,
+            "indegree": 0,
+            "maxbound": "1827",
+            "minbound": "1792",
+            "name": "sym.inc",
+            "nargs": 1,
+            "nbbs": 2,
+            "nlocals": 0,
+            "offset": 1792,
+            "outdegree": 1,
+            "range": "35",
+            "realsz": 35,
+            "size": 35,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [],
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 9,
+            "datarefs":
+            [
+                9
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "1873",
+            "minbound": "1856",
+            "name": "sym.dec",
+            "nargs": 1,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 1856,
+            "outdegree": 0,
+            "range": "17",
+            "realsz": 17,
+            "size": 17,
+            "type": "sym"
+        },
+        {
+            "callrefs":
+            [
+                {
+                    "addr": 1296,
+                    "at": 1932,
+                    "type": "C"
+                },
+                {
+                    "addr": 1974,
+                    "at": 1940,
+                    "type": "J"
+                },
+                {
+                    "addr": 0,
+                    "at": 1961,
+                    "type": "C"
+                },
+                {
+                    "addr": 1952,
+                    "at": 1972,
+                    "type": "J"
+                }
+            ],
+            "calltype": "amd64",
+            "cc": 3,
+            "codexrefs":
+            [
+                {
+                    "addr": 1972,
+                    "at": 1952,
+                    "type": "J"
+                },
+                {
+                    "addr": 1940,
+                    "at": 1974,
+                    "type": "J"
+                }
+            ],
+            "cost": 49,
+            "datarefs":
+            [
+                2100664,
+                2100672
+            ],
+            "dataxrefs":
+            [
+                1414
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 5,
+            "indegree": 2,
+            "maxbound": "1989",
+            "minbound": "1888",
+            "name": "sym.__libc_csu_init",
+            "nargs": 3,
+            "nbbs": 4,
+            "nlocals": 0,
+            "offset": 1888,
+            "outdegree": 2,
+            "range": "101",
+            "realsz": 101,
+            "size": 101,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "codexrefs":
+            [],
+            "cost": 3,
+            "dataxrefs":
+            [
+                1407
+            ],
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "2002",
+            "minbound": "2000",
+            "name": "sym.__libc_csu_fini",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 2000,
+            "outdegree": 0,
+            "range": "2",
+            "realsz": 2,
+            "size": 2,
+            "type": "sym"
+        },
+        {
+            "calltype": "amd64",
+            "cc": 1,
+            "cost": 5,
+            "diff": "NEW",
+            "difftype": "new",
+            "ebbs": 1,
+            "edges": 0,
+            "indegree": 0,
+            "maxbound": "2013",
+            "minbound": "2004",
+            "name": "sym._fini",
+            "nargs": 0,
+            "nbbs": 1,
+            "nlocals": 0,
+            "offset": 2004,
+            "outdegree": 0,
+            "range": "9",
+            "realsz": 9,
+            "size": 9,
+            "type": "sym"
+        }
+    ],
+    "afvj":
+    {
+        "bp":
+        [],
+        "reg":
+        [
+            {
+                "kind": "reg",
+                "name": "arg2",
+                "ref": "rsi",
+                "type": "int"
+            },
+            {
+                "kind": "reg",
+                "name": "arg3",
+                "ref": "rdx",
+                "type": "int"
+            }
+        ],
+        "sp":
+        []
+    },
+    "agj":
+    [
+        {
+            "blocks":
+            [
+                {
+                    "offset": 1728,
+                    "ops":
+                    [
+                        {
+                            "bytes": "89f0",
+                            "comment": "YXJnMg==",
+                            "disasm": "mov eax, esi",
+                            "esil": "esi,eax,=,0xffffffff,rax,&=",
+                            "family": "cpu",
+                            "fcn_addr": 1728,
+                            "fcn_last": 1734,
+                            "flags":
+                            [
+                                "section_end..symtab",
+                                "sym.stosb"
+                            ],
+                            "offset": 1728,
+                            "opcode": "mov eax, esi",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "4889d1",
+                            "comment": "YXJnMw==",
+                            "disasm": "mov rcx, rdx",
+                            "esil": "rdx,rcx,=",
+                            "family": "cpu",
+                            "fcn_addr": 1728,
+                            "fcn_last": 1733,
+                            "offset": 1730,
+                            "opcode": "mov rcx, rdx",
+                            "refptr": false,
+                            "size": 3,
+                            "type": "mov",
+                            "type2_num": 0,
+                            "type_num": 9
+                        },
+                        {
+                            "bytes": "f3aa",
+                            "disasm": "rep stosb byte [rdi], al",
+                            "esil": "rcx,!,?{,BREAK,},al,edi,=[1],df,?{,1,edi,-=,},df,!,?{,1,edi,+=,},rcx,--=,rcx,?{,5,GOTO,}",
+                            "family": "cpu",
+                            "fcn_addr": 1728,
+                            "fcn_last": 1734,
+                            "offset": 1733,
+                            "opcode": "rep stosb byte [rdi], al",
+                            "refptr": false,
+                            "size": 2,
+                            "type": "store",
+                            "type2_num": 0,
+                            "type_num": 31
+                        },
+                        {
+                            "bytes": "c3",
+                            "disasm": "ret",
+                            "esil": "rsp,[8],rip,=,8,rsp,+=",
+                            "family": "cpu",
+                            "fcn_addr": 1728,
+                            "fcn_last": 1735,
+                            "offset": 1735,
+                            "opcode": "ret",
+                            "refptr": false,
+                            "size": 1,
+                            "type": "ret",
+                            "type2_num": 0,
+                            "type_num": 5
+                        }
+                    ],
+                    "size": 8,
+                    "trace":
+                    {
+                        "count": 48,
+                        "times": 1
+                    }
+                }
+            ],
+            "name": "sym.stosb",
+            "nargs": 2,
+            "ninstr": 4,
+            "nlocals": 0,
+            "offset": 1728,
+            "size": 8,
+            "stack": 0,
+            "type": "sym"
+        }
+    ],
+    "arch": "x86",
+    "archbits": 64,
+    "isj":
+    [
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.",
+            "name": "",
+            "ordinal": 1,
+            "paddr": 568,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 568
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._1",
+            "name": "",
+            "ordinal": 2,
+            "paddr": 596,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 596
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._2",
+            "name": "",
+            "ordinal": 3,
+            "paddr": 628,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 628
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._3",
+            "name": "",
+            "ordinal": 4,
+            "paddr": 664,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 664
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._4",
+            "name": "",
+            "ordinal": 5,
+            "paddr": 704,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 704
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._5",
+            "name": "",
+            "ordinal": 6,
+            "paddr": 896,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 896
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._6",
+            "name": "",
+            "ordinal": 7,
+            "paddr": 1030,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1030
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._7",
+            "name": "",
+            "ordinal": 8,
+            "paddr": 1048,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1048
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._8",
+            "name": "",
+            "ordinal": 9,
+            "paddr": 1080,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1080
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._9",
+            "name": "",
+            "ordinal": 10,
+            "paddr": 1272,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1272
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._10",
+            "name": "",
+            "ordinal": 11,
+            "paddr": 1296,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1296
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._11",
+            "name": "",
+            "ordinal": 12,
+            "paddr": 1328,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1328
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._12",
+            "name": "",
+            "ordinal": 13,
+            "paddr": 1360,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1360
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._13",
+            "name": "",
+            "ordinal": 14,
+            "paddr": 1376,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 1376
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._14",
+            "name": "",
+            "ordinal": 15,
+            "paddr": 2004,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2004
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._15",
+            "name": "",
+            "ordinal": 16,
+            "paddr": 2016,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2016
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._16",
+            "name": "",
+            "ordinal": 17,
+            "paddr": 2060,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2060
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._17",
+            "name": "",
+            "ordinal": 18,
+            "paddr": 2192,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2192
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._18",
+            "name": "",
+            "ordinal": 19,
+            "paddr": 3512,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2100664
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._19",
+            "name": "",
+            "ordinal": 20,
+            "paddr": 3520,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2100672
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._20",
+            "name": "",
+            "ordinal": 21,
+            "paddr": 3528,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2100680
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._21",
+            "name": "",
+            "ordinal": 22,
+            "paddr": 4024,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2101176
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._22",
+            "name": "",
+            "ordinal": 23,
+            "paddr": 4096,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2101248
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._23",
+            "name": "",
+            "ordinal": 24,
+            "paddr": 4112,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 2101264
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym._24",
+            "name": "",
+            "ordinal": 25,
+            "paddr": 0,
+            "size": 0,
+            "type": "SECT",
+            "vaddr": 0
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.tests.c",
+            "name": "tests.c",
+            "ordinal": 26,
+            "paddr": 0,
+            "size": 0,
+            "type": "FILE",
+            "vaddr": 0
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.crtstuff.c",
+            "name": "crtstuff.c",
+            "ordinal": 27,
+            "paddr": 0,
+            "size": 0,
+            "type": "FILE",
+            "vaddr": 0
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.deregister_tm_clones",
+            "name": "deregister_tm_clones",
+            "ordinal": 28,
+            "paddr": 1440,
+            "size": 0,
+            "type": "FUNC",
+            "vaddr": 1440
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.register_tm_clones",
+            "name": "register_tm_clones",
+            "ordinal": 29,
+            "paddr": 1504,
+            "size": 0,
+            "type": "FUNC",
+            "vaddr": 1504
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.__do_global_dtors_aux",
+            "name": "__do_global_dtors_aux",
+            "ordinal": 30,
+            "paddr": 1584,
+            "size": 0,
+            "type": "FUNC",
+            "vaddr": 1584
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "obj.completed.7696",
+            "name": "completed.7696",
+            "ordinal": 31,
+            "paddr": 4112,
+            "size": 1,
+            "type": "OBJ",
+            "vaddr": 2101264
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "obj.__do_global_dtors_aux_fini_array_entry",
+            "name": "__do_global_dtors_aux_fini_array_entry",
+            "ordinal": 32,
+            "paddr": 3520,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2100672
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.frame_dummy",
+            "name": "frame_dummy",
+            "ordinal": 33,
+            "paddr": 1648,
+            "size": 0,
+            "type": "FUNC",
+            "vaddr": 1648
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "obj.__frame_dummy_init_array_entry",
+            "name": "__frame_dummy_init_array_entry",
+            "ordinal": 34,
+            "paddr": 3512,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2100664
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.crtstuff.c",
+            "name": "crtstuff.c",
+            "ordinal": 35,
+            "paddr": 0,
+            "size": 0,
+            "type": "FILE",
+            "vaddr": 0
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "obj.__FRAME_END",
+            "name": "__FRAME_END__",
+            "ordinal": 36,
+            "paddr": 2636,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2636
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "sym.",
+            "name": "",
+            "ordinal": 37,
+            "paddr": 0,
+            "size": 0,
+            "type": "FILE",
+            "vaddr": 0
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "loc.__init_array_end",
+            "name": "__init_array_end",
+            "ordinal": 38,
+            "paddr": 3520,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2100672
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "obj._DYNAMIC",
+            "name": "_DYNAMIC",
+            "ordinal": 39,
+            "paddr": 3528,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2100680
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "loc.__init_array_start",
+            "name": "__init_array_start",
+            "ordinal": 40,
+            "paddr": 3512,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2100664
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "loc.__GNU_EH_FRAME_HDR",
+            "name": "__GNU_EH_FRAME_HDR",
+            "ordinal": 41,
+            "paddr": 2060,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2060
+        },
+        {
+            "bind": "LOCAL",
+            "demname": "",
+            "flagname": "obj._GLOBAL_OFFSET_TABLE",
+            "name": "_GLOBAL_OFFSET_TABLE_",
+            "ordinal": 42,
+            "paddr": 4024,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2101176
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.__libc_csu_fini",
+            "name": "__libc_csu_fini",
+            "ordinal": 43,
+            "paddr": 2000,
+            "size": 2,
+            "type": "FUNC",
+            "vaddr": 2000
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.movsb",
+            "name": "movsb",
+            "ordinal": 44,
+            "paddr": 1744,
+            "size": 6,
+            "type": "FUNC",
+            "vaddr": 1744
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.data_start",
+            "name": "data_start",
+            "ordinal": 46,
+            "paddr": 4096,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2101248
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "loc._edata",
+            "name": "_edata",
+            "ordinal": 48,
+            "paddr": 4112,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2101264
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.dec",
+            "name": "dec",
+            "ordinal": 49,
+            "paddr": 1856,
+            "size": 17,
+            "type": "FUNC",
+            "vaddr": 1856
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym._fini",
+            "name": "_fini",
+            "ordinal": 50,
+            "paddr": 2004,
+            "size": 0,
+            "type": "FUNC",
+            "vaddr": 2004
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.div",
+            "name": "div",
+            "ordinal": 51,
+            "paddr": 1776,
+            "size": 7,
+            "type": "FUNC",
+            "vaddr": 1776
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "loc.__data_start",
+            "name": "__data_start",
+            "ordinal": 53,
+            "paddr": 4096,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2101248
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym._while",
+            "name": "_while",
+            "ordinal": 54,
+            "paddr": 1680,
+            "size": 31,
+            "type": "FUNC",
+            "vaddr": 1680
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "obj.__dso_handle",
+            "name": "__dso_handle",
+            "ordinal": 56,
+            "paddr": 4104,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2101256
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "obj._IO_stdin_used",
+            "name": "_IO_stdin_used",
+            "ordinal": 57,
+            "paddr": 2016,
+            "size": 4,
+            "type": "OBJ",
+            "vaddr": 2016
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.__libc_csu_init",
+            "name": "__libc_csu_init",
+            "ordinal": 58,
+            "paddr": 1888,
+            "size": 101,
+            "type": "FUNC",
+            "vaddr": 1888
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "loc._end",
+            "name": "_end",
+            "ordinal": 59,
+            "paddr": 2101272,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2101272
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.segovr",
+            "name": "segovr",
+            "ordinal": 60,
+            "paddr": 1664,
+            "size": 9,
+            "type": "FUNC",
+            "vaddr": 1664
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym._start",
+            "name": "_start",
+            "ordinal": 61,
+            "paddr": 1392,
+            "size": 43,
+            "type": "FUNC",
+            "vaddr": 1392
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "loc.__bss_start",
+            "name": "__bss_start",
+            "ordinal": 62,
+            "paddr": 4112,
+            "size": 0,
+            "type": "NOTYPE",
+            "vaddr": 2101264
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.main",
+            "name": "main",
+            "ordinal": 63,
+            "paddr": 1376,
+            "size": 3,
+            "type": "FUNC",
+            "vaddr": 1376
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.mul",
+            "name": "mul",
+            "ordinal": 64,
+            "paddr": 1760,
+            "size": 6,
+            "type": "FUNC",
+            "vaddr": 1760
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "obj.__TMC_END",
+            "name": "__TMC_END__",
+            "ordinal": 65,
+            "paddr": 4112,
+            "size": 0,
+            "type": "OBJ",
+            "vaddr": 2101264
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.stosb",
+            "name": "stosb",
+            "ordinal": 67,
+            "paddr": 1728,
+            "size": 8,
+            "type": "FUNC",
+            "vaddr": 1728
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym._init",
+            "name": "_init",
+            "ordinal": 69,
+            "paddr": 1296,
+            "size": 0,
+            "type": "FUNC",
+            "vaddr": 1296
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.cmpsb",
+            "name": "cmpsb",
+            "ordinal": 70,
+            "paddr": 1712,
+            "size": 14,
+            "type": "FUNC",
+            "vaddr": 1712
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.inc",
+            "name": "inc",
+            "ordinal": 71,
+            "paddr": 1792,
+            "size": 62,
+            "type": "FUNC",
+            "vaddr": 1792
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp._ITM_deregisterTMCloneTable",
+            "name": "imp._ITM_deregisterTMCloneTable",
+            "ordinal": 1,
+            "paddr": 0,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 0
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.puts",
+            "name": "imp.puts",
+            "ordinal": 2,
+            "paddr": 1344,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 1344
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.__libc_start_main",
+            "name": "imp.__libc_start_main",
+            "ordinal": 3,
+            "paddr": 0,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp.__gmon_start",
+            "name": "imp.__gmon_start__",
+            "ordinal": 4,
+            "paddr": 0,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp._ITM_registerTMCloneTable",
+            "name": "imp._ITM_registerTMCloneTable",
+            "ordinal": 5,
+            "paddr": 0,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "sym.imp.__cxa_finalize",
+            "name": "imp.__cxa_finalize",
+            "ordinal": 6,
+            "paddr": 0,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp._ITM_deregisterTMCloneTable",
+            "name": "imp._ITM_deregisterTMCloneTable",
+            "ordinal": 1,
+            "paddr": 0,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 0
+        },
+        {
+            "bind": "GLOBAL",
+            "demname": "",
+            "flagname": "sym.imp.__libc_start_main",
+            "name": "imp.__libc_start_main",
+            "ordinal": 3,
+            "paddr": 0,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp.__gmon_start",
+            "name": "imp.__gmon_start__",
+            "ordinal": 4,
+            "paddr": 0,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "loc.imp._ITM_registerTMCloneTable",
+            "name": "imp._ITM_registerTMCloneTable",
+            "ordinal": 5,
+            "paddr": 0,
+            "size": 16,
+            "type": "NOTYPE",
+            "vaddr": 0
+        },
+        {
+            "bind": "WEAK",
+            "demname": "",
+            "flagname": "sym.imp.__cxa_finalize",
+            "name": "imp.__cxa_finalize",
+            "ordinal": 6,
+            "paddr": 0,
+            "size": 16,
+            "type": "FUNC",
+            "vaddr": 0
+        }
+    ],
+    "izj":
+    [
+        {
+            "length": 13,
+            "ordinal": 0,
+            "paddr": 2020,
+            "section": ".rodata",
+            "size": 14,
+            "string": "bG93ZXIgdGhhbiAxMA==",
+            "type": "ascii",
+            "vaddr": 2020
+        },
+        {
+            "length": 24,
+            "ordinal": 1,
+            "paddr": 2034,
+            "section": ".rodata",
+            "size": 25,
+            "string": "ZXF1YWxzIG9yIGhpZ2hlciB0aGFuIDEw",
+            "type": "ascii",
+            "vaddr": 2034
+        }
+    ],
+    "name": "issue_1533063178117"
+}

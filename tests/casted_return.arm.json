@@ -1,19 +1,29 @@
 {
-    "Csj": [],
-    "afcfj": [],
-    "aflj": [],
-    "afvj": {
-        "bp": [],
-        "reg": [],
-        "sp": []
+    "Csj":
+    [],
+    "afcfj":
+    [],
+    "aflj":
+    [],
+    "afvj":
+    {
+        "bp":
+        [],
+        "reg":
+        [],
+        "sp":
+        []
     },
-    "agj": [
+    "agj":
+    [
         {
-            "blocks": [
+            "blocks":
+            [
                 {
                     "colorize": 0,
                     "offset": 119840,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e8031e32",
                             "disasm": "orr w8, wzr, 4",
@@ -21,13 +31,15 @@
                             "family": "cpu",
                             "fcn_addr": 119840,
                             "fcn_last": 119848,
-                            "flags": [
+                            "flags":
+                            [
                                 "fcn.0001d420"
                             ],
                             "offset": 119840,
                             "opcode": "orr w8, wzr, 4",
                             "refptr": false,
-                            "refs": [
+                            "refs":
+                            [
                                 {
                                     "addr": 3404328,
                                     "type": "CALL"
@@ -88,7 +100,9 @@
     ],
     "arch": "arm",
     "archbits": 64,
-    "icj": [],
-    "isj": [],
+    "icj":
+    [],
+    "isj":
+    [],
     "name": "issue_1563881497002"
 }

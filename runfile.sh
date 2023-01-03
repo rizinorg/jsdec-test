@@ -9,7 +9,7 @@ ERROR=false
 DIFF="diff --color=always -u"
 
 if [ -z "$JSDECFOLDER" ]; then
-	JSDECFOLDER=~/.local/share/rizin/plugins/jsdec
+	JSDECFOLDER=~/.local/lib/rizin/plugins/jsdec/
 fi
 
 JSDECBINFLD=$JSDECFOLDER/p

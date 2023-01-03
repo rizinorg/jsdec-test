@@ -1,13 +1,17 @@
 {
-    "afcfj": [],
-    "aflj": [
+    "afcfj":
+    [],
+    "aflj":
+    [
         {
             "bits": 32,
-            "bpvars": [
+            "bpvars":
+            [
                 {
                     "kind": "arg",
                     "name": "arg_8h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 8
                     },
@@ -16,14 +20,16 @@
                 {
                     "kind": "arg",
                     "name": "arg_ch",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 12
                     },
                     "type": "int"
                 }
             ],
-            "callrefs": [
+            "callrefs":
+            [
                 {
                     "addr": 4198494,
                     "at": 4198410,
@@ -147,7 +153,8 @@
             ],
             "calltype": "cdecl",
             "cc": 14,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198742,
                     "at": 4198400,
@@ -205,7 +212,8 @@
                 }
             ],
             "cost": 207,
-            "datarefs": [
+            "datarefs":
+            [
                 4206608,
                 4206620,
                 4206668,
@@ -220,7 +228,8 @@
                 4206596,
                 4206592
             ],
-            "dataxrefs": [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 2,
             "edges": 35,
@@ -235,19 +244,23 @@
             "offset": 4198400,
             "outdegree": 14,
             "realsz": 406,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 380,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 20,
             "type": "fcn"
         },
         {
             "bits": 32,
-            "bpvars": [
+            "bpvars":
+            [
                 {
                     "kind": "var",
                     "name": "var_30h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551568
                     },
@@ -256,7 +269,8 @@
                 {
                     "kind": "var",
                     "name": "var_2ch",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551572
                     },
@@ -265,7 +279,8 @@
                 {
                     "kind": "var",
                     "name": "var_28h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551576
                     },
@@ -274,7 +289,8 @@
                 {
                     "kind": "var",
                     "name": "var_24h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551580
                     },
@@ -283,7 +299,8 @@
                 {
                     "kind": "var",
                     "name": "var_20h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551584
                     },
@@ -292,7 +309,8 @@
                 {
                     "kind": "var",
                     "name": "var_1ch",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551588
                     },
@@ -301,7 +319,8 @@
                 {
                     "kind": "var",
                     "name": "var_18h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551592
                     },
@@ -310,7 +329,8 @@
                 {
                     "kind": "var",
                     "name": "var_14h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551596
                     },
@@ -319,14 +339,16 @@
                 {
                     "kind": "var",
                     "name": "var_4h",
-                    "ref": {
+                    "ref":
+                    {
                         "base": "ebp",
                         "offset": 18446744073709551612
                     },
                     "type": "int"
                 }
             ],
-            "callrefs": [
+            "callrefs":
+            [
                 {
                     "addr": 4202540,
                     "at": 4198564,
@@ -400,7 +422,8 @@
             ],
             "calltype": "cdecl",
             "cc": 2,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198637,
                     "at": 4198651,
@@ -408,7 +431,8 @@
                 }
             ],
             "cost": 126,
-            "datarefs": [
+            "datarefs":
+            [
                 4202560,
                 4198832,
                 4206668,
@@ -423,7 +447,8 @@
                 4206596,
                 4206592
             ],
-            "dataxrefs": [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 1,
             "edges": 3,
@@ -438,16 +463,20 @@
             "offset": 4198520,
             "outdegree": 13,
             "realsz": 260,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 260,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 112,
             "type": "fcn"
         },
         {
             "bits": 32,
-            "bpvars": [],
-            "callrefs": [
+            "bpvars":
+            [],
+            "callrefs":
+            [
                 {
                     "addr": 4202504,
                     "at": 4198792,
@@ -456,7 +485,8 @@
             ],
             "calltype": "cdecl",
             "cc": 1,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198772,
                     "at": 4198792,
@@ -464,8 +494,10 @@
                 }
             ],
             "cost": 3,
-            "datarefs": [],
-            "dataxrefs": [],
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 1,
             "edges": 0,
@@ -480,16 +512,20 @@
             "offset": 4198792,
             "outdegree": 0,
             "realsz": 6,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 6,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 0,
             "type": "fcn"
         },
         {
             "bits": 32,
-            "bpvars": [],
-            "callrefs": [
+            "bpvars":
+            [],
+            "callrefs":
+            [
                 {
                     "addr": 4202520,
                     "at": 4198798,
@@ -498,7 +534,8 @@
             ],
             "calltype": "cdecl",
             "cc": 1,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198666,
                     "at": 4198798,
@@ -511,8 +548,10 @@
                 }
             ],
             "cost": 3,
-            "datarefs": [],
-            "dataxrefs": [],
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 1,
             "edges": 0,
@@ -527,16 +566,20 @@
             "offset": 4198798,
             "outdegree": 0,
             "realsz": 6,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 6,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 0,
             "type": "fcn"
         },
         {
             "bits": 32,
-            "bpvars": [],
-            "callrefs": [
+            "bpvars":
+            [],
+            "callrefs":
+            [
                 {
                     "addr": 4198838,
                     "at": 4198814,
@@ -545,7 +588,8 @@
             ],
             "calltype": "cdecl",
             "cc": 1,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198651,
                     "at": 4198804,
@@ -553,8 +597,10 @@
                 }
             ],
             "cost": 10,
-            "datarefs": [],
-            "dataxrefs": [],
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 1,
             "edges": 0,
@@ -569,18 +615,22 @@
             "offset": 4198804,
             "outdegree": 1,
             "realsz": 18,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 18,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 8,
             "type": "fcn"
         },
         {
             "bits": 32,
-            "bpvars": [],
+            "bpvars":
+            [],
             "calltype": "cdecl",
             "cc": 1,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198625,
                     "at": 4198825,
@@ -588,7 +638,8 @@
                 }
             ],
             "cost": 3,
-            "dataxrefs": [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 1,
             "edges": 0,
@@ -603,16 +654,20 @@
             "offset": 4198825,
             "outdegree": 0,
             "realsz": 1,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 1,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 0,
             "type": "fcn"
         },
         {
             "bits": 32,
-            "bpvars": [],
-            "callrefs": [
+            "bpvars":
+            [],
+            "callrefs":
+            [
                 {
                     "addr": 4202548,
                     "at": 4198838,
@@ -621,7 +676,8 @@
             ],
             "calltype": "cdecl",
             "cc": 1,
-            "codexrefs": [
+            "codexrefs":
+            [
                 {
                     "addr": 4198814,
                     "at": 4198838,
@@ -629,8 +685,10 @@
                 }
             ],
             "cost": 3,
-            "datarefs": [],
-            "dataxrefs": [],
+            "datarefs":
+            [],
+            "dataxrefs":
+            [],
             "difftype": "new",
             "ebbs": 1,
             "edges": 0,
@@ -645,19 +703,24 @@
             "offset": 4198838,
             "outdegree": 0,
             "realsz": 6,
-            "regvars": [],
+            "regvars":
+            [],
             "size": 6,
-            "spvars": [],
+            "spvars":
+            [],
             "stackframe": 0,
             "type": "fcn"
         }
     ],
-    "afvj": {
-        "bp": [
+    "afvj":
+    {
+        "bp":
+        [
             {
                 "kind": "arg",
                 "name": "arg_8h",
-                "ref": {
+                "ref":
+                {
                     "base": "ebp",
                     "offset": 8
                 },
@@ -666,25 +729,31 @@
             {
                 "kind": "arg",
                 "name": "arg_ch",
-                "ref": {
+                "ref":
+                {
                     "base": "ebp",
                     "offset": 12
                 },
                 "type": "int"
             }
         ],
-        "reg": [],
-        "sp": []
+        "reg":
+        [],
+        "sp":
+        []
     },
-    "agj": [
+    "agj":
+    [
         {
-            "blocks": [
+            "blocks":
+            [
                 {
                     "colorize": 0,
                     "fail": 4198412,
                     "jump": 4198494,
                     "offset": 4198400,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "55",
                             "comment": "WzAwXSAtci14IHNlY3Rpb24gc2l6ZSA0MDk2IG5hbWVkIC50ZXh0",
@@ -693,7 +762,8 @@
                             "family": "cpu",
                             "fcn_addr": 4198400,
                             "fcn_last": 4198779,
-                            "flags": [
+                            "flags":
+                            [
                                 "section..text",
                                 "sub.Good_Job_401000"
                             ],
@@ -705,7 +775,8 @@
                             "type": "upush",
                             "type2_num": 0,
                             "type_num": 12,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198742,
                                     "type": "CALL"
@@ -820,7 +891,8 @@
                     "fail": 4198416,
                     "jump": 4198417,
                     "offset": 4198412,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "33c0",
                             "disasm": "xor eax, eax",
@@ -862,7 +934,8 @@
                     "colorize": 0,
                     "jump": 4198429,
                     "offset": 4198416,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e88b450c8b",
                             "disasm": "call 0x8b4c55a0",
@@ -897,7 +970,8 @@
                             "type": "mov",
                             "type2_num": 0,
                             "type_num": 9,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198414,
                                     "type": "CODE"
@@ -963,7 +1037,8 @@
                     "colorize": 0,
                     "jump": 4198429,
                     "offset": 4198417,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "8b450c",
                             "disasm": "mov eax, dword [arg_ch]",
@@ -980,7 +1055,8 @@
                             "type": "mov",
                             "type2_num": 0,
                             "type_num": 9,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198414,
                                     "type": "CODE"
@@ -1047,7 +1123,8 @@
                     "fail": 4198431,
                     "jump": 4198494,
                     "offset": 4198429,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "753f",
                             "disasm": "jne 0x40105e",
@@ -1074,7 +1151,8 @@
                     "fail": 4198435,
                     "jump": 4198436,
                     "offset": 4198431,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "33c0",
                             "disasm": "xor eax, eax",
@@ -1117,7 +1195,8 @@
                     "fail": 4198450,
                     "jump": 4198567,
                     "offset": 4198435,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e88b450c8b",
                             "disasm": "call 0x8b4c55b3",
@@ -1152,7 +1231,8 @@
                             "type": "mov",
                             "type2_num": 0,
                             "type_num": 9,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198433,
                                     "type": "CODE"
@@ -1224,7 +1304,8 @@
                     "fail": 4198451,
                     "jump": 4198494,
                     "offset": 4198436,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "8b450c",
                             "disasm": "mov eax, dword [arg_ch]",
@@ -1241,7 +1322,8 @@
                             "type": "mov",
                             "type2_num": 0,
                             "type_num": 9,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198433,
                                     "type": "CODE"
@@ -1330,7 +1412,8 @@
                     "colorize": 0,
                     "jump": 4198460,
                     "offset": 4198450,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "2b33",
                             "disasm": "sub esi, dword [ebx]",
@@ -1429,7 +1512,8 @@
                     "fail": 4198455,
                     "jump": 4198456,
                     "offset": 4198451,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "33c0",
                             "disasm": "xor eax, eax",
@@ -1471,7 +1555,8 @@
                     "colorize": 0,
                     "jump": 4198460,
                     "offset": 4198455,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e88b450c8b",
                             "disasm": "call 0x8b4c55c7",
@@ -1520,7 +1605,8 @@
                     "fail": 4198471,
                     "jump": 4198494,
                     "offset": 4198456,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "8b450c",
                             "disasm": "mov eax, dword [arg_ch]",
@@ -1633,7 +1719,8 @@
                     "fail": 4198471,
                     "jump": 4198494,
                     "offset": 4198460,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "48",
                             "disasm": "dec eax",
@@ -1712,7 +1799,8 @@
                     "fail": 4198475,
                     "jump": 4198476,
                     "offset": 4198471,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "33c0",
                             "disasm": "xor eax, eax",
@@ -1754,7 +1842,8 @@
                     "colorize": 0,
                     "jump": 4198487,
                     "offset": 4198475,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e868103040",
                             "disasm": "call 0x407020b8",
@@ -1790,7 +1879,8 @@
                             "type2_num": 0,
                             "type_num": 13,
                             "val": 4206608,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198473,
                                     "type": "CODE"
@@ -1821,7 +1911,8 @@
                     "colorize": 0,
                     "jump": 4198487,
                     "offset": 4198476,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "6810304000",
                             "disasm": "push str.Good_Job",
@@ -1839,7 +1930,8 @@
                             "type2_num": 0,
                             "type_num": 13,
                             "val": 4206608,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198473,
                                     "type": "CODE"
@@ -1870,7 +1962,8 @@
                     "colorize": 0,
                     "jump": 4198515,
                     "offset": 4198487,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "83c404",
                             "disasm": "add esp, 4",
@@ -1929,7 +2022,8 @@
                     "fail": 4198498,
                     "jump": 4198499,
                     "offset": 4198494,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "33c0",
                             "disasm": "xor eax, eax",
@@ -1945,7 +2039,8 @@
                             "type": "xor",
                             "type2_num": 0,
                             "type_num": 28,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198410,
                                     "type": "CODE"
@@ -1985,7 +2080,8 @@
                     "colorize": 0,
                     "jump": 4198510,
                     "offset": 4198498,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e8681c3040",
                             "disasm": "call 0x40702ccf",
@@ -2021,7 +2117,8 @@
                             "type2_num": 0,
                             "type_num": 13,
                             "val": 4206620,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198496,
                                     "type": "CODE"
@@ -2052,7 +2149,8 @@
                     "colorize": 0,
                     "jump": 4198510,
                     "offset": 4198499,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "681c304000",
                             "disasm": "push str.Son__I_am_disappoint.",
@@ -2070,7 +2168,8 @@
                             "type2_num": 0,
                             "type_num": 13,
                             "val": 4206620,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198496,
                                     "type": "CODE"
@@ -2101,7 +2200,8 @@
                     "colorize": 0,
                     "jump": 4198515,
                     "offset": 4198510,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "83c404",
                             "disasm": "add esp, 4",
@@ -2141,7 +2241,8 @@
                 {
                     "colorize": 0,
                     "offset": 4198515,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "5f",
                             "disasm": "pop edi",
@@ -2157,7 +2258,8 @@
                             "type": "pop",
                             "type2_num": 0,
                             "type_num": 14,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198492,
                                     "type": "CODE"
@@ -2236,7 +2338,8 @@
                     "fail": 4198639,
                     "jump": 4198651,
                     "offset": 4198567,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "204000",
                             "disasm": "and byte [eax], al",
@@ -2252,7 +2355,8 @@
                             "type": "and",
                             "type2_num": 0,
                             "type_num": 27,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198448,
                                     "type": "CODE"
@@ -2521,7 +2625,8 @@
                     "colorize": 0,
                     "jump": 4198651,
                     "offset": 4198639,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "68a6114000",
                             "disasm": "push 0x4011a6",
@@ -2579,7 +2684,8 @@
                 {
                     "colorize": 0,
                     "offset": 4198651,
-                    "ops": [
+                    "ops":
+                    [
                         {
                             "bytes": "e894000000",
                             "disasm": "call fcn.00401194",
@@ -2597,7 +2703,8 @@
                             "type": "call",
                             "type2_num": 0,
                             "type_num": 3,
-                            "xrefs": [
+                            "xrefs":
+                            [
                                 {
                                     "addr": 4198637,
                                     "type": "CODE"
@@ -3276,7 +3383,8 @@
     ],
     "arch": "x86",
     "archbits": 32,
-    "isj": [
+    "isj":
+    [
         {
             "bind": "NONE",
             "demname": "",
@@ -3432,7 +3540,8 @@
             "vaddr": 4202548
         }
     ],
-    "izj": [
+    "izj":
+    [
         {
             "length": 6,
             "ordinal": 0,

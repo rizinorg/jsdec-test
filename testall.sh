@@ -15,6 +15,7 @@ fi
 
 if [ -z "$JSDECFOLDER" ]; then
 	echo "$0 <jsdec folder> <ci>"
+	exit 1
 fi
 
 JSDECBINFLD=$JSDECFOLDER/p

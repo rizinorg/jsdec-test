@@ -13,20 +13,20 @@
     0x0001016c sw a5, -24(s0)            |     *((int32_t*) (s0 - 0x18)) = a5;
                                          |     do {
                                          | label_0:
-    0x00010170 lui a5, 0x21              |         a5 = 0x15000;
-    0x00010174 addi a0, a5, 1272         |         a0 = 0x154f8;
+    0x00010170 lui a5, 0x21              |         a5 = 0x21000;
+    0x00010174 addi a0, a5, 1272         |         a0 = "Enter your guess : ";
     0x00010178 jal ra, 0x10374           |         dbg_printf (a0);
     0x0001017c addi a5, s0, -24          |         a5 = s0 + -24;
     0x00010180 mv a1, a5                 |         a1 = a5;
-    0x00010184 lui a5, 0x21              |         a5 = 0x15000;
-    0x00010188 addi a0, a5, 1296         |         a0 = 0x15510;
+    0x00010184 lui a5, 0x21              |         a5 = 0x21000;
+    0x00010188 addi a0, a5, 1296         |         a0 = 0x21510;
     0x0001018c jal ra, 0x10480           |         dbg_scanf (a0);
     0x00010190 lw a4, -24(s0)            |         a4 = *((int32_t*) (s0 - 0x18));
     0x00010194 lw a5, -20(s0)            |         a5 = *((int32_t*) (s0 - 0x14));
                                          |         if (a4 == a5) {
     0x00010198 bne a4, a5, 0x101b0       |             
-    0x0001019c lui a5, 0x21              |             a5 = 0x15000;
-    0x000101a0 addi a0, a5, 1304         |             a0 = 0x15518;
+    0x0001019c lui a5, 0x21              |             a5 = 0x21000;
+    0x000101a0 addi a0, a5, 1304         |             a0 = "You win!";
     0x000101a4 jal ra, 0x10474           |             dbg_puts (a0);
     0x000101a8 li a5, 0                  |             a5 = 0;
     0x000101ac j 0x101dc                 |             goto label_1;
@@ -36,20 +36,20 @@
                                          |         if (a5 <= a4) {
     0x000101b8 ble a5, a4, 0x101cc       |             goto label_2;
                                          |         }
-    0x000101bc lui a5, 0x21              |         a5 = 0x15000;
-    0x000101c0 addi a0, a5, 1320         |         a0 = 0x15528;
+    0x000101bc lui a5, 0x21              |         a5 = 0x21000;
+    0x000101c0 addi a0, a5, 1320         |         a0 = "Too small";
     0x000101c4 jal ra, 0x10474           |         dbg_puts (a0);
     0x000101c8 j 0x10170                 |         
                                          |     } while (1);
                                          | label_2:
-    0x000101cc lui a5, 0x21              |     a5 = 0x15000;
-    0x000101d0 addi a0, a5, 1336         |     a0 = 0x15538;
+    0x000101cc lui a5, 0x21              |     a5 = 0x21000;
+    0x000101d0 addi a0, a5, 1336         |     a0 = "Too big";
     0x000101d4 jal ra, 0x10474           |     dbg_puts (a0);
     0x000101d8 j 0x10170                 |     goto label_0;
                                          | label_1:
     0x000101dc mv a0, a5                 |     a0 = a5;
-    0x000101e0 ld ra, 24(sp)             |     ra = *((int64_t*) (sp + 0x24));
-    0x000101e4 ld s0, 16(sp)             |     s0 = *((int64_t*) (sp + 0x16));
+    0x000101e0 ld ra, 24(sp)             |     ra = *((int64_t*) (sp + 0x18));
+    0x000101e4 ld s0, 16(sp)             |     s0 = *((int64_t*) (sp + 0x10));
     0x000101e8 addi sp, sp, 32           |     sp += 32;
     0x000101ec ret                       |     return;
                                          | }

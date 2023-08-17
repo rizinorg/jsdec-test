@@ -11,13 +11,13 @@ build_testsuite() {
 
 	if [ ! -d "$BUILD" ]; then
 		echo "Info: creating meson build '$BUILD'"
-		cd "$BUILD"
+		cd "$JSDEC"
 		meson -Dstandalone=true "build-standalone" || exit 1
 		ninja -C "build-standalone" || exit 1
 		cd "$WORKDIR"
 	elif [ ! -f "$BIN" ]; then
 		echo "Info: rebuilding '$BIN'"
-		cd "$BUILD"
+		cd "$JSDEC"
 		ninja -C "build-standalone" || exit 1
 		cd "$WORKDIR"
 	fi

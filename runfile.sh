@@ -1,29 +1,22 @@
 #!/bin/bash
 
-TESTFOLDER=./tests
-TMPFOLDER=./tmp
-JSDECFOLDER=$2
-TESTNAME=$1
-RMCMD="rmdir"
-ERROR=false
-DIFF="diff --color=always -u"
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+JSDEC="$2"
+TESTNAME="$1"
 
-if [ -z "$JSDECFOLDER" ]; then
+if [ -z "$JSDEC" ]; then
 	echo "$0 <file.json> <jsdec folder>"
 	exit 1
 fi
 
-JSDECBINFLD=$JSDECFOLDER/p
+. "$SCRIPT_DIR/common.sh"
 
-if [ ! -f "$JSDECBINFLD/jsdec-test" ]; then
-	echo "building binary src"
-    make --no-print-directory testbin -C "$JSDECBINFLD"
-fi
+build_testsuite "$JSDEC"
 
 if [ -z "$TESTNAME" ]; then
 	echo "Empty name.."
 	exit 1;
 fi
 
-$JSDECBINFLD/jsdec-test "$JSDECFOLDER" "$TESTNAME"
+run_test "$JSDEC" "$TESTNAME"
 

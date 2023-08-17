@@ -2,6 +2,7 @@ build_testsuite() {
 	local JSDEC="$1"
 	local BUILD="$JSDEC/build-standalone"
 	local BIN="$BUILD/jsdec-standalone"
+	local WORKDIR="$PWD"
 
 	if [ ! -d "$JSDEC" ]; then
 		echo "Error: '$JSDEC' is not a valid directory"
@@ -9,13 +10,16 @@ build_testsuite() {
 	fi
 
 	if [ ! -d "$BUILD" ]; then
-		echo "Info: creating meson build directory '$BUILD'"
-		meson -Dstandalone=true "$BUILD" || exit 1
-	fi
-	
-	if [ ! -f "$BIN" ]; then
-		echo "Info: building '$BIN'"
-		ninja -C "$BUILD" || exit 1
+		echo "Info: creating meson build '$BUILD'"
+		cd "$BUILD"
+		meson -Dstandalone=true "build-standalone" || exit 1
+		ninja -C "build-standalone" || exit 1
+		cd "$WORKDIR"
+	elif [ ! -f "$BIN" ]; then
+		echo "Info: rebuilding '$BIN'"
+		cd "$BUILD"
+		ninja -C "build-standalone" || exit 1
+		cd "$WORKDIR"
 	fi
 }
 

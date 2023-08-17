@@ -1,24 +1,23 @@
 #!/bin/bash
 
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 TESTFOLDER=./tests
 TMPFOLDER=./tmp
-JSDECFOLDER=$2
+JSDEC=$2
 TESTNAME=$1
 RMCMD="rmdir"
 ERROR=false
 DIFF="diff --color=always -u"
 
-if [ -z "$JSDECFOLDER" ]; then
+if [ -z "$TESTNAME" ] || [ -z "$JSDEC" ]; then
 	echo "$0 <test name> <jsdec folder>"
 	exit 1
 fi
 
-JSDECBINFLD=$JSDECFOLDER/p
+. "$SCRIPT_DIR/common.sh"
 
-if [ ! -f "$JSDECBINFLD/jsdec-test" ]; then
-	echo "building binary src"
-    make --no-print-directory testbin -C "$JSDECBINFLD"
-fi
+build_testsuite "$JSDEC"
+
 ELEM=$(find "$TESTFOLDER" | grep "$TESTNAME*.json" | sed "s/.json//g")
 
 if [ ! -d "$TMPFOLDER" ]; then
@@ -32,7 +31,7 @@ if [ -z "$NAME" ]; then
 fi
 
 OUTPUTFILE="$TMPFOLDER/$NAME.output.txt"
-$JSDECBINFLD/jsdec-test "$JSDECFOLDER" "$ELEM.json" > "$OUTPUTFILE" || break
+run_test "$JSDEC" "$ELEM.json" > "$OUTPUTFILE" || break
 if [ ! -f "$ELEM.output.txt" ]; then
 	touch "$ELEM.output.txt"
 fi
@@ -51,7 +50,6 @@ fi
 if [ ! "$TMPFOLDER" == "/tmp" ] ; then
 	$RMCMD "$TMPFOLDER" 2> /dev/null
 fi
-
 
 if $ERROR; then
 	exit 1;

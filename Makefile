@@ -1,5 +1,5 @@
 all:
-	@echo "run manually './testall.sh /path/to/r2dec-js'"
+	@echo "run manually './testall.sh /path/to/jsdec'"
 	@echo "to build the tests again, use 'make build && make buildtests'"
 
 build:
